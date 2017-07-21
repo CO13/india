@@ -1,0 +1,60 @@
+.toolbar {
+    background-color: $lightBlue;
+    border-radius: 2px;
+    padding: 6px 40px 6px 20px;
+    margin-bottom: 20px;
+
+    .sorter {
+        float: left;
+    }
+
+    .view-mode,
+    .limiter {
+        float: right;
+    }
+
+    .view-mode {
+         margin: 5px 0 5px 30px;
+        .list,
+        .grid {
+            background: url('../images/view-mode.png') no-repeat;
+            display: inline-block;
+            height: 14px;
+            vertical-align: middle;
+            width: 14px;
+        }
+
+        .grid {
+            margin-right: 6px;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        a.grid {
+            background-position: 0 -16px;
+        }
+
+        a.list {
+            background-position: -16px -16px;
+        }
+
+        a.grid:hover,
+        strong.grid {
+            background-position: 0 0;
+        }
+
+        a.list:hover,
+        strong.list {
+            background-position: -16px 0;
+        }
+    }
+
+    label {
+        color: $textColor;
+        font-family: $font-name__roboto-light;
+        margin: 0 8px 0 0;
+    }
+
+}

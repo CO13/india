@@ -1,0 +1,64 @@
+.features-products {
+    @include clearfix;
+    padding: 30px 0;
+    text-align: center;
+
+    &__item {
+        cursor: pointer;
+
+        &:hover {
+            .features-products__image {
+                &:after {
+                    opacity: 0.6;
+                }
+            }
+
+            .features-products__title {
+                a {
+                    color: #1ca5d0;
+                }
+            }
+        }
+    }
+
+    &__image {
+        position: relative;
+        padding-bottom: 20px;
+
+        img {
+            max-width: 100%;
+            width: auto;
+            display: initial;
+        }
+
+        &:after {
+            content: '';
+            background: url("../images/features-item-bg.png") top center no-repeat;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            @include transition(all .3s linear);
+        }
+    }
+
+    &__title {
+        a {
+            color: $hColor;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            float: left;
+            width: 20%;
+        }
+    }
+} //.features-products

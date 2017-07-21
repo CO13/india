@@ -1,0 +1,41 @@
+
+.breadcrumbs {
+    ul {
+        margin: 10px 0 5px;
+        padding: 0;
+
+        li {
+            display: inline;
+            list-style: none;
+
+            a {
+                color: $textColor;
+                text-decoration: underline;
+
+                &:hover {
+                    color: $blue;
+                }
+
+                &:after {
+                    content: '';
+                    background: url('../images/breadcrumbs-separator.png') no-repeat;
+                    display: inline-block;
+                    height: 5px;
+                    margin-left: 10px;
+                    margin-right: 8px;
+                    width: 8px;
+                }
+            }
+
+            strong {
+                color: $blue;
+            }
+
+            a,
+            strong {
+                font-family: $font-name__roboto-regular;
+                font-weight: normal;
+            }
+        }
+    }
+}

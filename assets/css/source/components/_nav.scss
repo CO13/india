@@ -1,0 +1,45 @@
+.navbar {
+	@media screen and (min-width: 992px) {
+			background-color: $blue;
+	}
+}
+
+.md-nav {
+	padding: 0;
+	border-radius: 2px;
+
+	.navbar-collapse {
+			justify-content: center;
+			@media screen and (max-width: 991px) {
+					background-color: $blue;
+
+			}
+	}
+
+	.nav {
+		li {
+			a {
+				padding: 0 25px;
+				display: flex;
+				align-items: center;
+				color: $white;
+				text-transform: uppercase;
+				height: 46px;
+				font-size: 14px;
+
+				&:hover,&.active {
+					text-decoration: none;
+					background-color: $green;
+				}
+				@media screen and (max-width: 1199px) and (min-width: 992px) {
+		  			padding: 0 15px;
+						font-size: 13px;
+				}
+				@media screen and (max-width: 991px) {
+						padding: 0 20px;
+						border-bottom: 1px solid #3eb2d6;
+				}
+			}
+		}
+	}
+}

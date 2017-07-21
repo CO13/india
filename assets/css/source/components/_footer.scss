@@ -1,0 +1,141 @@
+
+.footer {
+	background-color: #2b2a29;
+	padding: 40px 0 30px;
+
+	&-title {
+		font-size: 18px;
+		color: $white;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+
+		li {
+			margin-bottom: 10px;
+			font-family: 'Roboto-Light';
+			list-style: none;
+			width: 100%;
+
+			a {
+				&:hover,
+				&.active {
+					color: $green;
+					text-decoration: none;
+				}
+			}
+		}
+		&.footer-menu {
+			li {
+				width: 50%;
+			}
+		}
+		&.footer-contacts {
+			.icon {
+				display: inline-block;
+				background: url('../images/contacts-sprite.png') no-repeat;
+
+				&.icon-map {
+					background-position: 0 0;
+					margin-right: 15px;
+					height: 21px;
+					width: 15px;
+				}
+
+				&.icon-phone {
+					background-position: -17px 0;
+					margin-right: 13px;
+					height: 20px;
+					width: 20px;
+
+					+ span {
+						color: $white;
+						font-family: 'Exo2-Bold';
+						font-size: 24px;
+					}
+				}
+
+				&.icon-mail {
+					background-position: -39px 0;
+					margin-right: 12px;
+					height: 11px;
+					width: 20px;
+
+					+ span {
+						color: #48caf3;
+						border-bottom: 1px dashed #48caf3;
+					}
+				}
+			}
+		} //.footer-contacts
+	}
+} //.footer
+
+.footer-bottom {
+	background-color: #2b2a29;
+	font-family: $font-name__roboto-light;
+
+	.container {
+			border-top: 2px solid #4d4d4d;
+	}
+
+	.copyright {
+		padding: 15px 30px;
+
+		span {
+			display: block;
+			padding-top: 8px;
+		}
+	}
+
+	.social {
+		text-align: right;
+		padding: 15px 30px;
+
+		strong {
+			color: $white;
+			display: inline-block;
+			font-weight: 300;
+			margin-right: 30px;
+		}
+
+		ul {
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+
+			li {
+				display: inline-block;
+				list-style: none;
+
+				&:not(:last-child) {
+					margin-right: 5px;
+				}
+
+				a {
+					&:hover {
+						text-decoration: none;
+					}
+				}
+
+				.icon {
+					border: 2px solid #a7c529;
+					border-radius: 50%;
+					display: block;
+					line-height: 32px;
+					height: 35px;
+					text-align: center;
+					width: 35px;
+
+					&:before {
+						color: #a7c529;
+					}
+				}
+			}
+		} //ul
+	} //.social
+} //.footer-bottom

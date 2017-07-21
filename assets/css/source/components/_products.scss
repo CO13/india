@@ -1,0 +1,117 @@
+.category-products {
+
+    &__item {
+        background-color: $white;
+        border: 1px solid #dbece9;
+        border-radius: 3px;
+        padding: 0 15px 15px 15px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &:hover {
+            &:before {
+                display: block;
+            }
+        }
+
+        &:before {
+            display: none;
+            position: absolute;
+            content: " ";
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background-color: #4ecff8;
+            border-radius: 10px;
+            z-index: -1;
+        }
+    }
+
+    &__review {
+        position: relative;
+        overflow: hidden;
+        width: 78px;
+
+        .icon-star {
+            margin-right: 2px;
+        }
+
+        .review-result {
+            color: #fcd036;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+        }
+    }
+
+
+	&__image {
+  		img {
+  			width: 100%;
+  		}
+	}
+
+	&__link {
+  		font-family: 'Exo2-Medium';
+  		text-decoration: underline;
+  		font-size: 17px;
+        color: #3a3a3a;
+
+  		&:hover {
+    			text-decoration: none;
+    			color: $blue;
+  		}
+	}
+
+    &__info {
+        font-family: 'Roboto-Light';
+  		color: #909aa3;
+  		font-size: 14px;
+    }
+
+    &__click {
+        text-align: center;
+        a {
+            position: relative;
+            font-family: 'Exo2-Medium';
+            color: #444444;
+
+            &:before {
+                position: relative;
+                top: 3px;
+                content: " ";
+				display: inline-block;
+				background: url('../images/cursor-icon.png') no-repeat;
+				margin-right: 10px;
+				height: 17px;
+				width: 15px;
+			}
+
+            &:hover {
+                span {
+                    color: $green;
+                    border-color: $green;
+                }
+            }
+            span {
+                border-bottom: 1px dashed #444444;
+            }
+        }
+    }
+
+    &__footer {
+        .btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+            i {
+            	font-size: 20px;
+            	margin-right: 10px;
+            }
+        }
+    }
+}

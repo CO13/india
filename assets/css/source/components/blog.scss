@@ -1,0 +1,62 @@
+.blog-post {
+	margin-bottom: 25px;
+	padding-bottom: 22px;
+	border-bottom: 1px dashed #c0e4ed;
+	position: relative;
+
+	&:after {
+		position: absolute;
+		content: " ";
+		bottom: -1.5px;
+		left: 0;
+		right: 0;
+		border-bottom: 1px dashed $white;
+	}
+
+	&__header {
+		a {
+			img {
+				width: 100%;
+				border-radius: 2px;
+			}
+		}
+	}
+	&__date {
+		font-size: 13px;
+		line-height: 22px;
+		color: #0099cc;
+		font-family: "Roboto-Light";
+	}
+
+	&__title {
+		font-size: 18px;
+		line-height: 18px;
+		color: #3a3a3a;
+		font-family: "Exo2-SemiBold";
+	}
+
+	&__info {
+		font-size: 15px;
+		line-height: 24px;
+		color: #999999;
+		font-family: "Roboto-Light";
+		margin-bottom: 7px;
+	}
+
+	.btn {
+		font-family: "Exo2-SemiBold";
+		color: #1ca5d0;
+	}
+	.btn-outline-info {
+		border-color: #1ca5d0;
+		font-size: 12px;
+		line-height: 18px;
+		padding: 8px 30px;
+
+		&:hover {
+			background-color: #1ca5d0;
+			color: $white;
+
+		}
+	}
+}

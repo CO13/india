@@ -1,0 +1,52 @@
+/*_____ Colors  _____*/
+$backgroundColor: #e7f4f2;
+$baseColor: #444444;
+$textColor: #555555;
+$hColor: #3a3a3a;
+$lightBlue: #e9f6f4;
+$labelColor: #909aa3;
+$white: #fff;
+
+/*_____ Fonts  _____*/
+$font-name__roboto-light-italic: 'Roboto-LightItalic';
+$font-name__roboto-light: 'Roboto-Light';
+$font-name__roboto-regular: 'Roboto-Regular';
+$font-name__icon: 'iconmoon';
+
+/*_____ Icons  _____*/
+.icon-arrow-down:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-cart:before {
+  content: "\e900";
+}
+.icon-check:before {
+  content: "\e903";
+}
+.icon-clock:before {
+  content: "\e904";
+}
+.icon-in:before {
+  content: "\e908";
+}
+.icon-search:before {
+  content: "\e90b";
+}
+.icon-star:before {
+  content: '\e905'
+}
+.icon-twitter:before {
+  content: '\e90f';
+}
+.icon-facebook:before {
+  content: '\e910';
+}
+.icon-vk:before {
+  content: '\e911';
+}
