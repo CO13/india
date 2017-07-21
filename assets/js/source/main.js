@@ -5,6 +5,7 @@ jQuery(document).ready( function($) {
     $('.slider-product').not('.slick-initialized').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
+        swipe:  true,
         arrows: true,
         adaptiveHeight: true,
         dots: false,
