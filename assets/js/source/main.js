@@ -55,7 +55,16 @@ jQuery(document).ready( function($) {
   		slidesToScroll: 1,
   		arrows: true,
   		adaptiveHeight: true,
-  		dots: false
+  		dots: false,
+        responsive: [
+           {
+              breakpoint: 768,
+              settings: {
+                  arrows: false,
+                  dots: true
+              }
+           }
+       ]
 	});
 
   // Hamburger button

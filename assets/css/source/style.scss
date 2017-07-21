@@ -346,10 +346,15 @@ a {
 }
 
 .section-testimonial {
-    padding-bottom: 37px;
-    border-bottom: 1px dashed $blue;
+
+
     margin-bottom: 29px;
 
+    .separator {
+        width: 100%;
+        padding-top: 37px;
+        border-bottom: 1px dashed $blue;
+    }
     .title-primary {
         text-transform: uppercase;
     }
@@ -357,25 +362,24 @@ a {
 
 .slider-testimonial {
     border-radius: 2px;
-
     &__item {
         display: flex !important;
     }
 
     &__box-left {
         background-color: $green;
-        width: 30%;
-        padding: 0 40px 0 70px;
+        width: 28.2%;
+        padding: 0 40px 0 63px;
         display: flex;
         align-items: center
     }
 
     &__box-right {
-        padding: 35px 70px 10px 70px;
+        padding: 35px 70px 15px 70px;
         position: relative;
         position: relative;
         background-color: $blue;
-        width: 70%;
+        width: 71.8%;
 
         &:before {
             position: absolute;
@@ -391,8 +395,21 @@ a {
     }
 
     &__info {
+        position: relative;
         font-family: "Roboto-MediumItalic";
         color: $white;
+        line-height: 24px;
+
+        &:before {
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: -45px;
+            width: 32px;
+            height: 23px;
+            background:  url("../images/slider-before.png") top center no-repeat;
+            background-size: 100%;
+        }
     }
 
     .slick-arrow {
@@ -428,6 +445,15 @@ a {
     .slick-prev {
         left: 0;
     }
+
+    .btn-outline-info {
+        border-color: $white;
+        color: $white;
+        font-size: 12px;
+        line-height: 18px;
+        font-family: "Exo2-SemiBold";
+        padding: 0.534rem 1.86rem;
+    }
 }
 
 .avatar {
@@ -448,10 +474,11 @@ a {
     &__name {
         color: $white;
         font-size: 18px;
-        margin-bottom: 15px;
+        margin-bottom: 18px;
     }
 
     &__city {
+        font-family: "Roboto-Regular";
         color: $white;
 
     }
@@ -516,6 +543,10 @@ a {
 }
 
 @media (max-width: 768px) {
+    h4 {
+        font-size: 22px;
+    }
+
     .slider-testimonial {
         border-radius: 2px;
         &__item {
@@ -529,7 +560,8 @@ a {
         }
         &__box-right {
             width: 100%;
-
+            padding-left: 60px;
+            padding-right: 35px;
             &:before {
                 top: -25px;
                 left: calc(50% - 35px);
@@ -538,6 +570,33 @@ a {
                 border-width: 0 35px 25px 35px;
                 border-color: transparent transparent $blue transparent;
             }
+        }
+        .slick-dots {
+            bottom: -25px;
+        }
+    }
+
+    .ih-list-faq {
+        &__pane {
+            h6 {
+                font-size: 18px;
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 400px) {
+    .footer-bottom {
+        .copyright {
+            padding: 15px 0px;
+        }
+
+        .social {
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 }
