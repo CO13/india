@@ -35,10 +35,20 @@ main {
 
 a {
     text-decoration: none;
-    @include transition(all .3s linear);
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    transition: all .3s linear;
 
     &:hover {
         text-decoration: none;
+    }
+}
+
+a,
+button {
+    &:focus {
+        box-shadow: none;
+        outline: none;
     }
 }
 
@@ -49,6 +59,7 @@ a {
 }
 
 .section-features {
+    margin-top: 15px;
 
     .title-primary {
         text-transform: uppercase;
@@ -195,7 +206,7 @@ a {
       			border-color: $green transparent transparent transparent;
     		}
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             font-size: 18px;
             width: 100%;
 
@@ -220,11 +231,18 @@ a {
       		font-size: 17px;
       		line-height: 24px;
     	}
+
+      @media screen and (max-width: 767px) {
+          &__item {
+              padding: 0 20px 0 16px;
+          }
+          &__info {
+              margin-left: 8px;
+          }
+      }
 }
 
 .section-check-list {
-
-
     margin-bottom: 25px;
 
     .separator {
@@ -393,6 +411,10 @@ a {
             border-width: 35px 25px 35px 0;
             border-color: transparent $blue transparent transparent;
         }
+        @media screen and (max-width: 767px) {
+            padding-left: 55px;
+            padding-right: 15px;
+        }
     }
 
     &__info {
@@ -543,7 +565,7 @@ a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     h4 {
         font-size: 22px;
     }
@@ -564,8 +586,7 @@ a {
         }
         &__box-right {
             width: 100%;
-            padding-left: 60px;
-            padding-right: 35px;
+
             &:before {
                 top: -25px;
                 left: calc(50% - 35px);
@@ -600,16 +621,12 @@ a {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .footer-bottom {
-        .copyright {
-            padding: 15px 0px;
-        }
-
+        .social strong,
         .social {
-            text-align: center;
-            padding-left: 10px;
-            padding-right: 10px;
+            display: block;
+            margin: 0 0 10px 0;
         }
     }
 }

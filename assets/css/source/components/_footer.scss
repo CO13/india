@@ -32,6 +32,9 @@
 		&.footer-menu {
 			li {
 				width: 50%;
+				@media screen and (max-width: 420px) {
+						width: 100%;
+				}
 			}
 		}
 		&.footer-contacts {
@@ -117,9 +120,17 @@
 				}
 
 				a {
-					&:hover {
-						text-decoration: none;
-					}
+						&:hover {
+								color: #fff;
+								text-decoration: none;
+								.icon {
+										border-color: $white;
+
+										&:before {
+												color: $white;
+										}
+								}
+						}
 				}
 
 				.icon {
@@ -130,9 +141,11 @@
 					height: 35px;
 					text-align: center;
 					width: 35px;
+					transition: all .3s linear;
 
 					&:before {
 						color: #a7c529;
+						transition: all .3s linear;
 					}
 				}
 			}
