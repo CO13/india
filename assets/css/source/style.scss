@@ -19,7 +19,9 @@
 @import "components/modal";
 @import "components/blog";
 @import "components/cart";
+@import "components/related";
 @import "pages/index";
+@import "pages/detail";
 @import "pages/checkout";
 @import "responsive";
 
@@ -32,6 +34,10 @@ main {
     background: url("../images/bottom-background.png") bottom center no-repeat;
     background-size: 100%;
     padding-bottom: 60px;
+}
+
+h1 {
+    font-family: "Roboto-Bold";
 }
 
 a {
@@ -48,8 +54,8 @@ a {
 a,
 button {
     &:focus {
-        box-shadow: none;
-        outline: none;
+        box-shadow: none!important;
+        outline: none!important;
     }
 }
 

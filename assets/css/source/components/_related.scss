@@ -1,0 +1,26 @@
+.related-products {
+    margin-top: 80px;
+
+    h1 {
+        color: #222222;
+        font-family: "Exo2-Bold";
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .category-products {
+        padding-top: 30px;
+        position: relative;
+
+        &:before {
+            border-top: 1px dashed #c0e4ed;
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 15px;
+            right: 15px;
+        }
+    }
+}

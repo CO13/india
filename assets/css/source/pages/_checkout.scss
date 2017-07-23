@@ -19,6 +19,35 @@
     border-radius: 2px;
     margin-bottom: 30px;
 
+    &-sin {
+        padding-bottom: 5px;
+
+        .btn {
+            font-family: "Exo2-Bold";
+        }
+    }
+
+    &-registration {
+        padding-bottom: 11px;
+    }
+
+    &-payment {
+        padding-top: 25px;
+    }
+
+    &-cart {
+        padding-top: 25px;
+        .cart-table {
+            tbody {
+                td {
+                    .remove {
+                        right: 40px;
+                    }
+                }
+            }
+        }
+    }
+
     &__title {
         font-family: "Exo2-SemiBold";
         color: #3a3a3a;
@@ -28,6 +57,83 @@
             font-family: "Roboto-Light";
             font-size: 14px;
             line-height: 22px;
+        }
+    }
+    &__button-group {
+        margin-top: 40px;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-between;
+
+        .btn-info {
+            background-color: #c0e4ed;
+            border-color: #c0e4ed;
+            color: $blue;
+            max-width: 245px;
+            width: 100%;
+        }
+
+        .btn-primary {
+            max-width: 260px;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        &-cart {
+            .cart-table {
+                tbody {
+                    td {
+                        .remove {
+                            right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 980px) {
+
+        &-cart {
+            .cart-table {
+                tbody {
+                    td {
+                        .remove {
+                            right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 15px;
+        &__title {
+            font-size: 20px;
+        }
+
+        &__button-group {
+            margin-top: 40px;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .btn-info {
+
+                max-width: 100%;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .btn-primary {
+                max-width: 100%;
+                width: 100%;
+            }
         }
     }
 }
@@ -51,6 +157,23 @@
         .btn {
             margin-top: 31px;
             width: 100%;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        li {
+            max-width: 50%;
+
+            .btn {
+                margin-top: 10px;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        li {
+            max-width: 100%;
+            &:last-child {
+                max-width: 100%;
+            }
         }
     }
 }
@@ -77,6 +200,9 @@
 .form-registration {
     max-width: 700px;
     width: 100%;
+    @media screen and (max-width: 1200px) {
+        max-width: 100%;
+    }
 
 }
 
@@ -88,6 +214,7 @@
     display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 17px;
 
     li {
         display: -webkit-flex;
@@ -105,5 +232,19 @@
         height: 45px;
         text-align: center;
     }
-
+    @media screen and (max-width: 1200px) {
+        justify-content: center;
+        li {
+            margin-bottom: 10px;
+            width: 50%;
+            margin-right: 0;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        li {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+    }
 }

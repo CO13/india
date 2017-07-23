@@ -2,6 +2,10 @@
     width: 100%;
     font-family: 'Roboto-Regular';
 
+    @media screen and (max-width: 991px) {
+        display: block;
+    }
+
     thead {
         background-color: #3a3a3a;
         color: #fff;
@@ -16,12 +20,16 @@
                 width: 35%;
             }
         }
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
     }
 
     tbody {
         background-color: #fff;
-        border: 1px dashed #a7c529;
-        border-top-style: solid;
+        border-color: #a7c529;
+        border-style: dashed;
+        border-width:  0 1px 1px 1px;
 
         tr {
             &:first-child {
@@ -79,6 +87,152 @@
                 &:hover {
                     opacity: .7;
                 }
+            }
+
+            .cart-price {
+                color: #222222;
+                font-size: 24px;
+            }
+
+            .qty {
+                input {
+                    border: 1px solid #d9dbdd;
+                    border-width: 1px 0;
+                    color: #222222;
+                    display: inline-block;
+                    font-size: 18px;
+                    margin: 0 -4px;
+                    height: 36px;
+                    text-align: center;
+                    vertical-align: middle;
+                    width: 50px;
+                }
+                button {
+                    border-width: 0;
+                    background-color: #1ca5d0;
+                    display: inline-block;
+                    cursor: pointer;
+                    transition: all .3s linear;
+                    height: 36px;
+                    vertical-align: middle;
+                    width: 36px;
+
+                    &:hover {
+                        background-color: #c0e4ed;
+
+                    }
+
+                    &:before {
+                        content: '';
+                        display: block;
+                        margin: auto;
+                        width: 19px;
+                    }
+
+                    &.button-down {
+                        border-top-left-radius: 2px;
+                        border-bottom-left-radius: 2px;
+
+                        &:before {
+                            background: url('../images/button-minus.png') no-repeat;
+                            height: 1px;
+                        }
+                    }
+
+                    &.button-up {
+                        border-top-right-radius: 2px;
+                        border-bottom-right-radius: 2px;
+
+                        &:before {
+                            background: url('../images/button-plus.png') no-repeat;
+                            height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 991px) {
+            display: block;
+            width: 100%;
+
+            tr,
+            td,
+            tbody {
+                display: block;
+                width: 100%;
+            }
+
+            td {
+                &:not(:first-child) {
+                    padding-top: 10px;
+                }
+                &:not(:last-child) {
+                    padding-bottom: 10px;
+                }
+                .product-image {
+                    float: none;
+                }
+                .product-title {
+                    margin: 10px auto 0;
+                    text-align: center;
+                }
+                .remove {
+                    top: 20px;
+                    right: 20px;
+                }
+            }
+        }
+    }
+
+    tfoot {
+        background-color: #f7fce0;
+        border-color: #a7c529;
+        border-style: dashed;
+        border-width: 0 1px 1px 1px;
+
+        td {
+            color: #222222;
+            font-size: 24px;
+            text-align: center;
+            padding: 15px;
+
+            .total-price {
+                font-family: "Exo2-SemiBold";
+                font-size: 30px;
+            }
+        }
+        @media screen and (max-width: 991px) {
+            display: block;
+            width: 100%;
+
+            tr,
+            td {
+                display: block;
+                width: 100%;
+            }
+
+            td:first-child  {
+                padding-bottom: 0;
+            }
+
+            td:last-child  {
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+.cart-page {
+    .buttons-wrapper {
+        padding-top: 25px;
+        text-align: right;
+
+        a.btn {
+            width: 270px;
+
+            &:focus {
+                color: #fff;
             }
         }
     }
