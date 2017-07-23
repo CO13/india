@@ -44,25 +44,6 @@
         }
     }
 
-    &__review {
-        position: relative;
-        overflow: hidden;
-        width: 78px;
-
-        .icon-star {
-          margin-right: 3px;
-          font-size: 14px;
-        }
-
-        .review-result {
-            color: #fcd036;
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-        }
-    }
-
-
 	&__image {
   		img {
   			width: 100%;
@@ -87,37 +68,6 @@
     		color: #909aa3;
     		font-size: 14px;
         margin: 7px 0;
-    }
-
-    &__click {
-        text-align: center;
-        a {
-            position: relative;
-            font-family: 'Exo2-Medium';
-            color: #444444;
-
-            &:before {
-                position: relative;
-                top: 3px;
-                content: " ";
-        				display: inline-block;
-        				background: url('../images/cursor-icon.png') no-repeat;
-        				margin-right: 10px;
-        				height: 17px;
-        				width: 15px;
-           }
-
-            &:hover {
-                span {
-                    color: $green;
-                    border-color: $green;
-                }
-            }
-
-            span {
-                border-bottom: 1px dashed #444444;
-            }
-        }
     }
 
     &__price {
@@ -183,5 +133,55 @@
             	margin-right: 15px;
             }
         }
+    }
+}
+
+.products-list {
+    > div {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .category-products {
+
+        &__item {
+            @extend .row;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__header {
+            @extend .col-lg-3;
+        }
+
+        &__section {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            @extend .col-lg-6;
+            //border-right: 1px dashed #c4e6ee;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__link {
+            order: 1;
+        }
+        &__info {
+            order: 2;
+        }
+
+        &__price {
+            order: 4;
+        }
+        &__footer {
+            margin-top: 10px;
+            align-self: center;
+            @extend .col-lg-3;
+        }
+    }
+    .review-block {
+        order: 3;
     }
 }

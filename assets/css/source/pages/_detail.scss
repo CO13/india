@@ -35,7 +35,29 @@
     &__product-title {
         color: #222222;
         text-transform: uppercase;
+        margin-bottom: 12px;
     }
+
+    &__review {
+        margin-bottom: 15px;
+
+        .review-block {
+            width: 126px;
+            margin-right: 15px;
+
+            .icon-star {
+                margin-right: 5px;
+                font-size: 23px;
+            }
+        }
+
+        .review-block,
+        span {
+              display: inline-block;
+              vertical-align: middle;
+        }
+    }
+
 
     &__availability {
         font-family: "Roboto-Medium";
@@ -61,6 +83,8 @@
     }
 
     &__add-to-box {
+        margin-bottom: 35px;
+
         ul {
             padding: 0;
             margin: 0;
@@ -71,13 +95,35 @@
                 vertical-align: top;
             }
         }
+
+        a.btn {
+            font-family: "Exo2-Bold";
+            font-size: 18px;
+            padding-bottom: 18px;
+            padding-top: 18px;
+            margin-top: 25px;
+            width: 300px;
+
+            &:focus {
+                color: #fff;
+            }
+
+            i {
+                font-size: 25px;
+                margin-right: 5px;
+                vertical-align: -3px;
+            }
+        }
     }
 
     &__price {
+        min-width: 285px;
+
         strong {
             color: #222222;
             display: block;
             font-weight: 400;
+            line-height: 1;
         }
 
         .price,
@@ -89,6 +135,18 @@
         .price {
             color: #222222;
             font-size: 45px;
+            line-height: 1;
+
+            .symbol {
+                font-size: 36px
+            }
+        }
+
+        .old-price {
+            color: #616060;
+            font-size: 30px;
+            text-decoration: line-through;
+            line-height: 1;
         }
 
         &.sale {
@@ -98,4 +156,75 @@
         }
     }
 
+    .product-click {
+        padding-top: 8px;
+    }
+
+    &__product-options {
+        margin-bottom: 20px;
+
+        dl {
+            font-size: 15px;
+
+            dt,
+            dd {
+                display: inline-block;
+                margin-bottom: 0;
+                padding: 8px 22px;
+                border-bottom: 1px solid #e7f4f2;
+            }
+
+            dt {
+                font-weight: 400;
+                width: 33%;
+
+                &:nth-of-type(odd) {
+                    background-color: #d8eff2;
+                }
+
+                &:nth-of-type(even) {
+                    background-color: #deefdd;
+                }
+            }
+
+            dd {
+                font-family: 'Roboto-Medium';
+                margin-left: -4px;
+                width: 67%;
+
+                &:nth-of-type(odd) {
+                    background-color: #d8eff2;
+                }
+
+                &:nth-of-type(even) {
+                    background-color: #deefdd;
+                }
+            }
+        }
+    }
+
+    &__support {
+        border: 1px solid #b0e2f2;
+        padding: 18px;
+        text-align: center;
+
+        > span {
+            font-family: "Roboto-Regular";
+            font-size: 17px;
+        }
+
+        strong {
+            font-family: "Exo2-Bold";
+            font-size: 24px;
+
+            span {
+                color: #1ca5d0;
+            }
+        }
+
+        > span,
+        strong {
+            display: block;
+        }
+    }
 }

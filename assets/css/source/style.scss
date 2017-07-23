@@ -59,6 +59,56 @@ button {
     }
 }
 
+.product-click {
+    text-align: center;
+    a {
+        position: relative;
+        font-family: 'Exo2-Medium';
+        color: #444444;
+
+        &:before {
+            position: relative;
+            top: 3px;
+            content: " ";
+            display: inline-block;
+            background: url('../images/cursor-icon.png') no-repeat;
+            margin-right: 10px;
+            height: 17px;
+            vertical-align: -2px;
+            width: 15px;
+       }
+
+        &:hover {
+            span {
+                color: $green;
+                border-color: $green;
+            }
+        }
+
+        span {
+            border-bottom: 1px dashed #444444;
+        }
+    }
+}
+
+.review-block {
+    position: relative;
+    overflow: hidden;
+    width: 78px;
+
+    .icon-star {
+      margin-right: 3px;
+      font-size: 14px;
+    }
+
+    .review-result {
+        color: #fcd036;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+    }
+}
+
 .title-primary {
     color: #444444;
     margin-bottom: 15px;
