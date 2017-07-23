@@ -17,10 +17,17 @@
         padding: 0 15px 15px 15px;
         margin-bottom: 38px;
         position: relative;
+        z-index: 3;
 
         &:hover {
             &:before {
                 display: block;
+                top: -5px;
+                left: -5px;
+                right: -5px;
+                bottom: -5px;
+                background-color: #fff;
+                border: 5px solid #4ecff8;
             }
         }
 
@@ -28,11 +35,10 @@
             display: none;
             position: absolute;
             content: " ";
-            top: -5px;
-            left: -5px;
-            right: -5px;
-            bottom: -5px;
-            background-color: #4ecff8;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             border-radius: 10px;
             z-index: -1;
         }

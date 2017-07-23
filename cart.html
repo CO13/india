@@ -70,7 +70,7 @@
       </div>
     </header>
     <!--.header-->
-    <main>
+    <main class="cart-page">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -106,10 +106,12 @@
                     <h5 class="product-title"> <a href="#" title="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab">Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab </a></h5><a href="#" title="Удалить" class="remove">x </a>
                   </td>
                   <td> <span class="cart-price">8 350 руб. </span></td>
-                  <td> <span class="qty"> 
-                      <button type="button" class="button-down">- </button>
-                      <input value="2" size="4" title="Qty" name="" id="" class="qty">
-                      <button type="button" class="button-up">+ </button></span></td>
+                  <td> <span class="qty">
+                      <!-- (Notice for backend dev) Add product id at parameter to changeQty function-->
+                      <button type="button" onclick="changeQty(13, this);" class="button-down"> </button>
+                      <!-- (Notice for backend dev) Add product id to qty id-->
+                      <input value="1" size="4" title="Qty" name="" id="cart-qty-13" class="qty">
+                      <button type="button" onclick="changeQty(13, this);" class="button-up"> </button></span></td>
                   <td><span class="cart-price total-price">16 700 руб.</span></td>
                 </tr>
                 <tr>
@@ -117,10 +119,12 @@
                     <h5 class="product-title"> <a href="#" title="Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab">Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab </a></h5><a href="#" title="Удалить" class="remove">x </a>
                   </td>
                   <td> <span class="cart-price">7 600 руб.</span></td>
-                  <td> <span class="qty"> 
-                      <button type="button" class="button-down">- </button>
-                      <input value="1" size="4" title="Qty" name="" id="" class="qty">
-                      <button type="button" class="button-up">+ </button></span></td>
+                  <td> <span class="qty">
+                      <!-- (Notice for backend dev) Add product id at parameter to changeQty function-->
+                      <button type="button" onclick="changeQty(12, this);" class="button-down"> </button>
+                      <!-- (Notice for backend dev) Add product id to qty id-->
+                      <input value="1" size="4" title="Qty" name="" id="cart-qty-12" class="qty">
+                      <button type="button" onclick="changeQty(12, this);" class="button-up"> </button></span></td>
                   <td><span class="cart-price total-price">7 600 руб.     </span></td>
                 </tr>
               </tbody>
@@ -142,108 +146,109 @@
           <div class="col-lg-12"> 
             <div class="related-products">
               <h1>Вас может заинтересовать</h1>
-              <div class="products-grid">
-                <div class="row category-products">
-                  <div class="col-xl-3 col-lg-6">
-                    <div class="category-products__item">
-                      <div class="category-products__header"><a href="#">
-                          <div class="category-products__image"><img src="assets/images/product.png" alt=""></div></a>
-                        <div class="category-products__sale"></div>
-                      </div>
-                      <!--.category-products__header-->
-                      <div class="category-products__section">
-                        <div class="category-products__review">
-                          <div class="review-result-wrapper"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
-                            <div style="width: 80%" class="review-result"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
-                          </div>
-                          <!-- .category-products__review-->
+              <div class="row category-products">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                  <div class="category-products__item">
+                    <div class="category-products__header"><a href="#">
+                        <div class="category-products__image"><img src="media/home-products/product1.jpg" alt=""></div></a><span class="category-products__sale"></span></div>
+                    <!--.category-products__header-->
+                    <div class="category-products__section">
+                      <div class="category-products__review">
+                        <div class="review-result-wrapper"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
+                          <div style="width: 80%" class="review-result"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
                         </div>
-                        <!-- .category-products__section--><a href="#" class="category-products__link">Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab</a>
-                        <p class="category-products__info">Производитель: Natco Pharma </p>
+                        <!-- .category-products__review-->
                       </div>
-                      <!--.category-products__section-->
-                      <div class="category-products__footer"><a href="#" class="btn btn-lg btn-primary"> <i class="icon-cart"></i>   В корзину</a>
-                        <div class="category-products__click"><a href="#"><span>Купить в 1 клик</span></a></div>
-                      </div>
-                      <!--.category-products__footer-->
+                      <!-- .category-products__section--><a href="#" class="category-products__link">Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab</a>
+                      <p class="category-products__info">Производитель: Natco Pharma </p>
+                      <div class="category-products__price discount"><span class="price">10 550 <span class="symbol">руб. </span></span><span class="old-price">11 800<span class="symbol">руб. </span></span></div>
                     </div>
-                    <!--.category-products__item-->
+                    <!--.category-products__section-->
+                    <div class="category-products__footer"><a href="#" class="btn btn-lg btn-primary"> <i class="icon-cart"></i>   В корзину</a>
+                      <div class="category-products__click"><a href="#" title="Купить в 1 клик"><span>Купить в 1 клик</span></a></div>
+                    </div>
+                    <!--.category-products__footer-->
                   </div>
-                  <div class="col-xl-3 col-lg-6">
-                    <div class="category-products__item">
-                      <div class="category-products__header"><a href="#">
-                          <div class="category-products__image"><img src="assets/images/product.png" alt=""></div></a>
-                        <div class="category-products__sale"></div>
-                      </div>
-                      <!--.category-products__header-->
-                      <div class="category-products__section">
-                        <div class="category-products__review">
-                          <div class="review-result-wrapper"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
-                            <div style="width: 100%" class="review-result"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
-                          </div>
-                          <!-- .category-products__review-->
+                  <!--.category-products__item-->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                  <div class="category-products__item">
+                    <div class="category-products__header"><a href="#">
+                        <div class="category-products__image"><img src="media/home-products/product2.jpg" alt=""></div></a><span class="category-products__sale"></span></div>
+                    <!--.category-products__header-->
+                    <div class="category-products__section">
+                      <div class="category-products__review">
+                        <div class="review-result-wrapper"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
+                          <div style="width: 80%" class="review-result"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
                         </div>
-                        <!-- .category-products__section--><a href="#" class="category-products__link">Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab</a>
-                        <p class="category-products__info">Производитель: Natco Pharma </p>
+                        <!-- .category-products__review-->
                       </div>
-                      <!--.category-products__section-->
-                      <div class="category-products__footer"><a href="#" class="btn btn-lg btn-primary"> <i class="icon-cart"></i>   В корзину</a>
-                        <div class="category-products__click"><a href="#"><span>Купить в 1 клик</span></a></div>
-                      </div>
-                      <!--.category-products__footer-->
+                      <!-- .category-products__section--><a href="#" class="category-products__link">Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab</a>
+                      <p class="category-products__info">Производитель: Natco Pharma </p>
                     </div>
-                    <!--.category-products__item-->
+                    <!--.category-products__section-->
+                    <div class="category-products__price sale"><span class="price">6 970 <span class="symbol">руб. </span></span><span class="old-price">8 350 <span class="symbol">руб. </span></span></div>
+                    <!--.category-products__price-->
+                    <div class="category-products__footer"><a href="#" class="btn btn-lg btn-primary"> <i class="icon-cart"></i>   В корзину</a>
+                      <div class="category-products__click"><a href="#" title="Купить в 1 клик"><span>Купить в 1 клик</span></a></div>
+                    </div>
+                    <!--.category-products__footer-->
                   </div>
-                  <div class="col-xl-3 col-lg-6">
-                    <div class="category-products__item">
-                      <div class="category-products__header"><a href="#">
-                          <div class="category-products__image"><img src="assets/images/product.png" alt=""></div></a>
-                        <div class="category-products__sale"></div>
-                      </div>
-                      <!--.category-products__header-->
-                      <div class="category-products__section">
-                        <div class="category-products__review">
-                          <div class="review-result-wrapper"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
-                            <div style="width: 80%" class="review-result"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
-                          </div>
-                          <!-- .category-products__review-->
+                  <!--.category-products__item-->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                  <div class="category-products__item">
+                    <div class="category-products__header"><a href="#">
+                        <div class="category-products__image"><img src="media/home-products/product1.jpg" alt=""></div></a></div>
+                    <!--.category-products__header-->
+                    <div class="category-products__section">
+                      <div class="category-products__review">
+                        <div class="review-result-wrapper"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
+                          <div style="width: 100%" class="review-result"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
                         </div>
-                        <!-- .category-products__section--><a href="#" class="category-products__link">Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab</a>
-                        <p class="category-products__info">Производитель: Natco Pharma </p>
+                        <!-- .category-products__review-->
                       </div>
-                      <!--.category-products__section-->
-                      <div class="category-products__footer"><a href="#" class="btn btn-lg btn-primary"> <i class="icon-cart"></i>   В корзину</a>
-                        <div class="category-products__click"><a href="#"><span>Купить в 1 клик</span></a></div>
-                      </div>
-                      <!--.category-products__footer-->
+                      <!-- .category-products__section--><a href="#" class="category-products__link">Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab</a>
+                      <p class="category-products__info">Производитель: Natco Pharma </p>
                     </div>
-                    <!--.category-products__item-->
+                    <!--.category-products__section-->
+                    <div class="category-products__price"> <span class="price">10 550 <span class="symbol">
+                           
+                          руб.</span></span></div>
+                    <!--.category-products__price-->
+                    <div class="category-products__footer"><a href="#" class="btn btn-lg btn-primary"> <i class="icon-cart"></i>   В корзину</a>
+                      <div class="category-products__click"><a href="#" title="Купить в 1 клик"><span>Купить в 1 клик</span></a></div>
+                    </div>
+                    <!--.category-products__footer-->
                   </div>
-                  <div class="col-xl-3 col-lg-6">
-                    <div class="category-products__item">
-                      <div class="category-products__header"><a href="#">
-                          <div class="category-products__image"><img src="assets/images/product.png" alt=""></div></a>
-                        <div class="category-products__sale"></div>
-                      </div>
-                      <!--.category-products__header-->
-                      <div class="category-products__section">
-                        <div class="category-products__review">
-                          <div class="review-result-wrapper"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
-                            <div style="width: 100%" class="review-result"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
-                          </div>
-                          <!-- .category-products__review-->
+                  <!--.category-products__item-->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                  <div class="category-products__item">
+                    <div class="category-products__header"><a href="#">
+                        <div class="category-products__image"><img src="media/home-products/product1.jpg" alt=""></div></a></div>
+                    <!--.category-products__header-->
+                    <div class="category-products__section">
+                      <div class="category-products__review">
+                        <div class="review-result-wrapper"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
+                          <div style="width: 100%" class="review-result"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
                         </div>
-                        <!-- .category-products__section--><a href="#" class="category-products__link">Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab</a>
-                        <p class="category-products__info">Производитель: Natco Pharma </p>
+                        <!-- .category-products__review-->
                       </div>
-                      <!--.category-products__section-->
-                      <div class="category-products__footer"><a href="#" class="btn btn-lg btn-primary"> <i class="icon-cart"></i>   В корзину</a>
-                        <div class="category-products__click"><a href="#"><span>Купить в 1 клик</span></a></div>
-                      </div>
-                      <!--.category-products__footer-->
+                      <!-- .category-products__section--><a href="#" class="category-products__link">Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab</a>
+                      <p class="category-products__info">Производитель: Natco Pharma </p>
                     </div>
-                    <!--.category-products__item-->
+                    <!--.category-products__section-->
+                    <div class="category-products__price"> <span class="price">10 550 <span class="symbol">
+                           
+                          руб.</span></span></div>
+                    <!--.category-products__price-->
+                    <div class="category-products__footer"><a href="#" class="btn btn-lg btn-primary"> <i class="icon-cart"></i>   В корзину</a>
+                      <div class="category-products__click"><a href="#" title="Купить в 1 клик"><span>Купить в 1 клик</span></a></div>
+                    </div>
+                    <!--.category-products__footer-->
                   </div>
+                  <!--.category-products__item-->
                 </div>
               </div>
             </div>
@@ -251,6 +256,18 @@
         </div>
       </div>
     </main>
+    <script type="text/javascript">
+      function changeQty(productId, button) {
+      		var input = $('#cart-qty-'+productId),
+      				inputVal = parseInt(input.val());
+      		
+      		if($(button).hasClass('button-up')) {
+      				input.val(inputVal + 1);
+      		} else if($(button).hasClass('button-down') && inputVal > 1) {
+      				input.val(inputVal - 1);
+      		}
+      }
+    </script>
     <footer class="footer">
       <div class="container">
         <div class="row">
