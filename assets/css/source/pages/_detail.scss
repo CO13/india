@@ -227,4 +227,154 @@
             display: block;
         }
     }
+
+    &__product-content {
+        color: #444444;
+        margin-top: 40px;
+
+        h6 {
+            font-family: "Exo2-SemiBold";
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 24px;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__row-reviews {
+        padding-top: 40px;
+        position: relative;
+        margin-top: 80px;
+
+        &:before {
+            border-top: 1px dashed #c0e4ed;
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 15px;
+            right: 15px;
+        }
+
+        .box-reviews {
+            h1 {
+                margin-bottom: 25px;
+            }
+
+            ul {
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .review-user {
+                display: block;
+                font-family: "Exo2-SemiBold";
+                font-size: 17px;
+                margin-bottom: 5px;
+
+                .review-date {
+                    color: #a7c529;
+                    font-family: "Roboto-Light";
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+
+            a.btn {
+                background-color: #e7f4f2;
+                font-size: 12px;
+                font-family: "Exo2-SemiBold";
+
+                &:hover {
+                    background-color: #5bc0de;
+                }
+            }
+        }
+
+        .box-form-reviews {
+            h1 {
+                margin-bottom: 0;
+            }
+
+            &__inside {
+                background-color: #d8eff2;
+                padding: 22px 22px 28px;
+
+                p {
+                    strong {
+                        color: #222222;
+                        font-size: 18px;
+                        font-family: "Roboto-Regular"
+                    }
+
+                    a {
+                        border-bottom: 1px dashed $blue;
+                        color: $blue;
+                        font-size: 15px;
+                        font-family: "Roboto-Light";
+                        padding-top: 3px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+            label {
+                color: #222222;
+                font-size: 15px;
+            }
+
+            input {
+                height: 40px;
+                margin-bottom: 15px;
+            }
+
+            textarea {
+                min-height: 130px;
+            }
+
+            input,
+            textarea {
+                border-radius: 2px;
+                border-width: 0;
+                padding: 10px 20px;
+                width: 100%;
+            }
+
+            .buttons-wrapper {
+                padding-top: 20px;
+
+                .btn {
+                    font-family: "Exo2-Bold";
+                    font-size: 14px;
+                    float: right;
+                    text-transform: uppercase;
+                    width: 240px;
+                }
+            }
+
+        }
+
+        .box-reviews,
+        .box-form-reviews {
+            h1 {
+                background-color: #deefdd;
+                font-family: "Exo2-Bold";
+                padding: 12px 20px;
+
+                .reviews-counter {
+                    color: #1ca5d0;
+                    font-family: "Roboto-Regular";
+                    font-size: 18px;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
 }
