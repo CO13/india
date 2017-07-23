@@ -20,6 +20,7 @@
 @import "components/blog";
 @import "components/cart";
 @import "pages/index";
+@import "pages/checkout";
 @import "responsive";
 
 body {
@@ -555,6 +556,8 @@ button {
         }
     }
 }
+
+
 
 @media (max-width: 1200px) {
 

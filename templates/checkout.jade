@@ -1,0 +1,157 @@
+extends ./layout.jade
+
+  
+block content
+
+    main
+    
+        .container
+    
+            .row
+      
+                .col-lg-12
+        
+                    .breadcrumbs
+          
+                        ul
+                          
+                            li 
+                            
+                                a(href="#" title="") Главная 
+                            
+                                    span.separator
+                              
+                            li
+                          
+                                strong Корзина
+
+            .row
+      
+                .col-lg-12
+        
+                    .page-title
+          
+                        h1 Оформление заказа
+                        
+        section.section-checkout
+        
+            .container
+            
+                .ih-pane
+                    
+                    h6.ih-pane__title Войти 
+                        span (для зарегистрированных пользователей)
+                    
+                    form.form-sin-in
+                    
+                        ul.ih-list-sin
+                            li
+                                .form-group
+                                    label.col-form-label(for='formGroupInput') Логин
+                                    input#formGroupInput.form-control(type='email', aria-describedby='emailHelp', placeholder='Логин (E-mail)')
+                            li        
+                            
+                            
+                                .form-group
+                                    label.col-form-label(for='exampleInputPassword') Пароль
+                                    input#exampleInputPassword.form-control(type='password', placeholder='Пароль')
+                                    a.forgout-password(href="#") Напомнить пароль
+                                    
+                            li
+                                button.btn.btn-primary.btn-lg(type="submit") Войти
+                        
+                .ih-pane
+                    
+                    h6.ih-pane__title Для новых покупателей
+                    
+                    form.form-registration()
+                    
+                        .row.row-sm
+                        
+                            .col-lg-12
+                            
+                                .form-group
+                                    label.col-form-label(for='') Фамилия Имя Отчество
+                                    input.form-control(type='text', placeholder='Введите Ваше ФИО')
+                            
+                            .col-lg-12
+                            
+                                .form-group
+                                    label.col-form-label(for='') Ваш телефон
+                                    input.form-control(type='number', placeholder='Tелефон')
+                                    
+                            .col-lg-6
+                            
+                                .form-group
+                                    label.col-form-label(for='') Город
+                                    
+                                    select.custom-select
+                                        option(selected='') Choose One...
+                                        option(value='1') Boots
+                                        option(value='2') Shoes
+                                        option(value='3') Feet
+                                    
+                            .col-lg-6
+                            
+                                .form-group
+                                    label.col-form-label(for='') Индекс
+                                    input.form-control(type='text', placeholder='Почтовый индекс')
+                                    
+                            .col-lg-12
+                            
+                                .form-group
+                                    label.col-form-label(for='') Адрес доставки
+                                    input.form-control(type='text', placeholder='Адрес')
+                                    
+                            .col-lg-12
+                            
+                                label.custom-control.custom-checkbox
+                                    input.custom-control-input(type='checkbox')
+                                    span.custom-control-indicator
+                                    span.custom-control-description Зарегистрироваться
+                
+                .ih-pane
+                    
+                    h6.ih-pane__title Для новых покупателей
+                    
+                    form
+                    
+                        ul.ih-list-payment
+                        
+                            li
+                        
+                                .ih-list-payment__header
+                                    img(src="assets/images/icon-cash.png")
+                            
+                                label.custom-control.custom-radio
+                                    input#radioStacked1.custom-control-input(name='radio-stacked', type='radio')
+                                    span.custom-control-indicator
+                                    span.custom-control-description Наличными
+                                    
+                            li                
+                                .ih-list-payment__header
+                                    img(src="assets/images/icon-card.png")
+                                    
+                                label.custom-control.custom-radio
+                                    input#radioStacked2.custom-control-input(name='radio-stacked', type='radio')
+                                    span.custom-control-indicator
+                                    span.custom-control-description Банковская карта
+                                    
+                            li
+                        
+                                .ih-list-payment__header
+                                    img(src="assets/images/icon-bank.png")
+                            
+                                label.custom-control.custom-radio
+                                    input#radioStacked1.custom-control-input(name='radio-stacked', type='radio')
+                                    span.custom-control-indicator
+                                    span.custom-control-description Сбербанк онлайн
+                                        
+                            li                
+                                .ih-list-payment__header
+                                    img(src="assets/images/icon-payment.png")
+                                    
+                                label.custom-control.custom-radio
+                                    input#radioStacked2.custom-control-input(name='radio-stacked', type='radio')
+                                    span.custom-control-indicator
+                                    span.custom-control-description Оплата наложенным платежом
