@@ -344,6 +344,49 @@ button {
     }
 }
 
+.ih-list-number {
+  	counter-reset: myCounter;
+  	padding: 0;
+
+    li {
+        list-style: none;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            top: -10px;
+            counter-increment: myCounter;
+            content:counter(myCounter);
+            color: $blue;
+            left: 15px;
+            font-size: 30px;
+            display: inline-block;
+            text-align: center;
+            width: 20px;
+        }
+        &:after {
+            position: absolute;
+            content:" - ";
+            top: -10px;
+            left: 40px;
+            font-size: 30px;
+            color: $blue;
+            font-size: 30px;
+            font-family: "Exo2-Bold";
+
+        }
+
+        p {
+            margin-left: 60px;
+        }
+    }
+}
+
+
+
 .slider-carousel {
     margin-bottom: 40px;
 
@@ -678,6 +721,38 @@ button {
         }
     }
 
+}
+.expert-advice {
+    background-color: #1b9ac2;
+
+    &__title {
+        padding: 7px 36px;
+        text-transform: uppercase;
+        color: $white;
+        line-height: 30px;
+        background-color: $green;
+        display: inline-block;
+    }
+
+    &__info {
+        padding-left: 78px;
+        color: $white;
+        font-family: "Exo2-MediumItalic";
+        font-size: 15px;
+        line-height: 24px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: " ";
+            left: 30px;
+            top: 0;
+            width: 15px;
+            height: 55px;
+            background:  url("../images/bg-expert-advice-info.png") top center no-repeat;
+            background-size: 100%;
+        }
+    }
 }
 
 @media (max-width: 420px) {

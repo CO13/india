@@ -112,3 +112,41 @@
 		margin-bottom: 14px;
 	}
 }
+.md-sidebar-bottom {
+
+	.sidebar-social {
+		margin-top: 20px;
+	}
+
+	.sidebar-news {
+		text-align: left;
+	}
+
+	.sidebar-news-list {
+		@extend .row;
+
+		li {
+			@extend .col-sm-6;
+			border-color: transparent;
+			position: relative;
+
+		 	&:after {
+				position: absolute;
+				content: " ";
+				bottom: 0;
+				left: 15px;
+				right: 15px;
+				border-bottom: 1px dashed $blue;
+			}
+			&:last-child {
+				border: none;
+				margin-bottom: 20px;
+			}
+			@media (max-width: 980px) {
+				// @extend .col-sm-6;
+			}
+		}
+
+
+	}
+}
