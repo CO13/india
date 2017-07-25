@@ -22,6 +22,7 @@
 @import "components/related";
 @import "pages/index";
 @import "pages/detail";
+@import "pages/checkout";
 @import "responsive";
 
 body {
@@ -616,6 +617,8 @@ img {
         }
     }
 }
+
+
 
 @media (max-width: 1200px) {
 

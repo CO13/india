@@ -137,3 +137,53 @@
         }
     }
 }
+
+.products-list {
+    > div {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .category-products {
+
+        &__item {
+            @extend .row;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__header {
+            @extend .col-lg-3;
+        }
+
+        &__section {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            @extend .col-lg-6;
+            //border-right: 1px dashed #c4e6ee;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__link {
+            order: 1;
+        }
+        &__info {
+            order: 2;
+        }
+
+        &__price {
+            order: 4;
+        }
+        &__footer {
+            margin-top: 10px;
+            align-self: center;
+            @extend .col-lg-3;
+        }
+    }
+    .review-block {
+        order: 3;
+    }
+}

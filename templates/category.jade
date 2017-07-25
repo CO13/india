@@ -3,398 +3,823 @@ extends ./layout.jade
   
 block content
 
-  main
+    main
     
-    .container
+        .container
     
-      .row
+            .row
       
-        .col-lg-12
+                .col-lg-12
         
-          .breadcrumbs
+                    .breadcrumbs
           
-            ul
-              
-              li 
-                
-                a(href="#" title="") Главная 
-                
-                  span.separator
-                  
-              li
-              
-                strong Каталог
+                        ul
 
-      .row
-      
-        .col-lg-12
-        
-          .page-title
-          
-            h1 Каталог
-      
-      .row
-      
-        .col-lg-12
-      
-          .toolbar.clearfix
-          
-            .sorter
-            
-              label(for="sorter") Сортировать по:
-              
-              select#sorter
-              
-                option(value="popularity") популярности
-                
-                option(value="price") цена
-                
-                option(value="name") имя
-                
-            .view-mode
-            
-              label Вид:
-              
-              strong(class="grid")
-              
-              a(href="#" title="Список" class="list")
-                
-            .limiter
-            
-              label(for="limiter") Показывать:
-              
-              select#limiter
-              
-                option(value="16") 16
-                
-                option(value="24") 24
-                
-                option(value="32") 32
-        
-      .row
+                            li 
 
-        .col-lg-12
-        
-          .row
-          
-            .col-lg-3.col-md-4
+                                a(href="#" title="") Главная 
+
+                                    span.separator
+
+                            li
+
+                                strong Каталог
+
+            .row
+
+                .col-lg-12
+
+                    .page-title
+
+                        h1 Каталог
+      
+            .row
+
+                .col-lg-12
+              
+                    .toolbar.clearfix
+
+                        .sorter
+
+                            label(for="sorter") Сортировать по:
+
+                                select#sorter
+
+                                    option(value="popularity") популярности
+
+                                    option(value="price") цена
+
+                                    option(value="name") имя
+                        
+                        .view-mode
+
+                            label Вид:
+
+                            strong(class="grid")
+
+                            a(href="#" title="Список" class="list")
+                        
+                        .limiter
+
+                            label(for="limiter") Показывать:
+
+                            select#limiter
+
+                                option(value="16") 16
+
+                                option(value="24") 24
+
+                                option(value="32") 32
+
+            .row.category-products.products-grid
+
+                .col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-6 
+
+                    .category-products__item
+
+                        .category-products__header
+
+                            a(href="#")
+
+                                .category-products__image
+
+                                    img(src="media/home-products/product1.jpg",alt="")
+                            
+                            span.category-products__sale
+
+                        //.category-products__header
+
+                        .category-products__section
+                        
+                            .review-block
+                            
+                                .review-result-wrapper
+                                
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    .review-result(style='width: 80%')
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        
+                                // .review-block
+                                
+                            // .category-products__section
+
+                            a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
+                            
+                            p.category-products__info Производитель: Natco Pharma 
+                            
+                            .category-products__price.discount
+                                
+                                span.price 10 550 
+                                    
+                                    span.symbol руб. 
+                                        
+                                span.old-price 11 800
+                                    
+                                    span.symbol руб. 
+                    
+                                    //.category-products__section
+                                    
+                        .category-products__footer
+
+                            a.btn.btn-lg.btn-primary(href="#") 
+
+                                i.icon-cart
+
+                                |    В корзину
+
+                            .product-click
+                            
+                                a(href="#" title="Купить в 1 клик")
+                                
+                                    span Купить в 1 клик
+
+                        //.category-products__footer
+
+                    //.category-products__item     
+                    
+                .col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-6 
+
+                    .category-products__item
+
+                        .category-products__header
+
+                            a(href="#")
+
+                                .category-products__image
+
+                                    img(src="media/home-products/product1.jpg",alt="")
+                            
+                            span.category-products__sale
+
+                        //.category-products__header
+
+                        .category-products__section
+                        
+                            .review-block
+                            
+                                .review-result-wrapper
+                                
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    .review-result(style='width: 80%')
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        
+                                // .review-block
+                                
+                            // .category-products__section
+
+                            a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
+                            
+                            p.category-products__info Производитель: Natco Pharma 
+                            
+                            .category-products__price.discount
+                                
+                                span.price 10 550 
+                                    
+                                    span.symbol руб. 
+                                        
+                                span.old-price 11 800
+                                    
+                                    span.symbol руб. 
+                    
+                                    //.category-products__section
+                                    
+                        .category-products__footer
+
+                            a.btn.btn-lg.btn-primary(href="#") 
+
+                                i.icon-cart
+
+                                |    В корзину
+
+                            .product-click
+                            
+                                a(href="#" title="Купить в 1 клик")
+                                
+                                    span Купить в 1 клик
+
+                        //.category-products__footer
+
+                    //.category-products__item
+                
+                .col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-6 
+
+                    .category-products__item
+
+                        .category-products__header
+
+                            a(href="#")
+
+                                .category-products__image
+
+                                    img(src="media/home-products/product1.jpg",alt="")
+                            
+                            span.category-products__sale
+
+                        //.category-products__header
+
+                        .category-products__section
+                        
+                            .review-block
+                            
+                                .review-result-wrapper
+                                
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    .review-result(style='width: 80%')
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        
+                                // .review-block
+                                
+                            // .category-products__section
+
+                            a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
+                            
+                            p.category-products__info Производитель: Natco Pharma 
+                            
+                            .category-products__price.discount
+                                
+                                span.price 10 550 
+                                    
+                                    span.symbol руб. 
+                                        
+                                span.old-price 11 800
+                                    
+                                    span.symbol руб. 
+                    
+                                    //.category-products__section
+                                    
+                        .category-products__footer
+
+                            a.btn.btn-lg.btn-primary(href="#") 
+
+                                i.icon-cart
+
+                                |    В корзину
+
+                            .product-click
+                            
+                                a(href="#" title="Купить в 1 клик")
+                                
+                                    span Купить в 1 клик
+
+                        //.category-products__footer
+
+                    //.category-products__item
+                
+                .col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-6 
+
+                    .category-products__item
+
+                        .category-products__header
+
+                            a(href="#")
+
+                                .category-products__image
+
+                                    img(src="media/home-products/product1.jpg",alt="")
+                            
+                            span.category-products__sale
+
+                        //.category-products__header
+
+                        .category-products__section
+                        
+                            .review-block
+                            
+                                .review-result-wrapper
+                                
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    .review-result(style='width: 80%')
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        
+                                // .review-block
+                                
+                            // .category-products__section
+
+                            a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
+                            
+                            p.category-products__info Производитель: Natco Pharma 
+                            
+                            .category-products__price.discount
+                                
+                                span.price 10 550 
+                                    
+                                    span.symbol руб. 
+                                        
+                                span.old-price 11 800
+                                    
+                                    span.symbol руб. 
+                    
+                                    //.category-products__section
+                                    
+                        .category-products__footer
+
+                            a.btn.btn-lg.btn-primary(href="#") 
+
+                                i.icon-cart
+
+                                |    В корзину
+
+                            .product-click
+                            
+                                a(href="#" title="Купить в 1 клик")
+                                
+                                    span Купить в 1 клик
+
+                        //.category-products__footer
+
+                    //.category-products__item
+                
+                .col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-6 
+
+                    .category-products__item
+
+                        .category-products__header
+
+                            a(href="#")
+
+                                .category-products__image
+
+                                    img(src="media/home-products/product1.jpg",alt="")
+                            
+                            span.category-products__sale
+
+                        //.category-products__header
+
+                        .category-products__section
+                        
+                            .review-block
+                            
+                                .review-result-wrapper
+                                
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    .review-result(style='width: 80%')
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        
+                                // .review-block
+                                
+                            // .category-products__section
+
+                            a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
+                            
+                            p.category-products__info Производитель: Natco Pharma 
+                            
+                            .category-products__price.discount
+                                
+                                span.price 10 550 
+                                    
+                                    span.symbol руб. 
+                                        
+                                span.old-price 11 800
+                                    
+                                    span.symbol руб. 
+                    
+                                    //.category-products__section
+                                    
+                        .category-products__footer
+
+                            a.btn.btn-lg.btn-primary(href="#") 
+
+                                i.icon-cart
+
+                                |    В корзину
+
+                            .product-click
+                            
+                                a(href="#" title="Купить в 1 клик")
+                                
+                                    span Купить в 1 клик
+
+                        //.category-products__footer
+
+                    //.category-products__item     
+                    
+                .col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-6 
+
+                    .category-products__item
+
+                        .category-products__header
+
+                            a(href="#")
+
+                                .category-products__image
+
+                                    img(src="media/home-products/product1.jpg",alt="")
+                            
+                            span.category-products__sale
+
+                        //.category-products__header
+
+                        .category-products__section
+                        
+                            .review-block
+                            
+                                .review-result-wrapper
+                                
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    .review-result(style='width: 80%')
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        
+                                // .review-block
+                                
+                            // .category-products__section
+
+                            a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
+                            
+                            p.category-products__info Производитель: Natco Pharma 
+                            
+                            .category-products__price.discount
+                                
+                                span.price 10 550 
+                                    
+                                    span.symbol руб. 
+                                        
+                                span.old-price 11 800
+                                    
+                                    span.symbol руб. 
+                    
+                                    //.category-products__section
+                                    
+                        .category-products__footer
+
+                            a.btn.btn-lg.btn-primary(href="#") 
+
+                                i.icon-cart
+
+                                |    В корзину
+
+                            .product-click
+                            
+                                a(href="#" title="Купить в 1 клик")
+                                
+                                    span Купить в 1 клик
+
+                        //.category-products__footer
+
+                    //.category-products__item
+                
+                .col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-6 
+
+                    .category-products__item
+
+                        .category-products__header
+
+                            a(href="#")
+
+                                .category-products__image
+
+                                    img(src="media/home-products/product1.jpg",alt="")
+                            
+                            span.category-products__sale
+
+                        //.category-products__header
+
+                        .category-products__section
+                        
+                            .review-block
+                            
+                                .review-result-wrapper
+                                
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    .review-result(style='width: 80%')
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        
+                                // .review-block
+                                
+                            // .category-products__section
+
+                            a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
+                            
+                            p.category-products__info Производитель: Natco Pharma 
+                            
+                            .category-products__price.discount
+                                
+                                span.price 10 550 
+                                    
+                                    span.symbol руб. 
+                                        
+                                span.old-price 11 800
+                                    
+                                    span.symbol руб. 
+                    
+                                    //.category-products__section
+                                    
+                        .category-products__footer
+
+                            a.btn.btn-lg.btn-primary(href="#") 
+
+                                i.icon-cart
+
+                                |    В корзину
+
+                            .product-click
+                            
+                                a(href="#" title="Купить в 1 клик")
+                                
+                                    span Купить в 1 клик
+
+                        //.category-products__footer
+
+                    //.category-products__item
+                
+                .col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-6 
+
+                    .category-products__item
+
+                        .category-products__header
+
+                            a(href="#")
+
+                                .category-products__image
+
+                                    img(src="media/home-products/product1.jpg",alt="")
+                            
+                            span.category-products__sale
+
+                        //.category-products__header
+
+                        .category-products__section
+                        
+                            .review-block
+                            
+                                .review-result-wrapper
+                                
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    .review-result(style='width: 80%')
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        
+                                // .review-block
+                                
+                            // .category-products__section
+
+                            a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
+                            
+                            p.category-products__info Производитель: Natco Pharma 
+                            
+                            .category-products__price.discount
+                                
+                                span.price 10 550 
+                                    
+                                    span.symbol руб. 
+                                        
+                                span.old-price 11 800
+                                    
+                                    span.symbol руб. 
+                    
+                                    //.category-products__section
+                                    
+                        .category-products__footer
+
+                            a.btn.btn-lg.btn-primary(href="#") 
+
+                                i.icon-cart
+
+                                |    В корзину
+
+                            .product-click
+                            
+                                a(href="#" title="Купить в 1 клик")
+                                
+                                    span Купить в 1 клик
+
+                        //.category-products__footer
+
+                    //.category-products__item
+                    
+            .row.category-products.products-grid.products-list
+
+                .col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-6 
+
+                    .category-products__item
+
+                        .category-products__header
+
+                            a(href="#")
+
+                                .category-products__image
+
+                                    img(src="media/home-products/product1.jpg",alt="")
+                            
+                            span.category-products__sale
+
+                        //.category-products__header
+
+                        .category-products__section
+                        
+                            .review-block
+                            
+                                .review-result-wrapper
+                                
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    i.icon-star
+                                    .review-result(style='width: 80%')
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        i.icon-star
+                                        
+                                // .review-block
+                                
+                            // .category-products__section
+
+                            a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
+                            
+                            p.category-products__info Производитель: Natco Pharma 
+                            
+                            .category-products__price.discount
+                                
+                                span.price 10 550 
+                                    
+                                    span.symbol руб. 
+                                        
+                                span.old-price 11 800
+                                    
+                                    span.symbol руб. 
+                    
+                                    //.category-products__section
+                                    
+                        .category-products__footer
+
+                            a.btn.btn-lg.btn-primary(href="#") 
+
+                                i.icon-cart
+
+                                |    В корзину
+
+                            .product-click
+                            
+                                a(href="#" title="Купить в 1 клик")
+                                
+                                    span Купить в 1 клик
+
+                        //.category-products__footer
+
+                    //.category-products__item     
+        //.container
+        section.section-features
+
+            .container
+
+                h4.title-primary Поможем победить гепатит
+
+                .features
+
+                    p.features__info.
+                        Наше главное кредо — это быть полезными для своих клиентов. У нас Вы сможете приобрести продукты питания, средства для ухода и биодобавки высочайшего качества лучших брендов с мировым именем. Здесь Вы найдете полезную продукцию для детей и взрослых, которая придает бодрости и энергии, помогает восстановить силы и стать еще привлекательнее.
+
+                    p.features__desc.
+                        Eсли вам все же поставили такой диагноз, не отчаивайтесь, ведь наука не стоит на месте, в настоящее время ученые уже создали препараты, способные побороть этот недуг. Наш Интернет – магазин производит продажу медицинских препаратов, таких как Hepcinat, Hepcinat LP, Natdac , Viread, Ledifos, Daclahep, Sofovir и Sovaldi (Софосубвир), которые применяются в терапии ведущих клиник по всему миру. Дженерики разработанные высокотехнологичными фармацевтическими компаниями не чуть не хуже чем оригинальные лекарственные средства, они обладают теми же свойствами, но стоят на порядок дешевле. Мы работаем только с проверенными и надежными фирмами – производителями. Оформив заказ у наших менеджеров, вы сможете уже через несколько рабочих дней получить нужное лекарство, и приступить к лечению гепатита С, не теряя драгоценное время.
+
+                //.features
+                
+                .banner-primary
+
+                    h4.banner-primary__title Наши преимущества
+                
+                    .row
+
+                        .col-lg-4
+
+                            .banner-primary__item
+                                
+                                .banner-primary__image
+
+                                    img(src="assets/images/pr.png",alt="")
+
+                                .banner-primary__info.
+                                    Работаем напрямую с индийскими поставщиками
+                                    
+                        .col-lg-4
+
+                            .banner-primary__item
+                                
+                                .banner-primary__image
+
+                                    img(src="assets/images/pr-2.png",alt="")
+
+                                .banner-primary__info.
+                                    Выгодная стоимость препаратов
+                                    
+                        .col-lg-4
+
+                            .banner-primary__item
+                                
+                                .banner-primary__image
+
+                                    img(src="assets/images/pr-3.png",alt="")
+
+                                .banner-primary__info.
+                                    Быстрая доставка по России и СНГ
+
+                    //.row
+
+                //.banner-primary
+                
+            //.container
             
-              .category-products
-              
-                .category-products__header
+        //.section-features
+
+        section.section-check-list
+
+            .container
+
+                h4.title-primary  У нас Вы найдете только лучшую продукцию высокого качества, действительно полезную для здоровья:
+
+                .row
+
+                    .col-lg-6
+
+                        ul.ih-list-check
+
+                            li.
+                                Продукты питания и биодобавки восполнят дефицит витаминов и микроэлементов. Специальные комплексы способствуют укреплению иммунитета, сердечно-сосудистой и эндокринной систем, эффективны в борьбе с процессами старения;
+                            li.
+                                Детское питание не содержит искусственных добавок. Оно активирует иммунные силы организма и улучшает работу кишечника;
+
+                        //.ih-list-check
+
+                    .col-lg-6
+
+                        ul.ih-list-check
+
+                            li.
+                                Действующие вещества косметических средств — растительные экстракты, масла и другие вещества природного происхождения. Использование качественной косметики улучшит состояние кожи и волос и доставит Вам истинное удовольствие.
+                            li.
+                                Спортивное питание имеет сбалансированный состав для формирования идеального рельефа и быстрого восстановления сил после тренировок;
+
+                        //.ih-list-check
+                        
+                //.row
                 
-                  .category-products__image
-                  
-                    img(src="assets/images/product.png",alt="")
-                    
-                    .category-products__sale
-                    
-                //.category-products__header
-                
-                .category-products__section
-                
-                  a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
-                  
-                  p.category-products__info Производитель: Natco Pharma
-                  
-                //.category-products__section
-                
-                .category-products__footer
-                
-                  a.btn.btn-lg.btn-primary(hre="#")
-                  
-                    i.icon-cart
-                    
-                    |	В корзину
-                    
-                  .product-click
-                  
-                    img(src="",alt="")
-                    
-                    span text
-                    
-                //.category-products__footer
-                
-              //.category-products
+                .separator
+
+            //.container
             
-            .col-lg-3.col-md-4
-            
-              .category-products
-              
-                .category-products__header
-                
-                  .category-products__image
-                  
-                    img(src="assets/images/product.png",alt="")
-                    
-                    .category-products__sale
-                    
-                //.category-products__header
-                
-                .category-products__section
-                
-                  a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
-                  
-                  p.category-products__info Производитель: Natco Pharma
-                  
-                //.category-products__section
-                
-                .category-products__footer
-                
-                  a.btn.btn-lg.btn-primary(hre="#")
-                  
-                    i.icon-cart
-                    
-                    |	В корзину
-                    
-                  .product-click
-                  
-                    img(src="",alt="")
-                    
-                    span text
-                    
-                //.category-products__footer
-                
-              //.category-products
-              
-            .col-lg-3.col-md-4
-            
-              .category-products
-              
-                .category-products__header
-                
-                  .category-products__image
-                  
-                    img(src="assets/images/product.png",alt="")
-                    
-                    .category-products__sale
-                    
-                //.category-products__header
-                
-                .category-products__section
-                
-                  a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
-                  
-                  p.category-products__info Производитель: Natco Pharma
-                  
-                //.category-products__section
-                
-                .category-products__footer
-                
-                  a.btn.btn-lg.btn-primary(hre="#")
-                  
-                    i.icon-cart
-                    
-                    |	В корзину
-                    
-                  .product-click
-                  
-                    img(src="",alt="")
-                    
-                    span text
-                    
-                //.category-products__footer
-                
-              //.category-products
-              
-            .col-lg-3.col-md-4
-            
-              .category-products
-              
-                .category-products__header
-                
-                  .category-products__image
-                  
-                    img(src="assets/images/product.png",alt="")
-                    
-                    .category-products__sale
-                    
-                //.category-products__header
-                
-                .category-products__section
-                
-                  a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
-                  
-                  p.category-products__info Производитель: Natco Pharma
-                  
-                //.category-products__section
-                
-                .category-products__footer
-                
-                  a.btn.btn-lg.btn-primary(hre="#")
-                  
-                    i.icon-cart
-                    
-                    |	В корзину
-                    
-                  .product-click
-                  
-                    img(src="",alt="")
-                    
-                    span text
-                    
-                //.category-products__footer
-                
-              //.category-products
-              
-            .col-lg-3.col-md-4
-            
-              .category-products
-              
-                .category-products__header
-                
-                  .category-products__image
-                  
-                    img(src="assets/images/product.png",alt="")
-                    
-                    .category-products__sale
-                    
-                //.category-products__header
-                
-                .category-products__section
-                
-                  a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
-                  
-                  p.category-products__info Производитель: Natco Pharma
-                  
-                //.category-products__section
-                
-                .category-products__footer
-                
-                  a.btn.btn-lg.btn-primary(hre="#")
-                  
-                    i.icon-cart
-                    
-                    |	В корзину
-                    
-                  .product-click
-                  
-                    img(src="",alt="")
-                    
-                    span text
-                    
-                //.category-products__footer
-                
-              //.category-products
-              
-            .col-lg-3.col-md-4
-            
-              .category-products
-              
-                .category-products__header
-                
-                  .category-products__image
-                  
-                    img(src="assets/images/product.png",alt="")
-                    
-                    .category-products__sale
-                    
-                //.category-products__header
-                
-                .category-products__section
-                
-                  a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
-                  
-                  p.category-products__info Производитель: Natco Pharma
-                  
-                //.category-products__section
-                
-                .category-products__footer
-                
-                  a.btn.btn-lg.btn-primary(hre="#")
-                  
-                    i.icon-cart
-                    
-                    |	В корзину
-                    
-                  .product-click
-                  
-                    img(src="",alt="")
-                    
-                    span text
-                    
-                //.category-products__footer
-                
-              //.category-products
-              
-            .col-lg-3.col-md-4
-            
-              .category-products
-              
-                .category-products__header
-                
-                  .category-products__image
-                  
-                    img(src="assets/images/product.png",alt="")
-                    
-                    .category-products__sale
-                    
-                //.category-products__header
-                
-                .category-products__section
-                
-                  a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
-                  
-                  p.category-products__info Производитель: Natco Pharma
-                  
-                //.category-products__section
-                
-                .category-products__footer
-                
-                  a.btn.btn-lg.btn-primary(hre="#")
-                  
-                    i.icon-cart
-                    
-                    |	В корзину
-                    
-                  .product-click
-                  
-                    img(src="",alt="")
-                    
-                    span text
-                    
-                //.category-products__footer
-                
-              //.category-products
-              
-            .col-lg-3.col-md-4
-            
-              .category-products
-              
-                .category-products__header
-                
-                  .category-products__image
-                  
-                    img(src="assets/images/product.png",alt="")
-                    
-                    .category-products__sale
-                    
-                //.category-products__header
-                
-                .category-products__section
-                
-                  a(href="#").category-products__link Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab
-                  
-                  p.category-products__info Производитель: Natco Pharma
-                  
-                //.category-products__section
-                
-                .category-products__footer
-                
-                  a.btn.btn-lg.btn-primary(hre="#")
-                  
-                    i.icon-cart
-                    
-                    |	В корзину
-                    
-                  .product-click
-                  
-                    img(src="",alt="")
-                    
-                    span text
-                    
-                //.category-products__footer
-                
-              //.category-products
-                
-            //.conatiner
+        //.section-check-list

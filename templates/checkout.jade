@@ -1,0 +1,298 @@
+extends ./layout.jade
+
+  
+block content
+
+    main
+    
+        .container
+    
+            .row
+      
+                .col-lg-12
+        
+                    .breadcrumbs
+          
+                        ul
+                          
+                            li 
+                            
+                                a(href="#" title="") Главная 
+                            
+                                    span.separator
+                              
+                            li
+                          
+                                strong Корзина
+
+            .row
+      
+                .col-lg-12
+        
+                    .page-title
+          
+                        h1 Оформление заказа
+                        
+        section.section-checkout
+        
+            .container
+            
+                .ih-pane.ih-pane-sin
+                    
+                    h6.ih-pane__title Войти 
+                        span (для зарегистрированных пользователей)
+                    
+                    form.form-sin-in
+                    
+                        ul.ih-list-sin
+                            li
+                                .form-group
+                                    label.col-form-label(for='formGroupInput') Логин
+                                    input#formGroupInput.form-control(type='email', aria-describedby='emailHelp', placeholder='Логин (E-mail)')
+                                //.form-group
+                                
+                            li        
+                            
+                                .form-group
+                                    label.col-form-label(for='exampleInputPassword') Пароль
+                                    input#exampleInputPassword.form-control(type='password', placeholder='Пароль')
+                                    a.forgout-password(href="#") Напомнить пароль
+                                
+                                //.form-group
+                                
+                            li
+                                button.btn.btn-lg.btn-primary(type="submit") Войти
+                                
+                        //.ih-list-sin
+                    //.form-sin-in
+                    
+                //.ih-pane-sin
+                  
+                .ih-pane.ih-pane-registration
+                    
+                    h6.ih-pane__title Для новых покупателей
+                    
+                    form.form-registration(method="",action="",name="")
+                    
+                        .row.row-sm
+                        
+                            .col-lg-12
+                            
+                                .form-group
+                                    label.col-form-label(for='') Фамилия Имя Отчество
+                                    input.form-control(type='text', placeholder='Введите Ваше ФИО')
+                                //.form-group
+                                
+                            .col-lg-12
+                            
+                                .form-group
+                                    label.col-form-label(for='') Ваш телефон
+                                    input.form-control(type='number', placeholder='Tелефон')
+                                //.form-group
+                                
+                            .col-lg-6
+                            
+                                .form-group
+                                    label.col-form-label(for='') Город
+                                    
+                                    select.custom-select
+                                        option(selected='') Choose One...
+                                        option(value='1') Boots
+                                        option(value='2') Shoes
+                                        option(value='3') Feet
+                                        
+                                    //.custom-select
+                                //.form-group
+                                
+                            .col-lg-6
+                            
+                                .form-group
+                                    label.col-form-label(for='') Индекс
+                                    input.form-control(type='text', placeholder='Почтовый индекс')
+                                //.form-group
+                            .col-lg-12
+                            
+                                .form-group
+                                    label.col-form-label(for='') Адрес доставки
+                                    input.form-control(type='text', placeholder='Адрес')
+                                //.form-group
+                                
+                            .col-lg-12
+                                label.custom-control.custom-checkbox
+                                    input.custom-control-input(type='checkbox')
+                                    span.custom-control-indicator
+                                    span.custom-control-description Зарегистрироваться
+                                    
+                                //.custom-checkbox
+                    
+                    //.form-registration
+                //.ih-pane-registration
+                .ih-pane.ih-pane-payment
+                    
+                    h6.ih-pane__title Для новых покупателей
+                    
+                    form
+                    
+                        ul.ih-list-payment
+                        
+                            li
+                        
+                                .ih-list-payment__header
+                                    img(src="assets/images/icon-cash.png")
+                            
+                                label.custom-control.custom-radio
+                                    input#radioStacked1.custom-control-input(name='radio-stacked', type='radio')
+                                    span.custom-control-indicator
+                                    span.custom-control-description Наличными
+                                    
+                                //.custom-radio
+                            li                
+                                .ih-list-payment__header
+                                    img(src="assets/images/icon-card.png")
+                                    
+                                label.custom-control.custom-radio
+                                    input#radioStacked2.custom-control-input(name='radio-stacked', type='radio')
+                                    span.custom-control-indicator
+                                    span.custom-control-description Банковская карта
+                                
+                                //.custom-radio
+                            
+                            li
+                        
+                                .ih-list-payment__header
+                                    img(src="assets/images/icon-bank.png")
+                            
+                                label.custom-control.custom-radio
+                                    input#radioStacked1.custom-control-input(name='radio-stacked', type='radio')
+                                    span.custom-control-indicator
+                                    span.custom-control-description Сбербанк онлайн
+                                
+                                //.custom-radio
+                                
+                            li                
+                                .ih-list-payment__header
+                                    img(src="assets/images/icon-payment.png")
+                                    
+                                label.custom-control.custom-radio
+                                    input#radioStacked2.custom-control-input(name='radio-stacked', type='radio')
+                                    span.custom-control-indicator
+                                    span.custom-control-description Оплата наложенным платежом
+                                
+                                //.custom-radio
+                        
+                        //.ih-list-payment
+                //.ih-pane-payment
+                .ih-pane.ih-pane-cart
+                    h6.ih-pane__title Ваш заказ
+                    
+                    table#shopping-cart-table.cart-table 
+                        
+                        thead 
+                                
+                            tr
+                                    
+                                th Название
+                                
+                                th Цена
+                                
+                                th Количество, шт.
+                                
+                                th Стоимость 
+                        
+                        tbody 
+                        
+                            tr
+                            
+                                td 
+                                
+                                    a(href="#" title="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab" class="product-image") 
+                                    
+                                        img(src="media/cart-products/product-1.jpg" alt="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab" width="61" height="53")
+                                    
+                                    h5.product-title 
+                                        a(href="#" title="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab") Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab 
+                                    
+                                    a.remove(href="#" title="Удалить") x 
+                                
+                                td 
+                                
+                                    span.cart-price 8 350 руб. 
+                                
+                                td 
+                                
+                                    span.qty
+                                        // (Notice for backend dev) Add product id at parameter to changeQty function
+                                        button(type="button" class="button-down" onclick="changeQty(13, this);")  
+                                        // (Notice for backend dev) Add product id to qty id
+                                        input(value="1" size="4" title="Qty" class="qty" name="" id="cart-qty-13") 
+                                        
+                                        button(type="button" class="button-up" onclick="changeQty(13, this);") 
+                                
+                                td
+                                
+                                    span.cart-price.total-price 16 700 руб.
+                                    
+                            tr
+                            
+                                td 
+                                
+                                    a(href="#" title="Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab" class="product-image") 
+                                    
+                                        img(src="media/cart-products/product-1.jpg" alt="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab" width="61" height="53")
+                                    
+                                    h5.product-title 
+                                        a(href="#" title="Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab") Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab 
+                                    
+                                    a.remove(href="#" title="Удалить") x 
+                                
+                                td 
+                                
+                                    span.cart-price 7 600 руб.
+                                
+                                td 
+                                    
+                                    span.qty
+                                        // (Notice for backend dev) Add product id at parameter to changeQty function
+                                        button(type="button" class="button-down" onclick="changeQty(12, this);")  
+                                        // (Notice for backend dev) Add product id to qty id
+                                        input(value="1" size="4" title="Qty" class="qty" name="" id="cart-qty-12") 
+                                        
+                                        button(type="button" class="button-up" onclick="changeQty(12, this);") 
+                                
+                                td
+                                
+                                    span.cart-price.total-price 7 600 руб.     
+                                    
+                        tfoot 
+                        
+                            tr 
+                            
+                                td(colspan="3") 
+                                    
+                                    strong Итоговая сумма:
+                                
+                                td 
+                                
+                                    strong.total-price 24 300 руб. 
+                    
+                    //ta.cart-table
+                    .ih-pane__button-group
+                        
+                        a.btn.btn-lg.btn-info(href="#" title="Оформить заказ" ) Вернуться назад
+                        a.btn.btn-lg.btn-primary(href="#" title="Оформить заказ" ) Подтвердить
+                        
+                //.ih-pane-cart
+            //.container
+            script(type="text/javascript").
+                function changeQty(productId, button) {
+                        var input = $('#cart-qty-'+productId),
+                                inputVal = parseInt(input.val());
+                        
+                        if($(button).hasClass('button-up')) {
+                                input.val(inputVal + 1);
+                        } else if($(button).hasClass('button-down') && inputVal > 1) {
+                                input.val(inputVal - 1);
+                        }
+                }
+        
+        //.section-checkout
