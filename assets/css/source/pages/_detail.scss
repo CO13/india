@@ -113,6 +113,10 @@
                 margin-right: 5px;
                 vertical-align: -3px;
             }
+
+            @media screen and (max-width: 420px) {
+                width: 270px;
+            }
         }
     }
 
@@ -170,38 +174,69 @@
 
             dt,
             dd {
-                display: inline-block;
                 margin-bottom: 0;
                 padding: 8px 22px;
                 border-bottom: 1px solid #e7f4f2;
+                vertical-align: top;
             }
 
             dt {
                 font-weight: 400;
-                width: 33%;
-
-                &:nth-of-type(odd) {
-                    background-color: #d8eff2;
-                }
-
-                &:nth-of-type(even) {
-                    background-color: #deefdd;
-                }
             }
 
             dd {
                 font-family: 'Roboto-Medium';
-                margin-left: -4px;
-                width: 67%;
+            }
 
-                &:nth-of-type(odd) {
+            @media screen and (min-width: 768px) {
+                dt,
+                dd {
+                    display: inline-block;
+                    max-height: 39px;
+                    overflow: hidden;
+                }
+
+                dt {
+                    width: 33%;
+
+                    &:nth-of-type(odd) {
+                        background-color: #d8eff2;
+                    }
+
+                    &:nth-of-type(even) {
+                        background-color: #deefdd;
+                    }
+                }
+
+                dd {
+                    margin-left: -4px;
+                    width: 67%;
+
+                    &:nth-of-type(odd) {
+                        background-color: #d8eff2;
+                    }
+
+                    &:nth-of-type(even) {
+                        background-color: #deefdd;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                dt,
+                dd {
+                    display: block;
+                }
+
+                dt {
                     background-color: #d8eff2;
                 }
 
-                &:nth-of-type(even) {
+                dd {
                     background-color: #deefdd;
                 }
             }
+
         }
     }
 
@@ -298,6 +333,10 @@
                     background-color: #5bc0de;
                 }
             }
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: 40px;
+            }
         }
 
         .box-form-reviews {
@@ -353,11 +392,18 @@
                 padding-top: 20px;
 
                 .btn {
+                    display: block;
                     font-family: "Exo2-Bold";
                     font-size: 14px;
-                    float: right;
                     text-transform: uppercase;
+                    margin: auto;
                     width: 240px;
+                }
+
+                @media screen and (min-width: 992px) {
+                    .btn {
+                        float: right;
+                    }
                 }
             }
 
@@ -380,9 +426,8 @@
         }
 
         .add-review {
-            float: left;
-            margin-top: 5px;
-            width: 120px;
+              margin: 0 auto 10px;
+              width: 120px;
 
             label {
                 margin-bottom: 0px;
@@ -404,6 +449,11 @@
                     color: #fcd036;
                     text-shadow: 0px 0px 1px #fcd036;
                 }
+            }
+
+            @media screen and (min-width: 992px) {
+                float: left;
+                margin-top: 5px;
             }
         }
     }
