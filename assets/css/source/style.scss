@@ -30,6 +30,7 @@ body {
     background-size: 100%;
 }
 
+
 main {
     background: url("../images/bottom-background.png") bottom center no-repeat;
     background-size: 100%;
@@ -57,6 +58,18 @@ button {
         box-shadow: none!important;
         outline: none!important;
     }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-family: "Roboto-Light";
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
 }
 
 .product-click {
@@ -287,6 +300,7 @@ button {
       		color: #222222;
       		font-size: 17px;
       		line-height: 24px;
+            flex: 1;
     	}
 
       @media screen and (max-width: 767px) {
@@ -344,6 +358,100 @@ button {
     }
 }
 
+.products-list-sm {
+    margin: 0;
+    > div {
+        padding: 0;
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+
+    }
+
+    .category-products {
+
+        &__item {
+            @extend .row;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+        &__header {
+            @extend .col-lg-2;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        &__section {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            @extend .col-lg-7;
+            padding-left: 6px;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                content: " ";
+                left: 60%;
+                transform: translateX(-60%);
+                top: 15px;
+                bottom: 15px;
+                border-right: 1px dashed #c4e6ee;
+            }
+        }
+
+        &__link {
+            order: 1;
+            width: 50%;
+        }
+        &__info {
+            order: 2;
+        }
+
+        &__price {
+            order: 4;
+            position: absolute;
+            right: 15px;
+        }
+        &__footer {
+            margin-top: 10px;
+            align-self: center;
+            @extend .col-lg-3;
+            padding-left: 22px;
+            padding-right: 27px;
+        }
+    }
+    .review-block {
+        order: 3;
+    }
+    @media screen and (max-width: 980px) {
+        .category-products {
+
+            &__header {
+                flex: 0 0 40%;
+                max-width: 40%;
+
+            }
+            &__section {
+
+                flex: 0 0 40%;
+                max-width: 40%;
+
+            }
+            &__footer {
+                flex: 0 0 40%;
+                max-width: 40%;
+            }
+        }
+    }
+}
+
 .ih-list-number {
   	counter-reset: myCounter;
   	padding: 0;
@@ -357,30 +465,34 @@ button {
 
         &:before {
             position: absolute;
-            top: -10px;
+            top: -14px;
             counter-increment: myCounter;
             content:counter(myCounter);
-            color: $blue;
+            color: #1b9ac2;
             left: 15px;
             font-size: 30px;
             display: inline-block;
             text-align: center;
             width: 20px;
         }
+
         &:after {
             position: absolute;
             content:" - ";
-            top: -10px;
+            top: -15px;
             left: 40px;
             font-size: 30px;
-            color: $blue;
+            color: #1b9ac2;
             font-size: 30px;
             font-family: "Exo2-Bold";
 
         }
 
         p {
+            font-family: "Roboto-Light";
             margin-left: 60px;
+            color: #444444;
+            margin-bottom: 22px;
         }
     }
 }
@@ -722,8 +834,23 @@ button {
     }
 
 }
+.section-expert-advice {
+    .title-primary {
+        margin-bottom: 18px;
+    }
+    strong {
+        font-family: "Roboto-Bold";
+        color: #444444;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
 .expert-advice {
     background-color: #1b9ac2;
+    padding-bottom: 8px;
+    margin-top: 24px;
+    margin-bottom: 34px;
 
     &__title {
         padding: 7px 36px;
@@ -732,12 +859,14 @@ button {
         line-height: 30px;
         background-color: $green;
         display: inline-block;
+        margin-bottom: 23px;
     }
 
     &__info {
         padding-left: 78px;
+        padding-right: 45px;
         color: $white;
-        font-family: "Exo2-MediumItalic";
+        font-family: "Roboto-MediumItalic";
         font-size: 15px;
         line-height: 24px;
         position: relative;
