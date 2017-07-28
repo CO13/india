@@ -6,6 +6,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
+    <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="exampleModalLabel" class="modal-title">Modal title</h5>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header-block">
@@ -19,7 +34,7 @@
               <div class="row">
                 <div class="col-xl-6 col-sm-6">
                   <ul class="head-links">
-                    <li><i class="icon-in"></i><a href="#" title="Войти">Войти</a><span class="separator">/</span><a href="#" title="Регистрация">Регистрация  </a></li>
+                    <li><i class="icon-in"></i><a href="#" title="Войти" data-toggle="modal" data-target="#login-modal">Войти</a><span class="separator">/</span><a href="#" title="Регистрация">Регистрация  </a></li>
                     <li><i class="icon-clock"></i><span>Ежедневно: с  9:00 до 20:00	</span></li>
                   </ul>
                   <!--.head-links -->
@@ -383,6 +398,57 @@
               </div>
             </div>
           </div>
+          <siderbar class="md-sidebar-bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                  <div class="sidebar-news">
+                    <h6 class="title-news">Последние новости</h6>
+                    <ul class="sidebar-news-list">
+                      <li>
+                        <div class="news-item">
+                          <div class="news-item__header"><a href="#"><img src="assets/images/blog.png" alt=""></a></div>
+                          <div class="news-item__section">
+                            <div class="news-item__date">24.06.2017</div>
+                            <h4 class="news-item__title"><a href="#">ПИТАНИЕ ПРИ ГЕПАТИТЕ С: ОСНОВНЫЕ ПРОДУКТЫ И БЛЮДА</a></h4>
+                            <div class="news-item__info">Осложнения, которые настигают больного очень опасны и как правило  больного очень опасны...</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="news-item">
+                          <div class="news-item__header"><a href="#"><img src="assets/images/blog.png" alt=""></a></div>
+                          <div class="news-item__section">
+                            <div class="news-item__date">24.06.2017</div>
+                            <h4 class="news-item__title"><a href="#">Комбинированный препарат для лечения гепатита С получил статус ускоренного рассмотрения</a></h4>
+                            <div class="news-item__info">Американская фармкомпания AbbVie заявила о том, что комбинированный...</div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul><a href="#" class="btn btn-outline-info">Все новости</a>
+                  </div>
+                  <!--.siderbar-news-->
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="sidebar-social">
+                    <h6 class="sidebar-social__title">Мы в контакте</h6>
+                    <div class="sidebar-social__box"><img src="assets/images/india-pills-vk.png"></div>
+                  </div>
+                  <!--.sidebar-social-->
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="sidebar-social">
+                    <h6 class="sidebar-social__title">Мы в фейсбук</h6>
+                    <div class="sidebar-social__box"><img src="assets/images/india-pills-fb.png"></div>
+                  </div>
+                </div>
+                <!--.sidebar-social-->
+              </div>
+              <!--.row-->
+            </div>
+            <!--.container-->
+          </siderbar>
+          <!--.md-sidebar-bottom-->
         </div>
       </section>
     </main>

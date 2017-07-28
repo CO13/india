@@ -1,0 +1,166 @@
+extends ./layout.jade
+
+	
+block content
+
+	main.contact-us
+		
+		.container
+		
+			.row
+			
+				.col-lg-12
+				
+					.breadcrumbs
+					
+						ul
+							
+							li 
+								
+								a(href="#" title="") Главная 
+								
+									span.separator
+									
+							li
+							
+								strong Контакты
+
+			.row
+			
+				.col-lg-12
+				
+					.page-title
+					
+						h1 Контакты
+			
+			.row 
+			
+				.col-lg-12
+				
+					.contact-us__block
+					
+						.row
+						
+							.col-md-4
+							
+								.contact-us__area
+								
+									ul.contact-us__info
+									
+										li.contact-us__phone
+										
+											span Звоните прямо сейчас
+											
+											strong
+											
+												span +7 (495)
+												
+												| 180-04-77
+												
+											strong
+											
+												span +7 (495)
+												
+												| 180-04-77	
+											
+											strong
+											
+												span +7 (495)
+												
+												| 180-04-77
+										
+										li.contact-us__mail
+										
+											span Напишите нам
+											
+											a(href=":mailto:India-pills@mail.ru" title="Напишите нам") India-pills@mail.ru
+											
+									ul.contact-us__social
+									
+										li
+										
+											a(href="#" title="Мы вконтакте")
+												i.icon.icon-vk
+												
+												span Мы вконтакте
+												
+										li
+										
+											a(href="#" title="Мы в фэйсбуке")
+												i.icon.icon-facebook
+												
+												span Мы в фэйсбуке
+												
+										li
+										
+											a(href="#" title="Мы на ютубе")
+											
+												i.icon.icon-youtube
+												
+												span Мы на ютубе
+							
+							.col-md-8
+							
+								form(action="#" id="")
+								
+									h6 Задать вопрос
+									
+									ul
+									
+										li
+											
+											.form-group
+											
+												label Фамилия Имя Отчество
+												
+												input(type="text" name="name" id="name" class="form-control" placeholder="Введите Ваше ФИО")
+										
+										li
+										
+											.form-group
+											
+												label Ваш телефон или E-mail
+												
+												input(type="text" name="email" id="email" class="form-control" placeholder="Введите ваш номер телефона или адрес электронной почты")
+										
+										li
+										
+											.form-group
+											
+												label Комментарий
+												
+												textarea(name="message" id="message" class="form-control" placeholder="Ваш вопрос")
+											
+										li
+										
+											.buttons-wrapper
+											
+												button(type="submit").btn.btn-lg.btn-primary Отправить
+								
+			.row.md-sidebar-bottom
+
+					.col-lg-6.col-sm-6
+					
+							.sidebar-social
+							
+									h6.sidebar-social__title Мы в контакте
+									
+									.sidebar-social__box
+											
+											img(src="assets/images/india-pills-vk-big.png")
+									
+							//.sidebar-social
+							
+					.col-lg-6.col-sm-6
+					
+							.sidebar-social
+							
+									h6.sidebar-social__title Мы в фейсбук
+									
+									.sidebar-social__box
+											
+											img(src="assets/images/india-pills-fb-big.png")
+									
+					//.sidebar-social
+			//.row
+	//.md-sidebar-bottom
