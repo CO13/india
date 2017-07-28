@@ -42,14 +42,15 @@ block content
                         .sorter
 
                             label(for="sorter") Сортировать по:
+                            
+                                .select-wrapper
+                                    select#sorter
 
-                                select#sorter
+                                        option(value="popularity") популярности
 
-                                    option(value="popularity") популярности
+                                        option(value="price") цена
 
-                                    option(value="price") цена
-
-                                    option(value="name") имя
+                                        option(value="name") имя
                         
                         .view-mode
 
@@ -63,13 +64,15 @@ block content
 
                             label(for="limiter") Показывать:
 
-                            select#limiter
+                            .select-wrapper
+                            
+                                select#limiter
 
-                                option(value="16") 16
+                                    option(value="16") 16
 
-                                option(value="24") 24
+                                    option(value="24") 24
 
-                                option(value="32") 32
+                                    option(value="32") 32
 
             .row.category-products.products-grid
 
