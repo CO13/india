@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+  </head>
+  <body>
+    <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="exampleModalLabel" class="modal-title">Modal title</h5>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header-block">
+          <div class="row">
+            <div class="col-lg-4 align-self-center">
+              <div class="logo-block"><a href="/" class="logo"><img src="assets/images/logo.png " alt=""></a>
+                <!--.logo -->
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="row">
+                <div class="col-xl-6 col-sm-6">
+                  <ul class="head-links">
+                    <li><i class="icon-in"></i><a href="#" title="Войти" data-toggle="modal" data-target="#login-modal">Войти</a><span class="separator">/</span><a href="#" title="Регистрация">Регистрация  </a></li>
+                    <li><i class="icon-clock"></i><span>Ежедневно: с  9:00 до 20:00	</span></li>
+                  </ul>
+                  <!--.head-links -->
+                </div>
+                <div class="col-xl-6 col-sm-6">
+                  <div class="head-info">
+                    <h5><span>(343) </span>200-75-77</h5><a href="#" title="Заказать звонок">Заказать звонок</a>
+                  </div>
+                  <!--.head-info-->
+                </div>
+              </div>
+              <div class="form-search">
+                <form action="" method="post">
+                  <div class="input-group md-search">
+                    <input type="text" name="search" placeholder="Что ищите?" required="" class="form-control">
+                    <button type="submit" class="btn btn-primary"> <i class="icon-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <!--.form-search-->
+            </div>
+            <!-- .col-lg-5-->
+            <div class="col-lg-3">
+              <div class="header-cart"><a id="cart" href="#">
+                  <div class="cart-box"><i class="icon-cart"></i><span class="cart-qty">1</span></div>
+                  <div class="cart-box"><strong>Корзина</strong><span class="cart-price">26 082<span class="cart-price__symbol">руб.</span></span></div></a></div>
+            </div>
+            <!-- .col-lg-3-->
+          </div>
+        </div>
+        <nav class="navbar navbar-toggleable-md md-nav">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" class="navbar-toggler navbar-toggler-right"><span></span><span></span><span></span></button>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Гарантии</a></li>
+              <li><a href="#" class="active">Схемы лечения</a></li>
+              <li><a href="#">Сертификаты</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Вопрос-ответ</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--.header-->
+    <main class="cart-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumbs">
+              <ul>
+                <li> <a href="#" title="">Главная <span class="separator"></span></a></li>
+                <li><strong>СХЕМЫ ЛЕЧЕНИЯ</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section-guarantees">
+        <div class="container">
+          <h4 class="section-guarantees__title">Схемы лечения</h4>
+          <article class="banner-guarantees">
+            <header class="banner-guarantees__header">
+              <div class="banner-guarantees__images"><img src="media/treatment/banner.png" alt="" width="218" height="188"></div>
+            </header>
+            <section class="banner-guarantees__section">
+              <h4 class="banner-guarantees__title">Самые распространенные схемы лечения гепатита С </h4>
+              <p class="banner-guarantees__info">
+                Современная медицина сегодня успешно борется со многими заболеваниями.Не стал исключением и гепатит С, еще не так давно считавшийся неизлечимым. Побороть сегодня этот недуг позволяют эффективные противовирусные препараты – софосбувир, ледипасвир, даклатасвир, велпатасвир. Однако применение этих ингибиторных препаратов эффективно лишь в случае правильно выбранной стратегии.
+                
+              </p>
+            </section>
+          </article>
+          <!--.banner-guarantees-->
+        </div>
+      </section>
+      <section class="section-treatment">
+        <div class="container">
+          <h4 class="section-treatment__title">СХЕМА ЛЕЧЕНИЯ ГЕПАТИА С В 2016 ГОДУ, при генотипе 1</h4>
+          <table class="cart-treatment">
+            <thead> 
+              <tr>
+                <th>Генотип, цирроз, конфекция</th>
+                <th>Схема терапии</th>
+                <th>Продолжительность лечения</th>
+                <th>Эффективность</th>
+              </tr>
+            </thead>
+            <tbody> 
+              <tr class="tr-blue">
+                <td rowspan="5" class="td-blue">Генотип 1</td>
+              </tr>
+              <tr class="tr-white">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-white">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-yellow">
+                <td rowspan="5" class="td-yellow">Генотип 1 (с циррозом печени)
+                  <td>Софосбувир + Ледипасвир</td>
+                  <td>12 недель</td>
+                  <td>98%</td>
+                </td>
+              </tr>
+              <tr class="tr-green">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-yellow">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-green">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-yellow">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td rowspan="5" class="td-blue">Генотип 1</td>
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-white">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-white">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Данная таблица подразумевает схемы для лечения  пациентов, ранее не проходивших лечение противовирусными препаратми, а также для пациентов с декомпенсированным циррозом и коинфекцией ВИЧ, с диагностированным генотипом 1 а,б.. Исходя из вышеизложенного становится понятным тот факт, что наибольшую эффективность в лечении ВГС дает комбинация соф+лед и соф+дак – это 99% ответов на терапию. Несмотря на наличие схемы софосбувир + рибаверин, гепатологи все же рекомендуют добавлять к ней даклатасвир. Но, самое главное, пожалуй в том, что даже тем, у кого осталось совсем мало надежды на избавление от недуга, кто уже боролся с вирусом при помощи интерферонов появился отличный шанс перелечиться и избавиться от вируса навсегда. </p><br><br>
+          <h4 class="section-treatment__title">СХЕМА ЛЕЧЕНИЯ ГЕПАТИА С В 2016 ГОДУ, при генотипе 2</h4>
+          <table class="cart-treatment-primary">
+            <thead> 
+              <tr>
+                <th>Генотип, цирроз, конфекция</th>
+                <th>Схема терапии</th>
+                <th>Продолжительность лечения</th>
+                <th>Эффективность</th>
+              </tr>
+            </thead>
+            <tbody> 
+              <tr class="tr-blue">
+                <td rowspan="5" class="td-yellow">Генотип 1</td>
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr>
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr>
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr>
+                <td rowspan="5" class="td-yellow">Генотип 1 (с циррозом печени)
+                  <td>Софосбувир + Ледипасвир</td>
+                  <td>12 недель</td>
+                  <td>98%</td>
+                </td>
+              </tr>
+              <tr class="tr-blue">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr>
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr>
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td rowspan="5" class="td-yellow">Генотип 1</td>
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-white">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-white">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Данная таблица подразумевает схемы для лечения  пациентов, ранее не проходивших лечение противовирусными препаратми, а также для пациентов с декомпенсированным циррозом и коинфекцией ВИЧ, с диагностированным генотипом 1 а,б.. Исходя из вышеизложенного становится понятным тот факт, что наибольшую эффективность в лечении ВГС дает комбинация соф+лед и соф+дак – это 99% ответов на терапию. Несмотря на наличие схемы софосбувир + рибаверин, гепатологи все же рекомендуют добавлять к ней даклатасвир. Но, самое главное, пожалуй в том, что даже тем, у кого осталось совсем мало надежды на избавление от недуга, кто уже боролся с вирусом при помощи интерферонов появился отличный шанс перелечиться и избавиться от вируса навсегда. </p><br>
+          <h4 class="section-treatment__title">СХЕМА ЛЕЧЕНИЯ ГЕПАТИА С В 2016 ГОДУ, при генотипе 2</h4>
+          <table class="cart-treatment-secondary">
+            <thead> 
+              <tr>
+                <th>Генотип, цирроз, конфекция</th>
+                <th>Схема терапии</th>
+                <th>Продолжительность лечения</th>
+                <th>Эффективность</th>
+              </tr>
+            </thead>
+            <tbody> 
+              <tr class="tr-green">
+                <td rowspan="6" class="td-green">Генотип 1</td>
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-green">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-green">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-green">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-green">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-green">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-yellow">
+                <td rowspan="5" class="td-yellow">Генотип 1 <br>(с циррозом печени)
+                  <td>Софосбувир + Ледипасвир</td>
+                  <td>12 недель</td>
+                  <td>98%</td>
+                </td>
+              </tr>
+              <tr class="tr-yellow">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-yellow">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-yellow">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-yellow">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td rowspan="3" class="td-blue"><span>test</span></td>
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-blue">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-pr">
+                <td rowspan="4" class="td-pr">Генотип 1 <br>	(с циррозом печени)</td>
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-pr">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-pr">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+              <tr class="tr-pr">
+                <td>Софосбувир + Ледипасвир</td>
+                <td>12 недель</td>
+                <td>98%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-sm-12">
+            <h5 class="footer-title">Контакты</h5>
+            <ul class="footer-contacts">
+              <li><i class="icon icon-map"> </i><span>
+                   
+                  г. Москва, ул. Владимирская, д. 35</span></li>
+              <li><i class="icon icon-phone"> </i><span>8 (495) 222-33-00</span></li>
+              <li><a href="mailto:India-pills@mail.ru" title=""><i class="icon icon-mail"> </i><span>India-pills@mail.ru</span></a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-sm-12">
+            <h5 class="footer-title">Полезная информация</h5>
+            <ul class="footer-menu">
+              <li><a href="#">О нас </a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#" class="active">Схемы лечения </a></li>
+              <li><a href="#">Отзывы </a></li>
+              <li><a href="#">Гарантии</a></li>
+              <li><a href="#">Вопрос-ответ</a></li>
+              <li><a href="#"> Сертификаты  </a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <!-- -->
+          <div class="col-md-4 col-lg-4">
+            <h5 class="footer-title">Препараты</h5>
+            <ul class="footer-menu">
+              <li><a href="#">Софосбувир</a></li>
+              <li><a href="#">Даклатасвир</a></li>
+              <li><a href="#">Ледипасвир</a></li>
+              <li><a href="#">Тенофовир </a></li>
+              <li><a href="#">Велпатасвир</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="copyright"><span>© 2017 India-pills.com. Все права защищены.</span></div>
+            <!--.copyright-->
+          </div>
+          <div class="col-md-6">
+            <div class="social"><strong>Мы в соцсетях:</strong>
+              <ul>
+                <li><a href="#" title="Vkontakte"><i class="icon icon-vk"></i></a></li>
+                <li><a href="#" title="Twitter"><i class="icon icon-twitter"></i></a></li>
+                <li><a href="#" title="Facebook"><i class="icon icon-facebook"></i></a></li>
+              </ul>
+            </div>
+            <!--.social-->
+          </div>
+        </div>
+      </div>
+      <!--.container-->
+    </div>
+    <!--.footer-bottom-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

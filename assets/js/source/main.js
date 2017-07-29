@@ -109,4 +109,10 @@ jQuery(document).ready( function($) {
       $(this).toggleClass('open');
   });
 
+  $(".fancybox").fancybox({
+        padding         : [50, 35, 50, 35],
+        prevEffect		: 'none',
+		nextEffect		: 'none',
+		closeBtn		: true
+	});
 });
