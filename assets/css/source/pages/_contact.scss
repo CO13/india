@@ -1,5 +1,9 @@
 .contact-us {
-
+    &__area {
+        @media screen and (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+     }
     &__block {
         background-color: #f0fafb;
         padding: 35px;
@@ -26,7 +30,8 @@
 
                     button {
                         font-family: "Exo2-Bold";
-                        width: 260px;
+                        max-width: 260px;
+                        width: 100%;
                     }
                 }
             }
@@ -37,6 +42,10 @@
             font-family: 'Exo2-SemiBold';
             text-transform: uppercase;
             margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding: 15px;
         }
     }
 
@@ -82,7 +91,9 @@
 
     &__phone,
     &__mail {
-        padding-left: 80px;
+        @media screen and (min-width: 480px) {
+            padding-left: 80px;
+        }
 
         &:before {
             content: '';
@@ -90,6 +101,12 @@
             position: absolute;
             left: 0;
             vertical-align: top;
+
+            @media screen and (max-width: 480px) {
+                display: block;
+                position: relative;
+                margin: 0 auto 10px;
+            }
         }
     }
 

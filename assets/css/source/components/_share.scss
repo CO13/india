@@ -1,0 +1,52 @@
+.block-share {
+    color: #222222;
+
+    ul {
+        margin: 0 0 0 20px;
+        padding: 0;
+        display: inline-block;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+
+            i,
+            a {
+                display: block;
+                height: 30px;
+                width: 30px;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                transition: all .3s linear;
+            }
+
+            a:hover {
+                opacity: .7;
+            }
+
+            i {
+                &.vk {
+                    background: url('../images/vk.png') no-repeat;
+                }
+
+                &.fb {
+                    background: url('../images/fb.png') no-repeat;
+                }
+
+                &.tw {
+                    background: url('../images/tw.png') no-repeat;
+                }
+
+                &.ok {
+                    background: url('../images/ok.png') no-repeat;
+                }
+
+                &.more {
+                    background: url('../images/more.png') no-repeat;
+                }
+            }
+        }
+    }
+}
