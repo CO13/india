@@ -20,11 +20,13 @@
 @import "components/blog";
 @import "components/cart";
 @import "components/related";
+@import "components/share";
 @import "pages/index";
 @import "pages/detail";
 @import "pages/checkout";
 @import "pages/contact";
 @import "pages/guarantees";
+@import "pages/news-post";
 @import "responsive";
 
 body {
@@ -41,6 +43,16 @@ main {
 
 h1 {
     font-family: "Roboto-Bold";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #444444;
+    margin-bottom: 10px;
 }
 
 a {
@@ -84,6 +96,35 @@ select {
 
 }
 
+.a-center {
+    text-align: center;
+}
+
+.std {
+    p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 18px;
+        width: 100%;
+    }
+
+    strong {
+        color: #444444;
+        font-family: "Roboto-Medium";
+        font-weight: normal;
+        margin-bottom: 18px;
+    }
+
+    a {
+        color: #1b9ac2;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
 .select-wrapper {
   position: relative;
   display: inline-block;
@@ -95,6 +136,8 @@ select {
       z-index: 3;
       color: #bbbbbb;
       top: 55%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
       transform: translateY(-50%);
       font-family: $font-name__icon;
   }
