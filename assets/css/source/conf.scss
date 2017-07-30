@@ -32,6 +32,17 @@
 }
 
 @font-face {
+    font-family: "Exo2-Regular";
+    src: url('../fonts/Exo2-Regular/Exo2-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Exo2-Regular/Exo2-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Exo2-Regular/Exo2-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Exo2-Regular/Exo2-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/Exo2-Regular/Exo2-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Exo2-MediumItalic";
     src: url('../fonts/Exo2-MediumItalic/Exo2-MediumItalic.eot'); /* IE9 Compat Modes */
     src: url('../fonts/Exo2-MediumItalic/Exo2-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
