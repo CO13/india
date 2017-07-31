@@ -1,0 +1,276 @@
+extends ./layout.jade
+
+//-tabs-to-spaces:tabify — Converts leading whitespace to tabs
+//- tabs-to-spaces:untabify — Converts leading whitespace to spaces
+
+block content
+
+	main
+
+		.container
+		
+			.row
+			
+				.col-lg-12
+				
+					.breadcrumbs
+					
+						ul
+							
+							li 
+								
+								a(href="#" title="") Главная 
+								
+									span.separator
+									
+							li
+							
+								strong Страны и города
+			.row
+			
+				.col-lg-12
+				
+					.page-title
+					
+						h1 Страны и города
+						
+			.toolbar.toolbar--city.clearfix
+			
+				.sorter
+					img(src="assets/images/icon-pie.png")
+					
+					label(for="sorter") Выберите страну:
+					
+						.select-wrapper
+							select#sorter
+			
+								option(value="popularity") Россия
+			
+								option(value="price") цена
+			
+								option(value="name") имя
+					
+		section.section-city-list
+
+			.container
+			
+				h6.section-city-list__title Россия
+				
+				.section-city-list__box
+					
+					.row
+					
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Астрахань
+								
+								ul.ih-list-city
+									li
+										a(href="#") Софосбувир в Астрахани  
+									li
+										a(href="#") Даклатасвир в Астрахани
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Астрахань
+								
+								ul.ih-list-city
+									li
+										a(href="#") Софосбувир в Астрахани  
+									li
+										a(href="#") Даклатасвир в Астрахани
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Астрахань
+								
+								ul.ih-list-city
+									li
+										a(href="#") Софосбувир в Астрахани  
+									li
+										a(href="#") Даклатасвир в Астрахани
+					
+					.row
+					
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Санкт-Петербург
+								
+								ul.ih-list-city
+									li
+										a(href="#") Софосбувир в Санкт-Петербурге   
+									li
+										a(href="#") Даклатасвир в Санкт-петербурге
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Санкт-Петербург
+								
+								ul.ih-list-city
+									li
+										a(href="#") ССофосбувир в Санкт-Петербурге  
+									li
+										a(href="#") Даклатасвир в Санкт-петербурге
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Санкт-Петербург
+								
+								ul.ih-list-city
+									li
+										a(href="#") ССофосбувир в Санкт-Петербурге  
+									li
+										a(href="#") Даклатасвир в Санкт-петербурге
+					
+					.row
+					
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Екатеринбург
+								
+								ul.ih-list-city
+									li
+										a(href="#") Софосбувир в Екатеринбурге    
+									li
+										a(href="#") Даклатасвир в Екатеринбурге
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Екатеринбург
+								
+								ul.ih-list-city
+									li
+										a(href="#") ССофосбувир в Екатеринбурге   
+									li
+										a(href="#") Даклатасвир в Екатеринбурге
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Екатеринбург
+								
+								ul.ih-list-city
+									li
+										a(href="#") ССофосбувир в Екатеринбурге   
+									li
+										a(href="#") Даклатасвир в Екатеринбурге
+					
+					.row
+					
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Краснодар
+								
+								ul.ih-list-city
+									li
+										a(href="#") Софосбувир в Краснодаре     
+									li
+										a(href="#") Даклатасвир в Краснодаре
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Краснодар
+								
+								ul.ih-list-city
+									li
+										a(href="#")  Софосбувир в Краснодаре    
+									li
+										a(href="#") Даклатасвир в Краснодаре
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Краснодар
+								
+								ul.ih-list-city
+									li
+										a(href="#")  Софосбувир в Краснодаре   
+									li
+										a(href="#") Даклатасвир в Краснодаре
+					
+					.row
+					
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Новосибирск
+								
+								ul.ih-list-city
+									li
+										a(href="#") Софосбувир в Новосибирске     
+									li
+										a(href="#")  Даклатасвир в Новосибирске
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Новосибирск
+								
+								ul.ih-list-city
+									li
+										a(href="#")  Софосбувир в Новосибирске    
+									li
+										a(href="#")  Даклатасвир в Новосибирске
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Новосибирск
+								
+								ul.ih-list-city
+									li
+										a(href="#")  Софосбувир в Новосибирске   
+									li
+										a(href="#")  Даклатасвир в Новосибирске
+					
+					.row
+					
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Нижний Новгород
+								
+								ul.ih-list-city
+									li
+										a(href="#") Софосбувир в Нижнем Новгороде     
+									li
+										a(href="#")  Даклатасвир в Нижнем Новгороде 
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Нижний Новгород
+								
+								ul.ih-list-city
+									li
+										a(href="#")  Софосбувир в Нижнем Новгороде    
+									li
+										a(href="#")  Даклатасвир в Нижнем Новгороде 
+						.col-lg-4.col-md-6
+						
+							.box-city
+							
+								strong.box-city__title Нижний Новгород
+								
+								ul.ih-list-city
+									li
+										a(href="#")  Софосбувир в Нижнем Новгороде   
+									li
+										a(href="#")  Даклатасвир в Нижнем Новгороде 
+										

@@ -115,4 +115,48 @@ jQuery(document).ready( function($) {
 		nextEffect		: 'none',
 		closeBtn		: true
 	});
+    $(".fancybox-slider").fancybox({
+        padding         : [50, 35, 50, 35],
+        prevEffect		: 'none',
+  		nextEffect		: 'none',
+  		closeBtn		: true
+  	});
+    $('.certificates-slider').not('.slick-initialized').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        swipe:  true,
+        arrows: true,
+        adaptiveHeight: true,
+        dots: false,
+        responsive: [
+          {
+              breakpoint: 1200,
+              settings: {
+                  slidesToShow: 4,
+              }
+          },{
+              breakpoint: 990,
+              settings: {
+                  slidesToShow: 3,
+              }
+          }, {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 2,
+              }
+           },{
+               breakpoint: 600,
+               settings: {
+                  slidesToShow: 2,
+                   arrows: false,
+               }
+            },{
+                breakpoint: 480,
+                settings: {
+                   slidesToShow: 1,
+                    arrows: false,
+                }
+             }
+       ]
+    });
 });

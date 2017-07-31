@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+  </head>
+  <body>
+    <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="exampleModalLabel" class="modal-title">Modal title</h5>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header-block">
+          <div class="row">
+            <div class="col-lg-4 align-self-center">
+              <div class="logo-block"><a href="/" class="logo"><img src="assets/images/logo.png " alt=""></a>
+                <!--.logo -->
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="row">
+                <div class="col-xl-6 col-sm-6">
+                  <ul class="head-links">
+                    <li><i class="icon-in"></i><a href="#" title="Войти" data-toggle="modal" data-target="#login-modal">Войти</a><span class="separator">/</span><a href="#" title="Регистрация">Регистрация  </a></li>
+                    <li><i class="icon-clock"></i><span>Ежедневно: с  9:00 до 20:00	</span></li>
+                  </ul>
+                  <!--.head-links -->
+                </div>
+                <div class="col-xl-6 col-sm-6">
+                  <div class="head-info">
+                    <h5><span>(343) </span>200-75-77</h5><a href="#" title="Заказать звонок">Заказать звонок</a>
+                  </div>
+                  <!--.head-info-->
+                </div>
+              </div>
+              <div class="form-search">
+                <form action="" method="post">
+                  <div class="input-group md-search">
+                    <input type="text" name="search" placeholder="Что ищите?" required="" class="form-control">
+                    <button type="submit" class="btn btn-primary"> <i class="icon-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <!--.form-search-->
+            </div>
+            <!-- .col-lg-5-->
+            <div class="col-lg-3">
+              <div class="header-cart"><a id="cart" href="#">
+                  <div class="cart-box"><i class="icon-cart"></i><span class="cart-qty">1</span></div>
+                  <div class="cart-box"><strong>Корзина</strong><span class="cart-price">26 082<span class="cart-price__symbol">руб.</span></span></div></a></div>
+            </div>
+            <!-- .col-lg-3-->
+          </div>
+        </div>
+        <nav class="navbar navbar-toggleable-md md-nav">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" class="navbar-toggler navbar-toggler-right"><span></span><span></span><span></span></button>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Гарантии</a></li>
+              <li><a href="#" class="active">Схемы лечения</a></li>
+              <li><a href="#">Сертификаты</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Вопрос-ответ</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--.header-->
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumbs">
+              <ul>
+                <li> <a href="#" title="">Главная <span class="separator"></span></a></li>
+                <li><strong>СХЕМЫ ЛЕЧЕНИЯ</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section-guarantees">
+        <div class="container">
+          <h4 class="section-guarantees__title">Доставка и оплата</h4>
+          <article class="banner-guarantees">
+            <header class="banner-guarantees__header">
+              <div class="banner-guarantees__images"><img src="media/delivery/delivery-banner.png" alt="" width="263" height="283"></div>
+            </header>
+            <section class="banner-guarantees__section">
+              <h4 class="banner-guarantees__title">Доставка во все уголки России и страны СНГ!!!</h4>
+              <p class="banner-guarantees__info">
+                Мы принимаем Ваши заказы круглосуточно и обрабатываем каждый день 
+                без выходных с 09.00 до 22.00 по московскому времени. 
+                После оформления заказа мы оперативно с Вами свяжемся для подтверждения и 
+                выбора подходящего Вам времени доставки! 
+                
+              </p>
+            </section>
+          </article>
+          <!--.banner-guarantees-->
+          <ul role="tablist" class="nav-tab">
+            <li class="nav-item"><a data-toggle="tab" href="#home" role="tab" class="nav-link active">
+                <div class="nav-tab__item">
+                  <div class="nav-tab__header">
+                    <div class="nav-tab__image"><img src="media/payment-methods/tab.png" width="121" height="160"></div>
+                  </div>
+                  <div class="nav-tab__section">
+                    <h4>МОСКВА <span>(в пределах МКАД)   Московская область</span></h4>
+                  </div>
+                </div></a></li>
+            <li class="nav-item"><a data-toggle="tab" href="#profile" role="tab" class="nav-link">
+                <div class="nav-tab__item"> 
+                  <div class="nav-tab__header">
+                    <div class="nav-tab__image"><img src="media/payment-methods/tab-2.png" width="129" height="149"></div>
+                  </div>
+                  <div class="nav-tab__section">
+                    <h4>Все города РОССИИ</h4>
+                  </div>
+                </div></a></li>
+            <li class="nav-item"><a data-toggle="tab" href="#tab" role="tab" class="nav-link">
+                <div class="nav-tab__item">
+                  <div class="nav-tab__header"><img src="media/payment-methods/tab-3.png" width="144" height="141"></div>
+                  <div class="nav-tab__section">
+                    <h4>Страны СНГ</h4>
+                  </div>
+                </div></a></li>
+          </ul>
+          <!-- Tab panes-->
+          <div class="tab-content">
+            <div id="home" role="tabpanel" class="tab-pane active">
+              <table class="cart-treatment-secondary">
+                <thead> 
+                  <tr>
+                    <th>Генотип, цирроз, конфекция</th>
+                    <th>Схема терапии</th>
+                    <th>Продолжительность лечения</th>
+                    <th>Эффективность</th>
+                    <th>Эффективность</th>
+                  </tr>
+                </thead>
+                <tbody> 
+                  <tr class="tr-green">
+                    <td>Софосбувир + Ледипасвир</td>
+                    <td>12 недель</td>
+                    <td>98%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="profile" role="tabpanel" class="tab-pane">
+              <p>test</p>
+            </div>
+            <div id="tab" role="tabpanel" class="tab-pane">
+              <p>test 2</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="payment-methods">
+        <div class="container">
+          <h4 class="payment-methods__title">Способы оплаты</h4>
+          <div class="row justify-content-md-center">
+            <div class="col-lg-10 col-md-12">
+              <ul class="ih-lits-payment-methods">
+                <li><a href="#"> <img src="media/payment-methods/payment.png" width="167" height="167"></a></li>
+                <li><a href="#"> <img src="media/payment-methods/payment-2.png" width="197" height="196"></a></li>
+                <li><a href="#"> <img src="media/payment-methods/payment-3.png" width="167" height="167"></a></li>
+                <li><a href="#"> <img src="media/payment-methods/payment-4.png" width="167" height="167"></a></li>
+                <li><a href="#"> <img src="media/payment-methods/payment-5.png" width="167" height="167"></a></li>
+                <li><a href="#"> <img src="media/payment-methods/payment-6.png" width="167" height="167"></a></li>
+                <li><a href="#"> <img src="media/payment-methods/payment-7.png" width="167" height="167"></a></li>
+                <li><a href="#"> <img src="media/payment-methods/payment-8.png" width="167" height="167"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-sm-12">
+            <h5 class="footer-title">Контакты</h5>
+            <ul class="footer-contacts">
+              <li><i class="icon icon-map"> </i><span>
+                   
+                  г. Москва, ул. Владимирская, д. 35</span></li>
+              <li><i class="icon icon-phone"> </i><span>8 (495) 222-33-00</span></li>
+              <li><a href="mailto:India-pills@mail.ru" title=""><i class="icon icon-mail"> </i><span>India-pills@mail.ru</span></a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-sm-12">
+            <h5 class="footer-title">Полезная информация</h5>
+            <ul class="footer-menu">
+              <li><a href="#">О нас </a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#" class="active">Схемы лечения </a></li>
+              <li><a href="#">Отзывы </a></li>
+              <li><a href="#">Гарантии</a></li>
+              <li><a href="#">Вопрос-ответ</a></li>
+              <li><a href="#"> Сертификаты  </a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <!-- -->
+          <div class="col-md-4 col-lg-4">
+            <h5 class="footer-title">Препараты</h5>
+            <ul class="footer-menu">
+              <li><a href="#">Софосбувир</a></li>
+              <li><a href="#">Даклатасвир</a></li>
+              <li><a href="#">Ледипасвир</a></li>
+              <li><a href="#">Тенофовир </a></li>
+              <li><a href="#">Велпатасвир</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="copyright"><span>© 2017 India-pills.com. Все права защищены.</span></div>
+            <!--.copyright-->
+          </div>
+          <div class="col-md-6">
+            <div class="social"><strong>Мы в соцсетях:</strong>
+              <ul>
+                <li><a href="#" title="Vkontakte"><i class="icon icon-vk"></i></a></li>
+                <li><a href="#" title="Twitter"><i class="icon icon-twitter"></i></a></li>
+                <li><a href="#" title="Facebook"><i class="icon icon-facebook"></i></a></li>
+              </ul>
+            </div>
+            <!--.social-->
+          </div>
+        </div>
+      </div>
+      <!--.container-->
+    </div>
+    <!--.footer-bottom-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+.section-city-list {
+    &__box {
+        padding-top: 30px;
+        padding-bottom: 12px;
+        background-color: $white;
+    }
+
+    &__title {
+        font-family: "Exo2-SemiBold";
+        color: #3a3a3a;
+        text-transform: uppercase;
+    }
+}
+
+.box-city {
+    padding-left: 35px;
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: underline;
+        font-family: "Exo2-Medium";
+        color: #3a3a3a;
+    }
+}
+.ih-list-city {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 27px;
+
+    li {
+        margin-bottom: 2px;
+        a {
+            font-size: 15px;
+            line-height: 30px;
+            font-family: "Roboto-Light";
+            color: #1ca5d0;
+            border-bottom:1px dashed #1ca5d0;
+
+            &:hover {
+
+                border-color: $green;
+                color: $green;
+            }
+        }
+    }
+}

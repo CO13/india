@@ -1,0 +1,155 @@
+extends ./layout.jade
+
+	
+block content
+
+	main
+		
+		.container
+		
+			.row
+			
+				.col-lg-12
+				
+					.breadcrumbs
+					
+						ul
+							
+							li 
+								
+								a(href="#" title="") Главная 
+								
+									span.separator
+									
+							li
+							
+								strong СХЕМЫ ЛЕЧЕНИЯ
+
+			
+		section.section-guarantees
+			
+			.container
+			
+				h4.section-guarantees__title Доставка и оплата
+				
+				article.banner-guarantees
+				
+					header.banner-guarantees__header
+					
+						.banner-guarantees__images
+							img(src="media/delivery/delivery-banner.png" alt="" width="263" height="283")
+							
+					section.banner-guarantees__section
+					
+						h4.banner-guarantees__title Доставка во все уголки России и страны СНГ!!!
+						
+						p.banner-guarantees__info.
+							Мы принимаем Ваши заказы круглосуточно и обрабатываем каждый день 
+							без выходных с 09.00 до 22.00 по московскому времени. 
+							После оформления заказа мы оперативно с Вами свяжемся для подтверждения и 
+							выбора подходящего Вам времени доставки! 
+							
+				//.banner-guarantees
+				ul.nav-tab(role='tablist')
+				
+					li.nav-item
+						a.nav-link.active(data-toggle='tab', href='#home', role='tab')
+							.nav-tab__item
+								.nav-tab__header
+									.nav-tab__image
+										img(src="media/payment-methods/tab.png" width="121" height="160")
+								.nav-tab__section
+									h4 МОСКВА 
+										span (в пределах МКАД)   Московская область
+									
+					li.nav-item
+						a.nav-link(data-toggle='tab', href='#profile', role='tab')
+							.nav-tab__item 
+								.nav-tab__header
+									.nav-tab__image
+										img(src="media/payment-methods/tab-2.png" width="129" height="149")
+								.nav-tab__section
+									h4 Все города РОССИИ
+									
+					li.nav-item
+						a.nav-link(data-toggle='tab', href='#tab', role='tab')
+							.nav-tab__item
+								.nav-tab__header
+									img(src="media/payment-methods/tab-3.png" width="144" height="141")
+								.nav-tab__section
+									h4 Страны СНГ
+				// Tab panes
+				
+				.tab-content
+				
+					#home.tab-pane.active(role='tabpanel')
+			
+						table.cart-treatment-secondary
+							
+							thead 
+									
+								tr
+										
+									th Генотип, цирроз, конфекция
+									
+									th Схема терапии
+									
+									th Продолжительность лечения
+									
+									th Эффективность
+									
+									th Эффективность
+							
+							tbody 
+							
+								tr.tr-green
+								
+									td Софосбувир + Ледипасвир
+									
+									td 12 недель
+										
+									td 98%
+					
+					#profile.tab-pane(role='tabpanel')
+						p test
+					
+					#tab.tab-pane(role='tabpanel')
+						p test 2
+					
+		section.payment-methods
+		
+			.container
+			
+				h4.payment-methods__title Способы оплаты
+				
+				.row.justify-content-md-center
+				
+					.col-lg-10.col-md-12
+					
+						ul.ih-lits-payment-methods
+							li
+								a(href="#") 
+									img(src="media/payment-methods/payment.png" width="167" height="167")
+							li
+								a(href="#") 
+									img(src="media/payment-methods/payment-2.png" width="197" height="196")
+							li
+								a(href="#") 
+									img(src="media/payment-methods/payment-3.png" width="167" height="167")
+							li
+								a(href="#") 
+									img(src="media/payment-methods/payment-4.png" width="167" height="167")
+							li
+								a(href="#") 
+									img(src="media/payment-methods/payment-5.png" width="167" height="167")
+							li
+								a(href="#") 
+									img(src="media/payment-methods/payment-6.png" width="167" height="167")
+							li
+								a(href="#") 
+									img(src="media/payment-methods/payment-7.png" width="167" height="167")
+							li
+								a(href="#") 
+									img(src="media/payment-methods/payment-8.png" width="167" height="167")
+									
+				

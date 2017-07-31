@@ -57,6 +57,25 @@
         margin: 0 8px 0 0;
     }
 
+    &--city {
+        @include  gradient-x($start-color: #d8eff2, $end-color: #d8eff2, $start-percent: 0%, $end-percent: 100%);
+        padding: 15px;
+        padding-bottom: 15px;
+        .sorter {
+            img {
+                margin-right: 20px;
+            }
+            label {
+                font-size: 17px;
+                font-family: "Exo2-SemiBold";
+            }
+            select {
+                height: 50px;
+                width: 340px;
+            }
+        }
+    }
+
     @media screen and (max-width: 767px) {
 
             text-align: center;
@@ -70,5 +89,5 @@
                 float: none;
             }
         }
-    
+
 }
