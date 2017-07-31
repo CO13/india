@@ -4,6 +4,10 @@
     padding: 6px 40px 6px 20px;
     margin-bottom: 20px;
 
+    #limiter,
+    #sorter {
+        cursor: pointer;
+    }
     .sorter {
         float: left;
     }
