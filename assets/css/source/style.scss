@@ -1825,7 +1825,6 @@ select {
     }
 
     &__header {
-
         @extend .col-md-6;
         height: 208px;
         align-self: center;
@@ -1851,6 +1850,152 @@ select {
         h4  {
             span {
                 font-size: 18px;
+            }
+        }
+    }
+}
+
+.table-delivery {
+    width: 100%;
+
+    @media screen and (max-width: 991px) {
+        display: block;
+    }
+
+    thead {
+
+        color: #fff;
+        font-size: 15px;
+        background-color: #a7c529;
+        border-radius: 2px;
+
+        th {
+            text-align: center;
+
+            font-family: "Roboto-Bold";
+            padding: 14px 6px;
+            position: relative;
+            color: $white;
+
+
+            &:last-child {
+                border-right:  none;
+            }
+            &:first-child {
+                width: 35%;
+            }
+        }
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+
+    tbody {
+        background-color: #fff;
+
+
+        tr {
+            &:first-child {
+                border-top: 1px solid $white;
+            }
+            border-bottom: 1px solid #bfd9df;
+
+        }
+
+        .tr-blue {
+            td {
+                background-color: #e2f3fe;
+            }
+        }
+
+        .tr-yellow {
+            td {
+                background-color: #fbf8e4;
+            }
+        }
+
+        .tr-green {
+            td {
+                background-color: #e6f7d5;
+            }
+        }
+
+        .tr-pr {
+            td {
+                background-color: #f5effe;
+            }
+        }
+
+
+        td {
+            text-align: center;
+            padding: 10px 20px;
+            position: relative;
+            font-size: 15px;
+            font-family: "Roboto-Light";
+            border-right: 1px solid #bfd9df;
+            color: #555555;
+            background-color: $white;
+
+        }
+
+
+        .td-green {
+            font-family: "Roboto-Medium";
+            color: #3a3a3a;
+            background-color: #bedd3a !important;
+        }
+
+
+        .td-blue {
+            font-family: "Roboto-Medium";
+            color: #3a3a3a;
+            background-color: #61bbfa !important;
+        }
+
+        .td-pr {
+            font-family: "Roboto-Medium";
+            color: #3a3a3a;
+            background-color: #d0b6fd !important;
+        }
+
+        @media screen and (max-width: 991px) {
+            display: block;
+            width: 100%;
+
+            tr,
+            td,
+            tbody {
+                display: block;
+                width: 100%;
+            }
+
+            td {
+                text-align: left;
+
+                border-color: transparent;
+                &:before {
+                  content: attr(data-th)": ";
+                  font-weight: bold;
+                  width: 40%;
+                  display: inline-block;
+                }
+
+                &:not(:first-child) {
+                    padding-top: 10px;
+                }
+                &:not(:last-child) {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 580px) {
+            td {
+
+                &:before {
+                     width: 100%;
+                }
             }
         }
     }
