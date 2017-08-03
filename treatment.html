@@ -7,7 +7,22 @@
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
   </head>
   <body>
-    <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+    <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="custom-modal modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="exampleModalLabel" class="modal-title">Modal title</h5>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="phone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="custom-modal modal fade">
       <div role="document" class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -104,7 +119,7 @@
           <h4 class="section-guarantees__title">Схемы лечения</h4>
           <article class="banner-guarantees">
             <header class="banner-guarantees__header">
-              <div class="banner-guarantees__images"><img src="media/treatment/banner.png" alt="" width="218" height="188"></div>
+              <div class="banner-guarantees__images"><img src="media/treatment/banner.png" alt="" width="190" height="191"></div>
             </header>
             <section class="banner-guarantees__section">
               <h4 class="banner-guarantees__title">Самые распространенные схемы лечения гепатита С </h4>
@@ -131,80 +146,80 @@
             </thead>
             <tbody> 
               <tr class="tr-blue">
-                <td rowspan="5" class="td-blue">Генотип 1</td>
+                <td rowspan="5" data-th="Генотип, цирроз, конфекция" class="td-blue">Генотип 1</td>
               </tr>
               <tr class="tr-white">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-white">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-yellow">
-                <td rowspan="5" class="td-yellow">Генотип 1 (с циррозом печени)
-                  <td>Софосбувир + Ледипасвир</td>
-                  <td>12 недель</td>
-                  <td>98%</td>
+                <td rowspan="5" data-th="Генотип, цирроз, конфекция" class="td-yellow">Генотип 1 (с циррозом печени)
+                  <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                  <td data-th="Продолжительность лечения">12 недель</td>
+                  <td data-th="Эффективность">98%</td>
                 </td>
               </tr>
               <tr class="tr-green">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-yellow">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-green">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-yellow">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td rowspan="5" class="td-blue">Генотип 1</td>
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td rowspan="5" data-th="Генотип, цирроз, конфекция" class="td-blue">Генотип 1</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-white">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-white">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
             </tbody>
           </table>
@@ -221,83 +236,83 @@
             </thead>
             <tbody> 
               <tr class="tr-blue">
-                <td rowspan="5" class="td-yellow">Генотип 1</td>
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td rowspan="5" data-th="Генотип, цирроз, конфекция" class="td-yellow">Генотип 1</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr>
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr>
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr>
-                <td rowspan="5" class="td-yellow">Генотип 1 (с циррозом печени)
-                  <td>Софосбувир + Ледипасвир</td>
-                  <td>12 недель</td>
-                  <td>98%</td>
+                <td rowspan="5" data-th="Генотип, цирроз, конфекция" class="td-yellow">Генотип 1 (с циррозом печени)
+                  <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                  <td data-th="Продолжительность лечения">12 недель</td>
+                  <td data-th="Эффективность">98%</td>
                 </td>
               </tr>
               <tr class="tr-blue">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr>
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr>
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td rowspan="5" class="td-yellow">Генотип 1</td>
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td rowspan="5" data-th="Генотип, цирроз, конфекция" class="td-yellow">Генотип 1</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-white">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-white">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
             </tbody>
           </table>
@@ -314,99 +329,99 @@
             </thead>
             <tbody> 
               <tr class="tr-green">
-                <td rowspan="6" class="td-green">Генотип 1</td>
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td rowspan="6" data-th="Генотип, цирроз, конфекция" class="td-green">Генотип 1</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-green">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-green">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-green">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-green">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-green">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-yellow">
-                <td rowspan="5" class="td-yellow">Генотип 1 <br>(с циррозом печени)
-                  <td>Софосбувир + Ледипасвир</td>
-                  <td>12 недель</td>
-                  <td>98%</td>
+                <td rowspan="5" data-th="Генотип, цирроз, конфекция" class="td-yellow">Генотип 1 <br>(с циррозом печени)
+                  <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                  <td data-th="Продолжительность лечения">12 недель</td>
+                  <td data-th="Эффективность">98%</td>
                 </td>
               </tr>
               <tr class="tr-yellow">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-yellow">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-yellow">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-yellow">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td rowspan="3" class="td-blue"><span>test</span></td>
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td rowspan="3" data-th="Генотип, цирроз, конфекция" class="td-blue"><span>test</span></td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-blue">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-pr">
-                <td rowspan="4" class="td-pr">Генотип 1 <br>	(с циррозом печени)</td>
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td rowspan="4" data-th="Генотип, цирроз, конфекция" class="td-pr">Генотип 1 <br>	(с циррозом печени)</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-pr">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-pr">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
               <tr class="tr-pr">
-                <td>Софосбувир + Ледипасвир</td>
-                <td>12 недель</td>
-                <td>98%</td>
+                <td data-th="Схема терапии">Софосбувир + Ледипасвир</td>
+                <td data-th="Продолжительность лечения">12 недель</td>
+                <td data-th="Эффективность">98%</td>
               </tr>
             </tbody>
           </table>

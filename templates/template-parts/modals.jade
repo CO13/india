@@ -1,2 +1,138 @@
+#login-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+	.modal-dialog(role='document')
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Modal title
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					span(aria-hidden='true') ×
+			.modal-body
+				| ...
+			.modal-footer
+				button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+				button.btn.btn-primary(type='button') Save changes
+header.header
 
+	.container
 
+		.header-block
+
+			.row
+
+				.col-lg-4.align-self-center
+					
+					.logo-block
+					
+						a.logo(href='/')
+							img(src='assets/images/logo.png ', alt='')
+				
+						//.logo 
+
+				.col-lg-5
+
+					.row
+						
+						.col-xl-6.col-sm-6
+
+							ul.head-links
+
+								li
+									i.icon-in
+
+									a(href="#" title="Войти" data-toggle="modal" data-target="#login-modal") Войти
+
+									span.separator /
+
+									a(href="#" title="Регистрация") Регистрация  
+								li
+									i.icon-clock
+
+									span Ежедневно: с  9:00 до 20:00	
+
+							//.head-links 
+
+						.col-xl-6.col-sm-6
+
+							.head-info
+
+								h5
+									span (343) 
+									| 200-75-77
+
+								a(href="#" title="Заказать звонок") Заказать звонок
+
+							//.head-info
+
+					.form-search
+
+						form(action='', method='post')
+
+							.input-group.md-search
+
+								input.form-control(type='text', name='search', placeholder='Что ищите?', required='')
+
+								button.btn.btn-primary(type='submit') 
+
+									i.icon-search
+
+					//.form-search
+				// .col-lg-5
+
+				.col-lg-3
+
+					.header-cart
+
+						a#cart(href='#')
+							
+							.cart-box
+
+								i.icon-cart
+
+								span.cart-qty 1
+							
+							.cart-box
+
+								strong Корзина
+
+								span.cart-price 26 082
+								
+										span.cart-price__symbol руб.
+				// .col-lg-3
+		
+		nav.navbar.navbar-toggleable-md.md-nav
+
+			.navbar-header
+				button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbar', aria-controls='navbar', aria-expanded='false')
+					span
+					span
+					span
+
+			#navbar.collapse.navbar-collapse
+
+				ul.nav.navbar-nav
+
+					li
+						a(href='#') О нас
+
+					li
+						a(href='#') Гарантии
+
+					li
+						a.active(href='#') Схемы лечения
+
+					li
+						a(href='#') Сертификаты
+
+					li
+						a(href='#') Доставка и оплата
+
+					li
+						a(href='#') Отзывы
+
+					li
+						a(href='#') Вопрос-ответ
+
+					li
+						a(href='#') Контакты
+			
+
+//.header

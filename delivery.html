@@ -7,7 +7,22 @@
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
   </head>
   <body>
-    <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
+    <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="custom-modal modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="exampleModalLabel" class="modal-title">Modal title</h5>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="phone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="custom-modal modal fade">
       <div role="document" class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -155,7 +170,7 @@
                   </tr>
                 </thead>
                 <tbody> 
-                  <tr class="tr-green">
+                  <tr>
                     <td data-th="Условия доставки">Режим работы Курьеров: 
                       <ul>
                         <li>- с 9:00 до 20:00 часов</li>
@@ -172,7 +187,31 @@
               </table>
             </div>
             <div id="profile" role="tabpanel" class="tab-pane">
-              <p>test</p>
+              <table class="table-delivery">
+                <thead> 
+                  <tr>
+                    <th>Условия доставки</th>
+                    <th>Время доставки</th>
+                    <th>Оплата заказа</th>
+                    <th>Стоимость доставки</th>
+                  </tr>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td data-th="Условия доставки">Режим работы Курьеров: 
+                      <ul>
+                        <li>- с 9:00 до 20:00 часов</li>
+                        <li>- без перерывов и выходных</li>
+                      </ul>
+                    </td>
+                    <td data-th="Время доставки">- с 9:00 до 20:00 часов</td>
+                    <td data-th="Оплата заказа"> <strong>Наличными курьеру </strong>	при получении заказа</td>
+                    <td data-th="Стоимость доставки">Доставка до станции метро – 
+                      <h4>БЕСПЛАТНО</h4>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div id="tab" role="tabpanel" class="tab-pane">
               <p>test 2</p>

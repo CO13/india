@@ -119,7 +119,7 @@ block content
 							
 							tbody 
 							
-								tr.tr-green
+								tr
 								
 									td(data-th="Условия доставки") Режим работы Курьеров: 
 										
@@ -137,7 +137,40 @@ block content
 										h4 БЕСПЛАТНО
 					
 					#profile.tab-pane(role='tabpanel')
-						p test
+					
+						table.table-delivery
+							
+							thead 
+									
+								tr
+										
+									th Условия доставки
+									
+									th Время доставки
+									
+									th Оплата заказа
+									
+									th Стоимость доставки
+									
+							
+							tbody 
+							
+								tr
+								
+									td(data-th="Условия доставки") Режим работы Курьеров: 
+										
+										ul
+											li - с 9:00 до 20:00 часов
+											li - без перерывов и выходных
+									
+									td(data-th="Время доставки") - с 9:00 до 20:00 часов
+										
+									td(data-th="Оплата заказа") 
+										strong Наличными курьеру 
+										| 	при получении заказа
+									
+									td(data-th="Стоимость доставки") Доставка до станции метро – 
+										h4 БЕСПЛАТНО
 					
 					#tab.tab-pane(role='tabpanel')
 						p test 2
