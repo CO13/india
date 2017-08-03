@@ -179,7 +179,16 @@
                       <div class="category-products__price discount"><span class="price">10 550 <span class="symbol">руб. </span></span><span class="old-price">11 800<span class="symbol">руб. </span></span></div>
                     </div>
                     <!--.category-products__section-->
-                    <div class="category-products__footer"><a href="#" class="btn btn-lg btn-primary"> <i class="icon-cart"></i>   В корзину</a>
+                    <div class="category-products__footer"><a href="#" class="btn btn-lg btn-primary add-to-cart"> <i class="icon-cart"></i>   В корзину</a>
+                      <div class="qty-wrap"> <span>Даклатасвир</span><span class="qty">
+                          <button type="button" onclick="changeQty(12, this);" class="button-down"></button>
+                          <input id="cart-qty-12" type="text" value="1" size="4" title="Qty" name="" class="qty-input">
+                          <button type="button" onclick="changeQty(12, this);" class="button-up"></button></span>
+                        <div class="qty-wrap__butt">
+                          <button type="button" class="btn btn-ok btn-primary">Да</button>
+                          <button type="button" class="btn btn-cancel btn-primary">отмена</button>
+                        </div>
+                      </div>
                       <div class="product-click"><a href="#" title="Купить в 1 клик"><span>Купить в 1 клик</span></a></div>
                     </div>
                     <!--.category-products__footer-->
@@ -204,7 +213,16 @@
                     <!--.category-products__section-->
                     <div class="category-products__price sale"><span class="price">6 970 <span class="symbol">руб. </span></span><span class="old-price">8 350 <span class="symbol">руб. </span></span></div>
                     <!--.category-products__price-->
-                    <div class="category-products__footer"><a href="#" class="btn btn-lg btn-primary"> <i class="icon-cart"></i>   В корзину</a>
+                    <div class="category-products__footer"><a href="#" class="btn btn-lg btn-primary add-to-cart"> <i class="icon-cart"></i>   В корзину</a>
+                      <div class="qty-wrap"> <span>Даклатасвир</span><span class="qty">
+                          <button type="button" onclick="changeQty(13, this);" class="button-down"></button>
+                          <input id="cart-qty-13" type="text" value="1" size="4" title="Qty" name="" class="qty-input">
+                          <button type="button" onclick="changeQty(13, this);" class="button-up"></button></span>
+                        <div class="qty-wrap__butt">
+                          <button type="button" class="btn btn-ok btn-primary">Да</button>
+                          <button type="button" class="btn btn-cancel btn-primary">отмена</button>
+                        </div>
+                      </div>
                       <div class="product-click"><a href="#" title="Купить в 1 клик"><span>Купить в 1 клик</span></a></div>
                     </div>
                     <!--.category-products__footer-->
@@ -630,6 +648,18 @@
         <!--.container-->
       </section>
       <!--.section-faq-->
+      <script type="text/javascript">
+        function changeQty(productId, button) {
+        		var input = $('#cart-qty-'+productId),
+        				inputVal = parseInt(input.val());
+        		
+        		if($(button).hasClass('button-up')) {
+        				input.val(inputVal + 1);
+        		} else if($(button).hasClass('button-down') && inputVal > 1) {
+        				input.val(inputVal - 1);
+        		}
+        }
+      </script>
     </main>
     <footer class="footer">
       <div class="container">
