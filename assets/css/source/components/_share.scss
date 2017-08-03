@@ -49,4 +49,14 @@
             }
         }
     }
+
+    @media screen and (max-width: 767px) {
+        span:first-child {
+            display: block;
+        }
+
+        ul {
+            margin: 5px 0 0 0;
+        }
+    }
 }

@@ -20,6 +20,7 @@
 @import "components/blog";
 @import "components/cart";
 @import "components/related";
+@import "components/qty";
 @import "components/share";
 @import "pages/index";
 @import "pages/detail";
@@ -1206,6 +1207,17 @@ select {
             height: 55px;
             background:  url("../images/bg-expert-advice-info.png") top center no-repeat;
             background-size: 100%;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        &__info {
+            padding-right: 15px;
+            padding-left: 40px;
+
+            &:before {
+                left: 15px;
+            }
         }
     }
 }

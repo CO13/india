@@ -186,18 +186,36 @@ block content
 
 									.category-products__footer
 
-										a.btn.btn-lg.btn-primary(href="#") 
+										a.btn.btn-lg.btn-primary.add-to-cart(href="#") 
 
 											i.icon-cart
 
 											|    В корзину
-
+											
+										.qty-wrap 
+										
+											span Даклатасвир
+											
+											span.qty
+											
+												button.button-down(type='button', onclick='changeQty(12, this);')
+												
+												input#cart-qty-12.qty-input(type="text" value='1', size='4', title='Qty', name='')
+												
+												button.button-up(type='button', onclick='changeQty(12, this);')
+											
+											.qty-wrap__butt
+											
+												button(type="button" class="btn btn-ok btn-primary") Да
+												
+												button(type="button" class="btn btn-cancel btn-primary") отмена
+												
 										.product-click
 										
 											a(href="#" title="Купить в 1 клик")
 											
 												span Купить в 1 клик
-
+									
 									//.category-products__footer
 
 								//.category-products__item
@@ -258,11 +276,29 @@ block content
 
 									.category-products__footer
 
-										a.btn.btn-lg.btn-primary(href="#") 
+										a.btn.btn-lg.btn-primary.add-to-cart(href="#") 
 
 											i.icon-cart
 
 											|    В корзину
+											
+										.qty-wrap 
+										
+											span Даклатасвир
+											
+											span.qty
+											
+												button.button-down(type='button', onclick='changeQty(13, this);')
+												
+												input#cart-qty-13.qty-input(type="text" value='1', size='4', title='Qty', name='')
+												
+												button.button-up(type='button', onclick='changeQty(13, this);')
+											
+											.qty-wrap__butt
+											
+												button(type="button" class="btn btn-ok btn-primary") Да
+												
+												button(type="button" class="btn btn-cancel btn-primary") отмена
 
 										.product-click
 
@@ -1068,3 +1104,15 @@ block content
 			//.container
 
 		//.section-faq
+		
+		script(type="text/javascript").
+			function changeQty(productId, button) {
+					var input = $('#cart-qty-'+productId),
+							inputVal = parseInt(input.val());
+					
+					if($(button).hasClass('button-up')) {
+							input.val(inputVal + 1);
+					} else if($(button).hasClass('button-down') && inputVal > 1) {
+							input.val(inputVal - 1);
+					}
+			}
