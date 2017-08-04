@@ -12,18 +12,33 @@
 				button.btn.btn-primary(type='button') Save changes
 				
 #phone.custom-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+
 	.modal-dialog(role='document')
+	
 		.modal-content
+		
 			.modal-header
-				h5#exampleModalLabel.modal-title Modal title
-				button.close(type='button', data-dismiss='modal', aria-label='Close')
-					span(aria-hidden='true') ×
-			.modal-body
-				| ...
-			.modal-footer
-				button.btn.btn-secondary(type='button', data-dismiss='modal') Close
-				button.btn.btn-primary(type='button') Save changes
 				
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					img(src="assets/images/close.png")
+					
+			.custom-modal__body
+			
+				h4.custom-modal__titleЗаказать звонок
+				
+				form(method="" action="#" id="" name="")
+				
+					.form-group
+						
+						input.form-control(type="text"  placeholder="Ваше имя" id="title-review" name="title-review")
+						
+					.form-group
+						
+						
+						input.form-control(type="text"  placeholder="Телефон" id="title-review" name="title-review")
+					
+					button.btn.btn-lg.btn-primary(type="submit") Отправить
+					
 header.header
 
 	.container
@@ -72,7 +87,7 @@ header.header
 									span (343) 
 									| 200-75-77
 
-								a(href="#" title="Заказать звонок") Заказать звонок
+								a(href="#" title="Заказать звонок" data-toggle="modal" data-target="#phone") Заказать звонок
 
 							//.head-info
 
