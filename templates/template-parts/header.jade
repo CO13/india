@@ -1,16 +1,82 @@
 #login-modal.custom-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+
 	.modal-dialog(role='document')
+	
 		.modal-content
+		
 			.modal-header
-				h5#exampleModalLabel.modal-title Modal title
+			
 				button.close(type='button', data-dismiss='modal', aria-label='Close')
-					span(aria-hidden='true') ×
-			.modal-body
-				| ...
-			.modal-footer
-				button.btn.btn-secondary(type='button', data-dismiss='modal') Close
-				button.btn.btn-primary(type='button') Save changes
+					img(src="assets/images/close.png")
 				
+			.custom-modal__body
+			
+				h4.custom-modal__title Авторизация
+				
+				form(method="" action="#" id="" name="")
+				
+					.form-group
+						
+						input.form-control(type="email"  placeholder="E-mail"  name="")
+						
+					.form-group
+						
+						input.form-control(type="password"  placeholder="Пароль"  name="")
+					
+					
+						
+					button.btn.btn-lg.btn-primary(type="submit") Войти
+					
+					.registration-group
+					
+						a.registration-link(href="") Регистрация
+						
+					.item-forgout
+					
+						label.custom-control.custom-checkbox
+							input.custom-control-input(type='checkbox')
+							span.custom-control-indicator
+							span.custom-control-description Запомнить
+							
+						a.forgout(href="#") 
+							span Напомнить пароль 
+					
+			
+			
+			.social-modal
+				
+				.block-share
+				
+					p Войти через социальные сети:
+					
+					ul 
+					
+						li
+						
+							a(href="#")
+							
+								i.vk
+								
+						li
+						
+							a(href="#")
+							
+								i.fb
+								
+						li
+						
+							a(href="#")
+							
+								i.tw
+								
+						li
+						
+							a(href="#")
+							
+								i.ok
+									
+							
+			
 #phone.custom-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
 
 	.modal-dialog(role='document')
@@ -38,6 +104,159 @@
 						input.form-control(type="text"  placeholder="Телефон" id="title-review" name="title-review")
 					
 					button.btn.btn-lg.btn-primary(type="submit") Отправить
+
+#click.custom-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+
+	.modal-dialog(role='document')
+	
+		.modal-content
+		
+			.modal-header
+				
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					img(src="assets/images/close.png")
+					
+			.custom-modal__body
+			
+				h4.custom-modal__title Купить в 1 клик
+				
+				p.custom-modal__desc-blue Hepcinat LP Соф+ледипасвир , 90 табл.
+				
+				p.custom-modal__desc. 
+					Оставьте Ваш телефон и в течении 10 минут наш менеджер перезвонит Вам
+					
+				form(method="" action="#" id="" name="")
+				
+					.form-group
+						
+						input.form-control(type="text"  placeholder="Ваше имя" id="title-review" name="title-review")
+						
+					.form-group
+						
+						
+						input.form-control(type="text"  placeholder="Телефон" id="title-review" name="title-review")
+						
+					.qty-wrap 
+					
+						span Количество:
+						
+						span.qty
+						
+							button.button-down(type='button', onclick='changeQty(12, this);')
+							
+							input#cart-qty-12.qty-input(type="text" value='1', size='4', title='Qty', name='')
+							
+							button.button-up(type='button', onclick='changeQty(12, this);')
+							
+					button.btn.btn-lg.btn-primary(type="submit") Заказать товар
+
+#modal-check.custom-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+
+	.modal-dialog(role='document')
+	
+		.modal-content
+		
+			.modal-header
+				
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					img(src="assets/images/close.png")
+					
+			.custom-modal__box
+			
+				.custom-modal__row
+				
+					.custom-modal__header
+					
+						img(src="assets/images/modal/icon-check.png")
+					
+					.custom-modal__section
+					
+						h4.custom-modal__title Спасибо!
+						
+						strong Ваш заказ отправлен
+						
+						p.
+							Наш менеджер свяжется с вами  в ближайшее время
+							
+#modal-cart.custom-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+
+	.modal-dialog(role='document')
+	
+		.modal-content
+		
+			.modal-header
+				
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					img(src="assets/images/close.png")
+					
+			.custom-modal__cart
+			
+				h4.custom-modal__title Вы добавили в корзину
+				
+				p.custom-modal__desc-blue Hepcinat LP Соф+ледипасвир , 90 табл.
+					
+				.item-modal-cart
+				
+					.item-modal-cart__header
+					
+						img(src="media/home-products/product1.jpg",alt="")
+					
+					.item-modal-cart__section
+					
+						button.btn.btn-lg.btn-primary(type='button') Оформить заказ
+						button.btn.btn-lg.btn-secondary(type='button', data-dismiss='modal') Продолжить покупки
+				
+#modal-email.custom-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+
+	.modal-dialog(role='document')
+	
+		.modal-content
+		
+			.modal-header
+				
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					img(src="assets/images/close.png")
+					
+			.custom-modal__box
+			
+				.custom-modal__row
+				
+					.custom-modal__header
+					
+						img(src="assets/images/modal/icon-email.png")
+					
+					.custom-modal__section
+					
+						h4.custom-modal__title Ваше сообщение Отправлено! 
+						
+						p.
+							Наш менеджер свяжется с вами  в ближайшее время 
+					
+#modal-mess.custom-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+
+	.modal-dialog(role='document')
+	
+		.modal-content
+		
+			.modal-header
+				
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					img(src="assets/images/close.png")
+					
+			.custom-modal__box.custom-modal__box--full
+			
+				.custom-modal__row
+				
+					.custom-modal__header
+					
+						img(src="assets/images/modal/icon-mes.png")
+					
+					.custom-modal__section
+					
+						h4.custom-modal__title Большое спасибо!
+						
+						p.
+							Ваш отзыв отправлен на модерацию
 					
 header.header
 
@@ -87,7 +306,7 @@ header.header
 									span (343) 
 									| 200-75-77
 
-								a(href="#" title="Заказать звонок" data-toggle="modal" data-target="#phone") Заказать звонок
+								a(href="#" title="Заказать звонок" data-toggle="modal" data-target="#modal-cart") Заказать звонок
 
 							//.head-info
 

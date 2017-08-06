@@ -27,11 +27,237 @@
         text-align: center;
         margin-bottom: 30px;
     }
+
     .modal-header {
         border: none;
         justify-content: flex-end;
         .close {
             float: right;
         }
+    }
+
+    &__row {
+        @extend .row;
+        align-items: center;
+    }
+
+    &__box {
+        margin: 0 39px;
+        margin-bottom: 40px;
+        padding-top: 51px;
+        padding-bottom: 42px;
+        border: 3px dashed $green;
+        justify-content: center;
+
+        strong {
+            color: #3a3a3a;
+            font-size: 30px;
+            line-height: 36px;
+            font-family: "Exo2-Bold";
+        }
+
+        h4 {
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        p {
+            font-size: 17px;
+            font-family: "Exo2-Medium";
+            line-height: 20px;
+            color: #444444;
+            margin-top: 13px;
+        }
+
+        &__header {
+            @extend .col-md-4;
+            text-align: center;
+        }
+
+        &__section {
+            @extend .col-md-8;
+            padding-left: 0;
+            margin-left: -10px;
+        }
+
+        &--full {
+            padding-top: 25px;
+            padding-bottom: 19px;
+            .custom-modal {
+
+                &__header {
+                    @extend .col-md-12;
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+
+                &__section {
+                    @extend .col-md-12;
+                    text-align: center;
+                }
+
+            }
+            
+            h4 {
+                text-align: center;
+            }
+
+            p {
+                margin-top: 7px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            &__section {
+                padding-left: 15px;
+                margin-left: 0px;
+            }
+
+        }
+    }
+
+    &__desc-blue {
+        font-size: 17px;
+        line-height: 20px;
+        font-family: "Exo2-Medium";
+        color: $blue;
+        text-align: center;
+        margin-bottom: 23px;
+        margin-top: -17px;
+    }
+
+    &__desc {
+        font-size: 17px;
+        line-height: 20px;
+        font-family: "Exo2-Medium";
+        color: #3a3a3a;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .qty-wrap {
+        margin-bottom: 17px;
+
+        > span {
+            font-size: 17px;
+            line-height: 20px;
+            font-family: "Exo2-Medium";
+            color: #3a3a3a;
+        }
+
+        .qty {
+            input {
+                width: 85px;
+            }
+        }
+    }
+
+    &__cart {
+        width: 100%;
+        max-width: 385px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 767px) {
+        &__body {
+            padding: 0 15px;
+        }
+    }
+}
+
+
+.item-modal-cart {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 270px;
+    margin-bottom: 35px;
+
+
+    &__header {
+        background-color: $white;
+        margin-bottom: 20px;
+        border: 1px solid #dbece9;
+        border-radius: 3px;
+        text-align: center;
+    }
+
+    &__section {
+
+        .btn {
+            width: 100%;
+            margin-bottom: 11px;
+            font-family: "Exo2-Bold";
+            border-radius: 2px;
+        }
+
+        .btn-secondary {
+            background-color: #c0e4ed;
+            color: $white;
+            border-color: #c0e4ed;
+        }
+    }
+}
+
+.item-forgout {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgout {
+    font-size: 14px;
+    font-family: "Roboto-Light";
+    color: #444444;
+    span {
+        border-bottom:  1px dashed #444444;
+    }
+
+
+
+    &:hover {
+        span {
+            border-color: $green;
+        }
+        text-decoration: none;
+
+        color :$green;
+
+    }
+}
+
+.social-modal {
+    margin-top: -20px;
+    background-color: $white;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 17px;
+    padding-bottom: 23px;
+
+    .block-share {
+        text-align: center;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.registration-group {
+    text-align: center;
+}
+
+.registration-link {
+    color: #769104;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #769104;
+    font-family: "Exo2-Medium";
+
+
+    &:hover {
+        text-decoration: none;
+        color: $blue;
+        border-color: $blue;
     }
 }

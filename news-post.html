@@ -11,13 +11,36 @@
       <div role="document" class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 id="exampleModalLabel" class="modal-title">Modal title</h5>
-            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><img src="assets/images/close.png"></button>
           </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="custom-modal__body">
+            <h4 class="custom-modal__title">Авторизация</h4>
+            <form method="" action="#" id="" name="">
+              <div class="form-group">
+                <input type="email" placeholder="E-mail" name="" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="Пароль" name="" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-lg btn-primary">Войти</button>
+              <div class="registration-group"><a href="" class="registration-link">Регистрация</a></div>
+              <div class="item-forgout">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Запомнить</span>
+                </label><a href="#" class="forgout"> <span>Напомнить пароль </span></a>
+              </div>
+            </form>
+          </div>
+          <div class="social-modal">
+            <div class="block-share">
+              <p>Войти через социальные сети:</p>
+              <ul> 
+                <li><a href="#"><i class="vk"></i></a></li>
+                <li><a href="#"><i class="fb"></i></a></li>
+                <li><a href="#"><i class="tw"></i></a></li>
+                <li><a href="#"><i class="ok"></i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -43,6 +66,119 @@
         </div>
       </div>
     </div>
+    <div id="click" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="custom-modal modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><img src="assets/images/close.png"></button>
+          </div>
+          <div class="custom-modal__body">
+            <h4 class="custom-modal__title">Купить в 1 клик</h4>
+            <p class="custom-modal__desc-blue">Hepcinat LP Соф+ледипасвир , 90 табл.</p>
+            <p class="custom-modal__desc">
+              Оставьте Ваш телефон и в течении 10 минут наш менеджер перезвонит Вам
+              
+            </p>
+            <form method="" action="#" id="" name="">
+              <div class="form-group">
+                <input type="text" placeholder="Ваше имя" id="title-review" name="title-review" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Телефон" id="title-review" name="title-review" class="form-control">
+              </div>
+              <div class="qty-wrap"> <span>Количество:</span><span class="qty">
+                  <button type="button" onclick="changeQty(12, this);" class="button-down"></button>
+                  <input id="cart-qty-12" type="text" value="1" size="4" title="Qty" name="" class="qty-input">
+                  <button type="button" onclick="changeQty(12, this);" class="button-up"></button></span></div>
+              <button type="submit" class="btn btn-lg btn-primary">Заказать товар</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-check" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="custom-modal modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><img src="assets/images/close.png"></button>
+          </div>
+          <div class="custom-modal__box">
+            <div class="custom-modal__row">
+              <div class="custom-modal__header"><img src="assets/images/modal/icon-check.png"></div>
+              <div class="custom-modal__section">
+                <h4 class="custom-modal__title">Спасибо!</h4><strong>Ваш заказ отправлен</strong>
+                <p>
+                  Наш менеджер свяжется с вами  в ближайшее время
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="custom-modal modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><img src="assets/images/close.png"></button>
+          </div>
+          <div class="custom-modal__cart">
+            <h4 class="custom-modal__title">Вы добавили в корзину</h4>
+            <p class="custom-modal__desc-blue">Hepcinat LP Соф+ледипасвир , 90 табл.</p>
+            <div class="item-modal-cart">
+              <div class="item-modal-cart__header"><img src="media/home-products/product1.jpg" alt=""></div>
+              <div class="item-modal-cart__section">
+                <button type="button" class="btn btn-lg btn-primary">Оформить заказ</button>
+                <button type="button" data-dismiss="modal" class="btn btn-lg btn-secondary">Продолжить покупки</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-email" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="custom-modal modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><img src="assets/images/close.png"></button>
+          </div>
+          <div class="custom-modal__box">
+            <div class="custom-modal__row">
+              <div class="custom-modal__header"><img src="assets/images/modal/icon-email.png"></div>
+              <div class="custom-modal__section">
+                <h4 class="custom-modal__title">Ваше сообщение Отправлено! </h4>
+                <p>
+                  Наш менеджер свяжется с вами  в ближайшее время 
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-mess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="custom-modal modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><img src="assets/images/close.png"></button>
+          </div>
+          <div class="custom-modal__box custom-modal__box--full">
+            <div class="custom-modal__row">
+              <div class="custom-modal__header"><img src="assets/images/modal/icon-mes.png"></div>
+              <div class="custom-modal__section">
+                <h4 class="custom-modal__title">Большое спасибо!</h4>
+                <p>
+                  Ваш отзыв отправлен на модерацию
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header-block">
@@ -63,7 +199,7 @@
                 </div>
                 <div class="col-xl-6 col-sm-6">
                   <div class="head-info">
-                    <h5><span>(343) </span>200-75-77</h5><a href="#" title="Заказать звонок" data-toggle="modal" data-target="#phone">Заказать звонок</a>
+                    <h5><span>(343) </span>200-75-77</h5><a href="#" title="Заказать звонок" data-toggle="modal" data-target="#modal-cart">Заказать звонок</a>
                   </div>
                   <!--.head-info-->
                 </div>
