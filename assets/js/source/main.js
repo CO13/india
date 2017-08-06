@@ -8,7 +8,7 @@ jQuery(document).ready( function($) {
             var selected = jQuery(this).index();
             var star = jQuery(this).closest('.review-star').find('i');
 
-            jQuery(this).closest('.review-star').find('input[name="review-rating"]').val(selected);
+            jQuery(this).closest('.review-star').find('input[name="reviewRating"]').val(selected);
 
             star.removeClass('full');
             jQuery.each(star, function(i) {
