@@ -100,7 +100,30 @@ select {
     position: relative;
 
 }
+textarea.error,
+input.error,
+select.error,
+.form-control.error,
+.form-control.error:focus {
+    border: 1px solid #da0808!important;
+}
 
+label.error {
+    display: block!important;
+    color: #da0808!important;
+    clear: both!important;
+    font-family: 'Roboto-Light'!important;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+label[for="paymentMethod"] {
+    position: absolute;
+    display: block;
+    width: 300px;
+    bottom: -35px;
+    left: 0;
+}
 .a-center {
     text-align: center;
 }
