@@ -131,19 +131,19 @@
         <div class="container">
           <div class="ih-pane ih-pane-sin">
             <h6 class="ih-pane__title">Войти <span>(для зарегистрированных пользователей)</span></h6>
-            <form class="form-sin-in">
+            <form id="checkout-login" class="form-sin-in">
               <ul class="ih-list-sin">
                 <li>
                   <div class="form-group">
                     <label for="formGroupInput" class="col-form-label">Логин</label>
-                    <input id="formGroupInput" type="email" aria-describedby="emailHelp" placeholder="Логин (E-mail)" class="form-control">
+                    <input id="formGroupInput" type="email" name="login" aria-describedby="emailHelp" placeholder="Логин (E-mail)" class="form-control">
                   </div>
                   <!--.form-group-->
                 </li>
                 <li>       
                   <div class="form-group">
                     <label for="exampleInputPassword" class="col-form-label">Пароль</label>
-                    <input id="exampleInputPassword" type="password" placeholder="Пароль" class="form-control"><a href="#" class="forgout-password">Напомнить пароль</a>
+                    <input id="exampleInputPassword" type="password" name="password" placeholder="Пароль" class="form-control"><a href="#" class="forgout-password">Напомнить пароль</a>
                   </div>
                   <!--.form-group-->
                 </li>
@@ -156,149 +156,152 @@
             <!--.form-sin-in-->
           </div>
           <!--.ih-pane-sin-->
-          <div class="ih-pane ih-pane-registration">
-            <h6 class="ih-pane__title">Для новых покупателей</h6>
-            <form method="" action="" name="" class="form-registration">
-              <div class="row row-sm">
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label for="" class="col-form-label">Фамилия Имя Отчество</label>
-                    <input type="text" placeholder="Введите Ваше ФИО" class="form-control">
+          <form id="checkout-register" method="" action="" name="">
+            <div class="ih-pane ih-pane-registration">
+              <div class="form-registration">
+                <h6 class="ih-pane__title">Для новых покупателей</h6>
+                <div class="row row-sm">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label for="" class="col-form-label">Фамилия Имя Отчество</label>
+                      <input type="text" placeholder="Введите Ваше ФИО" id="fio" name="fio" class="form-control">
+                    </div>
+                    <!--.form-group-->
                   </div>
-                  <!--.form-group-->
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label for="" class="col-form-label">Ваш телефон</label>
-                    <input type="number" placeholder="Tелефон" class="form-control">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label for="" class="col-form-label">Ваш телефон</label>
+                      <input type="text" placeholder="Tелефон" name="phone" class="form-control">
+                    </div>
+                    <!--.form-group-->
                   </div>
-                  <!--.form-group-->
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="" class="col-form-label">Город</label>
-                    <select class="custom-select">
-                      <option selected="">Choose One...</option>
-                      <option value="1">Boots</option>
-                      <option value="2">Shoes</option>
-                      <option value="3">Feet</option>
-                    </select>
-                    <!--.custom-select-->
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="" class="col-form-label">Город</label>
+                      <select name="city" class="custom-select">
+                        <option selected=""></option>
+                        <option value="1">Boots</option>
+                        <option value="2">Shoes</option>
+                        <option value="3">Feet</option>
+                      </select>
+                      <!--.custom-select-->
+                    </div>
+                    <!--.form-group-->
                   </div>
-                  <!--.form-group-->
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <label for="" class="col-form-label">Индекс</label>
-                    <input type="text" placeholder="Почтовый индекс" class="form-control">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="" class="col-form-label">Индекс</label>
+                      <input type="text" placeholder="Почтовый индекс" name="postalCode" class="form-control">
+                    </div>
+                    <!--.form-group-->
                   </div>
-                  <!--.form-group-->
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label for="" class="col-form-label">Адрес доставки</label>
-                    <input type="text" placeholder="Адрес" class="form-control">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label for="" class="col-form-label">Адрес доставки</label>
+                      <input type="text" placeholder="Адрес" name="address" class="form-control">
+                    </div>
+                    <!--.form-group-->
                   </div>
-                  <!--.form-group-->
-                </div>
-                <div class="col-lg-12">
-                  <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Зарегистрироваться</span>
-                  </label>
-                  <!--.custom-checkbox-->
+                  <div class="col-lg-12">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" name="register" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Зарегистрироваться</span>
+                    </label>
+                    <!--.custom-checkbox-->
+                  </div>
                 </div>
               </div>
-            </form>
-            <!--.form-registration-->
-          </div>
-          <!--.ih-pane-registration-->
-          <div class="ih-pane ih-pane-payment">
-            <h6 class="ih-pane__title">Для новых покупателей</h6>
-            <form>
-              <ul class="ih-list-payment">
-                <li>
-                  <div class="ih-list-payment__header"><img src="assets/images/icon-cash.png"></div>
-                  <label class="custom-control custom-radio">
-                    <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Наличными</span>
-                  </label>
-                  <!--.custom-radio-->
-                </li>
-                <li>               
-                  <div class="ih-list-payment__header"><img src="assets/images/icon-card.png"></div>
-                  <label class="custom-control custom-radio">
-                    <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Банковская карта</span>
-                  </label>
-                  <!--.custom-radio-->
-                </li>
-                <li>
-                  <div class="ih-list-payment__header"><img src="assets/images/icon-bank.png"></div>
-                  <label class="custom-control custom-radio">
-                    <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Сбербанк онлайн</span>
-                  </label>
-                  <!--.custom-radio-->
-                </li>
-                <li>               
-                  <div class="ih-list-payment__header"><img src="assets/images/icon-payment.png"></div>
-                  <label class="custom-control custom-radio">
-                    <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Оплата наложенным платежом</span>
-                  </label>
-                  <!--.custom-radio-->
-                </li>
-              </ul>
-              <!--.ih-list-payment-->
-            </form>
-          </div>
-          <!--.ih-pane-payment-->
-          <div class="ih-pane ih-pane-cart">
-            <h6 class="ih-pane__title">Ваш заказ</h6>
-            <table id="shopping-cart-table" class="cart-table"> 
-              <thead> 
-                <tr>
-                  <th>Название</th>
-                  <th>Цена</th>
-                  <th>Количество, шт.</th>
-                  <th>Стоимость </th>
-                </tr>
-              </thead>
-              <tbody> 
-                <tr>
-                  <td> <a href="#" title="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab" class="product-image"> <img src="media/cart-products/product-1.jpg" alt="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab" width="61" height="53"></a>
-                    <h5 class="product-title"> <a href="#" title="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab">Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab </a></h5><a href="#" title="Удалить" class="remove">x </a>
-                  </td>
-                  <td> <span class="cart-price">8 350 руб. </span></td>
-                  <td> <span class="qty">
-                      <!-- (Notice for backend dev) Add product id at parameter to changeQty function-->
-                      <button type="button" onclick="changeQty(13, this);" class="button-down"> </button>
-                      <!-- (Notice for backend dev) Add product id to qty id-->
-                      <input value="1" size="4" title="Qty" name="" id="cart-qty-13" class="qty-input">
-                      <button type="button" onclick="changeQty(13, this);" class="button-up"> </button></span></td>
-                  <td><span class="cart-price total-price">16 700 руб.</span></td>
-                </tr>
-                <tr>
-                  <td> <a href="#" title="Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab" class="product-image"> <img src="media/cart-products/product-1.jpg" alt="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab" width="61" height="53"></a>
-                    <h5 class="product-title"> <a href="#" title="Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab">Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab </a></h5><a href="#" title="Удалить" class="remove">x </a>
-                  </td>
-                  <td> <span class="cart-price">7 600 руб.</span></td>
-                  <td> <span class="qty">
-                      <!-- (Notice for backend dev) Add product id at parameter to changeQty function-->
-                      <button type="button" onclick="changeQty(12, this);" class="button-down"> </button>
-                      <!-- (Notice for backend dev) Add product id to qty id-->
-                      <input value="1" size="4" title="Qty" name="" id="cart-qty-12" class="qty-input">
-                      <button type="button" onclick="changeQty(12, this);" class="button-up"> </button></span></td>
-                  <td><span class="cart-price total-price">7 600 руб.     </span></td>
-                </tr>
-              </tbody>
-              <tfoot> 
-                <tr> 
-                  <td colspan="3"> <strong>Итоговая сумма:</strong></td>
-                  <td> <strong class="total-price">24 300 руб. </strong></td>
-                </tr>
-              </tfoot>
-            </table>
-            <!--ta.cart-table-->
-            <div class="ih-pane__button-group"><a href="#" title="Оформить заказ" class="btn btn-lg btn-info">Вернуться назад</a><a href="#" title="Оформить заказ" class="btn btn-lg btn-primary">Подтвердить</a></div>
-          </div>
-          <!--.ih-pane-cart-->
+              <!--.form-registration-->
+            </div>
+            <!--.ih-pane-registration-->
+            <div class="ih-pane ih-pane-payment">
+              <h6 class="ih-pane__title">Для новых покупателей
+                <ul class="ih-list-payment">
+                  <li>
+                    <div class="ih-list-payment__header"><img src="assets/images/icon-cash.png"></div>
+                    <label class="custom-control custom-radio">
+                      <input id="radioStacked1" name="paymentMethod" type="radio" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Наличными</span>
+                    </label>
+                    <!--.custom-radio-->
+                  </li>
+                  <li>               
+                    <div class="ih-list-payment__header"><img src="assets/images/icon-card.png"></div>
+                    <label class="custom-control custom-radio">
+                      <input id="radioStacked2" name="paymentMethod" type="radio" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Банковская карта</span>
+                    </label>
+                    <!--.custom-radio-->
+                  </li>
+                  <li>
+                    <div class="ih-list-payment__header"><img src="assets/images/icon-bank.png"></div>
+                    <label class="custom-control custom-radio">
+                      <input id="radioStacked1" name="paymentMethod" type="radio" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Сбербанк онлайн</span>
+                    </label>
+                    <!--.custom-radio-->
+                  </li>
+                  <li>               
+                    <div class="ih-list-payment__header"><img src="assets/images/icon-payment.png"></div>
+                    <label class="custom-control custom-radio">
+                      <input id="radioStacked2" name="paymentMethod" type="radio" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Оплата наложенным платежом</span>
+                    </label>
+                    <!--.custom-radio-->
+                  </li>
+                </ul>
+                <!--.ih-list-payment-->
+              </h6>
+            </div>
+            <!--.ih-pane-payment-->
+            <div class="ih-pane ih-pane-cart">
+              <h6 class="ih-pane__title">Ваш заказ</h6>
+              <table id="shopping-cart-table" class="cart-table"> 
+                <thead> 
+                  <tr>
+                    <th>Название</th>
+                    <th>Цена</th>
+                    <th>Количество, шт.</th>
+                    <th>Стоимость </th>
+                  </tr>
+                </thead>
+                <tbody> 
+                  <tr>
+                    <td> <a href="#" title="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab" class="product-image"> <img src="media/cart-products/product-1.jpg" alt="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab" width="61" height="53"></a>
+                      <h5 class="product-title"> <a href="#" title="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab">Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab </a></h5><a href="#" title="Удалить" class="remove">x </a>
+                    </td>
+                    <td> <span class="cart-price">8 350 руб. </span></td>
+                    <td> <span class="qty">
+                        <!-- (Notice for backend dev) Add product id at parameter to changeQty function-->
+                        <button type="button" onclick="changeQty(13, this);" class="button-down"> </button>
+                        <!-- (Notice for backend dev) Add product id to qty id-->
+                        <input value="1" size="4" title="Qty" name="" id="cart-qty-13" class="qty-input">
+                        <button type="button" onclick="changeQty(13, this);" class="button-up"> </button></span></td>
+                    <td><span class="cart-price total-price">16 700 руб.</span></td>
+                  </tr>
+                  <tr>
+                    <td> <a href="#" title="Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab" class="product-image"> <img src="media/cart-products/product-1.jpg" alt="Даклатасвир — Daklatasvir Natdac Natco 60 mg 28 tab" width="61" height="53"></a>
+                      <h5 class="product-title"> <a href="#" title="Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab">Софосбувир Sofosbuvir SoviHep Zydus 400 mg 28 tab </a></h5><a href="#" title="Удалить" class="remove">x </a>
+                    </td>
+                    <td> <span class="cart-price">7 600 руб.</span></td>
+                    <td> <span class="qty">
+                        <!-- (Notice for backend dev) Add product id at parameter to changeQty function-->
+                        <button type="button" onclick="changeQty(12, this);" class="button-down"> </button>
+                        <!-- (Notice for backend dev) Add product id to qty id-->
+                        <input value="1" size="4" title="Qty" name="" id="cart-qty-12" class="qty-input">
+                        <button type="button" onclick="changeQty(12, this);" class="button-up"> </button></span></td>
+                    <td><span class="cart-price total-price">7 600 руб.     </span></td>
+                  </tr>
+                </tbody>
+                <tfoot> 
+                  <tr> 
+                    <td colspan="3"> <strong>Итоговая сумма:</strong></td>
+                    <td> <strong class="total-price">24 300 руб. </strong></td>
+                  </tr>
+                </tfoot>
+              </table>
+              <!--ta.cart-table-->
+              <div class="ih-pane__button-group"><a href="#" title="Вернуться назад" class="btn btn-lg btn-info">Вернуться назад</a>
+                <button type="submit" class="btn btn-lg btn-primary">Подтвердить</button>
+              </div>
+            </div>
+            <!--.ih-pane-cart-->
+          </form>
         </div>
         <!--.container-->
         <script type="text/javascript">
@@ -381,9 +384,11 @@
     <!--.footer-bottom-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/jquery.fancybox.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/validators.js"></script>
   </body>
 </html>

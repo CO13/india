@@ -358,19 +358,19 @@ block content
 										
 										a(href="#" title="Или войти под своим именем") Или войти под своим именем
 										
-									form(method="" action="#" id="" name="")
+									form(method="" action="#" id="review-form" name="")
 									
 										label(for="title-review") 
 										
 											| Заголовок
 										
-										input(type="text"  placeholder="Введите заголовок" id="title-review" name="title-review")
+										input(type="text"  placeholder="Введите заголовок" id="title-review" name="titleReview")
 										
 										label(for="comment-review") 
 										
 											| Комментарий *
 										
-										textarea(placeholder="Введите заголовок" id="comment-review" name="comment-review" rows="5")
+										textarea(placeholder="Введите заголовок" id="comment-review" name="commentReview" rows="5")
 
 										.buttons-wrapper.clearfix
 										
@@ -380,7 +380,7 @@ block content
 												
 												.review-star
 												
-													input#review-rating(type='hidden', name='review-rating')
+													input#review-rating(type='hidden', name='reviewRating')
 													
 													i.icon-star(data-value='1')
 													

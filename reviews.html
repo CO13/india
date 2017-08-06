@@ -271,22 +271,22 @@
                     <p><strong>
                          
                         Оставить отзыв анонимно </strong><a href="#" title="Или войти под своим именем">Или войти под своим именем</a></p>
-                    <form method="" action="#" id="" name="">
+                    <form method="" action="#" id="review-form" name="">
                       <label for="title-review">
                          
                         Заголовок
                       </label>
-                      <input type="text" placeholder="Введите заголовок" id="title-review" name="title-review">
+                      <input type="text" placeholder="Введите заголовок" id="title-review" name="titleReview">
                       <label for="comment-review">
                          
                         Комментарий *
                       </label>
-                      <textarea placeholder="Введите заголовок" id="comment-review" name="comment-review" rows="5"></textarea>
+                      <textarea placeholder="Введите заголовок" id="comment-review" name="commentReview" rows="5"></textarea>
                       <div class="buttons-wrapper clearfix">
                         <div class="review-block add-review">
                           <label>Оценить товар *</label>
                           <div class="review-star">
-                            <input id="review-rating" type="hidden" name="review-rating"><i data-value="1" class="icon-star"></i><i data-value="2" class="icon-star"></i><i data-value="3" class="icon-star"></i><i data-value="4" class="icon-star"></i><i data-value="5" class="icon-star"></i>
+                            <input id="review-rating" type="hidden" name="reviewRating"><i data-value="1" class="icon-star"></i><i data-value="2" class="icon-star"></i><i data-value="3" class="icon-star"></i><i data-value="4" class="icon-star"></i><i data-value="5" class="icon-star"></i>
                             <!--.review-star-->
                           </div>
                           <!--.review-block-->
@@ -366,9 +366,11 @@
     <!--.footer-bottom-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/jquery.fancybox.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/validators.js"></script>
   </body>
 </html>
