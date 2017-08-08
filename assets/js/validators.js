@@ -122,23 +122,23 @@ jQuery(document).ready(function($) {
 
       $.validator.addMethod("validateFIO", function(value, element) {
           return this.optional(element) || /[a-zA-Z]+\s+[a-zA-Z]+\s+[a-zA-Z]+/g.test(value);
-      },);
+      });
 
       $.validator.addMethod("validatePhone", function(value, element) {
           return this.optional(element) || /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(value);
-      },);
+      });
 
       $.validator.addMethod("russianPostalCode", function(value, element) {
           return this.optional(element) || /[1-6]\d{5}/.test(value);
-      },);
+      });
 
       $.validator.addMethod("validateEmail", function(value, element) {
           return this.optional(element) || /([a-zA-Z0-9_.]{1,})((@[a-zA-Z]{2,})[\\\.]([a-zA-Z]{2}|[a-zA-Z]{3}))/.test(value);
-      },);
+      });
 
       $.validator.addMethod("validateEmailORPhone", function(value, element) {
           return this.optional(element) || /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(value) || /([a-zA-Z0-9_.]{1,})((@[a-zA-Z]{2,})[\\\.]([a-zA-Z]{2}|[a-zA-Z]{3}))/.test(value);
-      },);
+      });
 
       // $.validator.addMethod("validateReviewRating", function(value, element) {
       //     return /[1-5]{1}$/.test(value);

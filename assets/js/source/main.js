@@ -102,6 +102,48 @@ jQuery(document).ready( function($) {
        ]
     });
 
+
+    // Initialize category products slider
+    $('.slider-category-products').not('.slick-initialized').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        swipe:  true,
+        arrows: true,
+        adaptiveHeight: true,
+        dots: false,
+        responsive: [
+          {
+              breakpoint: 1200,
+              settings: {
+                  slidesToShow: 3,
+              }
+          },{
+              breakpoint: 990,
+              settings: {
+                  slidesToShow: 2,
+              }
+          }, {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 2,
+              }
+           },{
+               breakpoint: 600,
+               settings: {
+                  slidesToShow: 2,
+                   arrows: false,
+               }
+            },{
+                breakpoint: 580,
+                settings: {
+                   slidesToShow: 1,
+                    arrows: false,
+                }
+             }
+       ]
+    });
+
+
     // Initialize Home slider
     $('.slider-carousel').not('.slick-initialized').slick({
     		slidesToShow: 1,
