@@ -15,12 +15,12 @@
           </div>
           <div class="custom-modal__body">
             <h4 class="custom-modal__title">Авторизация</h4>
-            <form method="" action="#" id="" name="">
+            <form method="" action="#" id="login-form" name="">
               <div class="form-group">
-                <input type="email" placeholder="E-mail" name="" class="form-control">
+                <input type="email" name="email" placeholder="E-mail" class="form-control">
               </div>
               <div class="form-group">
-                <input type="password" placeholder="Пароль" name="" class="form-control">
+                <input type="password" name="password" placeholder="Пароль" class="form-control">
               </div>
               <button type="submit" class="btn btn-lg btn-primary">Войти</button>
               <div class="registration-group"><a href="" class="registration-link">Регистрация</a></div>
@@ -53,12 +53,12 @@
           </div>
           <div class="custom-modal__body">
             <h4 class="custom-modal__title">Заказать звонок</h4>
-            <form method="" action="#" id="" name="">
+            <form method="" action="#" id="request-call" name="">
               <div class="form-group">
-                <input type="text" placeholder="Ваше имя" id="title-review" name="title-review" class="form-control">
+                <input type="text" placeholder="Ваше имя" id="name" name="name" class="form-control">
               </div>
               <div class="form-group">
-                <input type="text" placeholder="Телефон" id="title-review" name="title-review" class="form-control">
+                <input type="text" placeholder="Телефон" id="phone" name="phone" class="form-control">
               </div>
               <button type="submit" class="btn btn-lg btn-primary">Отправить</button>
             </form>
@@ -79,16 +79,16 @@
               Оставьте Ваш телефон и в течении 10 минут наш менеджер перезвонит Вам
               
             </p>
-            <form method="" action="#" id="" name="">
+            <form method="" action="#" id="buy-click" name="">
               <div class="form-group">
-                <input type="text" placeholder="Ваше имя" id="title-review" name="title-review" class="form-control">
+                <input type="text" placeholder="Ваше имя" id="name" name="name" class="form-control">
               </div>
               <div class="form-group">
-                <input type="text" placeholder="Телефон" id="title-review" name="title-review" class="form-control">
+                <input type="text" placeholder="Телефон" id="phone" name="phone" class="form-control">
               </div>
               <div class="qty-wrap"> <span>Количество:</span><span class="qty">
                   <button type="button" onclick="changeQty(12, this);" class="button-down"></button>
-                  <input id="cart-qty-12" type="text" value="1" size="4" title="Qty" name="" class="qty-input">
+                  <input id="popup-qty-12" type="text" value="1" size="4" title="Qty" name="" class="qty-input">
                   <button type="button" onclick="changeQty(12, this);" class="button-up"></button></span></div>
               <button type="submit" class="btn btn-lg btn-primary">Заказать товар</button>
             </form>
@@ -199,7 +199,7 @@
                 </div>
                 <div class="col-xl-6 col-sm-6">
                   <div class="head-info">
-                    <h5><span>(343) </span>200-75-77</h5><a href="#" title="Заказать звонок" data-toggle="modal" data-target="#modal-cart">Заказать звонок</a>
+                    <h5><span>(343) </span>200-75-77</h5><a href="#" title="Заказать звонок" data-toggle="modal" data-target="#phone">Заказать звонок</a>
                   </div>
                   <!--.head-info-->
                 </div>
@@ -792,7 +792,7 @@
       <!--.section-faq-->
       <script type="text/javascript">
         function changeQty(productId, button) {
-        		var input = $('#cart-qty-'+productId),
+        		var input = $(button).closest('.qty').find('.qty-input');
         				inputVal = parseInt(input.val());
         		
         		if($(button).hasClass('button-up')) {

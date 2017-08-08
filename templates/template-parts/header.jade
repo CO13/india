@@ -13,15 +13,15 @@
 			
 				h4.custom-modal__title Авторизация
 				
-				form(method="" action="#" id="" name="")
+				form(method="" action="#" id="login-form" name="")
 				
 					.form-group
 						
-						input.form-control(type="email"  placeholder="E-mail"  name="")
+						input.form-control(type="email" name="email" placeholder="E-mail")
 						
 					.form-group
 						
-						input.form-control(type="password"  placeholder="Пароль"  name="")
+						input.form-control(type="password" name="password" placeholder="Пароль")
 					
 					
 						
@@ -92,16 +92,16 @@
 			
 				h4.custom-modal__titleЗаказать звонок
 				
-				form(method="" action="#" id="" name="")
+				form(method="" action="#" id="request-call" name="")
 				
 					.form-group
 						
-						input.form-control(type="text"  placeholder="Ваше имя" id="title-review" name="title-review")
+						input.form-control(type="text"  placeholder="Ваше имя" id="name" name="name")
 						
 					.form-group
 						
 						
-						input.form-control(type="text"  placeholder="Телефон" id="title-review" name="title-review")
+						input.form-control(type="text"  placeholder="Телефон" id="phone" name="phone")
 					
 					button.btn.btn-lg.btn-primary(type="submit") Отправить
 
@@ -125,16 +125,16 @@
 				p.custom-modal__desc. 
 					Оставьте Ваш телефон и в течении 10 минут наш менеджер перезвонит Вам
 					
-				form(method="" action="#" id="" name="")
+				form(method="" action="#" id="buy-click" name="")
 				
 					.form-group
 						
-						input.form-control(type="text"  placeholder="Ваше имя" id="title-review" name="title-review")
+						input.form-control(type="text"  placeholder="Ваше имя" id="name" name="name")
 						
 					.form-group
 						
 						
-						input.form-control(type="text"  placeholder="Телефон" id="title-review" name="title-review")
+						input.form-control(type="text"  placeholder="Телефон" id="phone" name="phone")
 						
 					.qty-wrap 
 					
@@ -144,7 +144,7 @@
 						
 							button.button-down(type='button', onclick='changeQty(12, this);')
 							
-							input#cart-qty-12.qty-input(type="text" value='1', size='4', title='Qty', name='')
+							input#popup-qty-12.qty-input(type="text" value='1', size='4', title='Qty', name='')
 							
 							button.button-up(type='button', onclick='changeQty(12, this);')
 							
@@ -306,7 +306,7 @@ header.header
 									span (343) 
 									| 200-75-77
 
-								a(href="#" title="Заказать звонок" data-toggle="modal" data-target="#modal-cart") Заказать звонок
+								a(href="#" title="Заказать звонок" data-toggle="modal" data-target="#phone") Заказать звонок
 
 							//.head-info
 
