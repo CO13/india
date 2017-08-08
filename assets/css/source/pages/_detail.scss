@@ -18,6 +18,9 @@
                 display: inline-block;
                 list-style: none;
                 margin: 0 10px 0 0;
+                -webkit-transition: all .2s linear;
+                -moz-transition: all .2s linear;
+                transition: all .2s linear;
 
                 &:not(:first-child) {
                     margin-left: -4px;

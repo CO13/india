@@ -1,6 +1,73 @@
 jQuery(document).ready(function($) {
 
-      // Validate detail page review form
+      // Validate login form
+      $("#login-form").validate({
+          rules: {
+              email: {
+                  required: true,
+                  validateEmail: true
+              },
+              password: {
+                  required: true,
+                  minlength: 6
+              },
+          },
+          messages: {
+              email: {
+                  required: "This is required field",
+                  validateEmail: "Введите email в формате primer@primer.ru"
+              },
+              password: {
+                  required: "This is required field",
+                  minlength: "Your password must be at least 6 characters long"
+              }
+          }
+      });
+
+      // Validate request call form, Validate buy in one click
+      $("#request-call").validate({
+          rules: {
+              name: {
+                  required: true,
+              },
+              phone: {
+                  required: true,
+                  validatePhone: true,
+              },
+          },
+          messages: {
+              name: {
+                  required: "This is required field"
+              },
+              phone: {
+                  required: "This is required field",
+                  validatePhone: "Введите действительный номер телефона"
+              }
+          }
+      });
+
+      $("#buy-click").validate({
+          rules: {
+              name: {
+                  required: true,
+              },
+              phone: {
+                  required: true,
+                  validatePhone: true,
+              },
+          },
+          messages: {
+              name: {
+                  required: "This is required field"
+              },
+              phone: {
+                  required: "This is required field",
+                  validatePhone: "Введите действительный номер телефона"
+              }
+          }
+      });
+
+      // Validate reviews form
       $("#review-form, #detail-review-form").validate({
           rules: {
               titleReview: {
@@ -20,7 +87,7 @@ jQuery(document).ready(function($) {
           }
       });
 
-      // Validate checkout login form
+      // Validate contact form
       $("#contact-form").validate({
           rules: {
               name: {

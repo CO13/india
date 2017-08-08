@@ -44,7 +44,7 @@ jQuery(document).ready( function($) {
 
         $('.add-to-cart').click(function(e) {
             e.preventDefault();
-            $('.qty-wrap').hide();
+            $('.category-products__item .qty-wrap').hide();
             thisQty = $(this).next('.qty-wrap').find('.qty-input');
             $(this).next('.qty-wrap').stop().fadeIn(200);
         });
@@ -59,6 +59,16 @@ jQuery(document).ready( function($) {
         btnOk.click(function() {
             $(this).closest('.qty-wrap').stop().fadeOut(200);
             // Call popup
+        });
+    }());
+
+    $(function() {
+        $('#small-images li > a').click(function(e) {
+            e.preventDefault();
+            var imageUrl = $(this).attr('href');
+            $('#small-images li').removeClass('current');
+            $(this).closest('li').addClass('current');
+            $('.detail-page__image-box').find('img').attr('src', imageUrl);
         });
     }());
 

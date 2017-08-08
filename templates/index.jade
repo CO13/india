@@ -1107,7 +1107,7 @@ block content
 		
 		script(type="text/javascript").
 			function changeQty(productId, button) {
-					var input = $('#cart-qty-'+productId),
+					var input = $(button).closest('.qty').find('.qty-input');
 							inputVal = parseInt(input.val());
 					
 					if($(button).hasClass('button-up')) {
