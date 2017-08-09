@@ -3,7 +3,37 @@ html {
 }
 
 .header-block {
-	padding: 20px 0;
+		padding: 20px 0;
+
+		.form-search {
+				.twitter-typeahead {
+						padding-right: 100px;
+						width: 100%;
+				}
+				.tt-menu {
+						background-color: #fff;
+						border-top: 1px solid #d8edef;
+				    padding: 15px 18px;
+						width: 100%;
+						-webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.14);
+						-moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.14);
+						box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.14);
+
+						.tt-suggestion {
+								cursor: pointer;
+								font-family: 'Roboto-Light';
+
+								&:not(:last-child) {
+										margin-bottom: 12px;
+								}
+
+								&:hover {
+										color: #1ca5d0;
+								}
+						}
+				}
+		}
+
 		@media screen and(max-width: 1199px) {
 				.logo-block {
 						text-align: center;

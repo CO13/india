@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/typeahead.jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/validators.js"></script>
   </head>
   <body>
     <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="custom-modal modal fade">
@@ -207,7 +216,7 @@
               <div class="form-search">
                 <form action="" method="post">
                   <div class="input-group md-search">
-                    <input type="text" name="search" placeholder="Что ищите?" required="" class="form-control">
+                    <input type="text" name="search" placeholder="Что ищите?" required="" id="search" class="form-control">
                     <button type="submit" class="btn btn-primary"> <i class="icon-search"></i></button>
                   </div>
                 </form>
@@ -241,6 +250,46 @@
           </div>
         </nav>
       </div>
+      <script type="text/javascript">
+        jQuery(document).ready( function($) {
+        		var substringMatcher = function(strs) {
+        			return function findMatches(q, cb) {
+        				var matches, substringRegex;
+        				
+        				matches = [];
+        				
+        				substrRegex = new RegExp(q, 'i');
+        
+        				$.each(strs, function(i, str) {
+        					if (substrRegex.test(str)) {
+        						matches.push(str);
+        					}
+        				});
+        
+        				cb(matches);
+        			};
+        		};
+        		var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
+        				'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
+        				'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
+        				'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
+        				'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
+        				'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota',
+        				'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
+        				'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
+        				'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+        			];
+        			$('#search').typeahead({
+        				hint: true,
+        				highlight: true,
+        				minLength: 1
+        			},
+        			{
+        				name: 'states',
+        				source: substringMatcher(states)
+        			});
+        	});
+      </script>
     </header>
     <!--.header-->
     <main class="single-post">
@@ -637,13 +686,5 @@
       <!--.container-->
     </div>
     <!--.footer-bottom-->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/jquery.fancybox.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/validators.js"></script>
   </body>
 </html>
