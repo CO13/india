@@ -156,6 +156,8 @@ label[for="paymentMethod"] {
 .select-wrapper {
   position: relative;
   display: inline-block;
+  // overflow: hidden;
+
   &:before {
       position: absolute;
       @extend .icon-down;
@@ -169,6 +171,29 @@ label[for="paymentMethod"] {
       transform: translateY(-50%);
       font-family: $font-name__icon;
   }
+    select {
+
+
+        background-image: none;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+    }
+
+    select::-ms-expand {
+        display: none; /* hide the default arrow in ie10 and ie11 */
+    }
+}
+
+.form-group {
+    .select-wrapper {
+        display: block;
+
+        &:before {
+
+            right: 17px;
+        }
+    }
 }
 
 
