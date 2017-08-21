@@ -123,6 +123,7 @@
                 counter-increment: myCounter;
                 content:counter(myCounter);
                 bottom: auto;
+                top: 0;
             }
         }
 
@@ -130,6 +131,7 @@
             text-align: center;
             margin-bottom: 15px;
         }
+
         &__section {
             padding-left: 15px;
         }
@@ -400,6 +402,7 @@
 
 .section-certificates-slider {
     margin-bottom: 60px;
+
     &__box {
         background-color: #deefdd;
         padding-left: 15px;
@@ -414,6 +417,7 @@
         margin-bottom: 27px;
     }
 }
+
 .certificates-slider {
     list-style: none;
     padding: 0;
@@ -434,6 +438,41 @@
     .slick-slide {
         img {
 
+        }
+    }
+
+    .slick-next {
+        right: 0;
+
+    }
+
+    .slick-prev {
+        left: 0;
+    }
+
+    .slick-arrow {
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 60px;
+        width: 30px;
+        font-size: 20px;
+        z-index: 2;
+
+        @include transition(all .3s linear);
+
+        &:hover {
+            background-color: rgba(167, 197, 41, 0.5);
+
+            &:before {
+                color: #d9e89c;
+            }
+        }
+        &:before {
+        
+            display: inline-block;
+            font-size: 20px;
+            opacity: 1;
+            display: inline-block;
+            @include transition(all .3s linear);
         }
     }
 }

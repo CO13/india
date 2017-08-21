@@ -235,7 +235,7 @@ label[for="paymentMethod"] {
     width: 78px;
 
     .icon-star {
-      margin-right: 3px;
+      margin-right: 2px;
       font-size: 14px;
     }
 
@@ -999,9 +999,15 @@ label[for="paymentMethod"] {
             border-width: 35px 25px 35px 0;
             border-color: transparent $blue transparent transparent;
         }
+
         @media screen and (max-width: 767px) {
             padding-left: 55px;
             padding-right: 15px;
+        }
+
+        @media screen and (max-width: 580px) {
+            padding-left: 35px;
+            padding-right: 30px;
         }
     }
 
@@ -1055,6 +1061,19 @@ label[for="paymentMethod"] {
 
     .slick-prev {
         left: 0;
+    }
+
+    @media screen and (max-width: 580px) {
+
+        &__box-left {
+            padding: 0 30px 0 30px;
+        }
+
+        &__info {
+            &:before {
+                left: -34px;
+            }
+        }
     }
 
     .btn-outline-info {
@@ -1163,8 +1182,10 @@ label[for="paymentMethod"] {
     .sidebar-news {
         margin-bottom: 15px;
     }
+
     .slider-testimonial {
         border-radius: 2px;
+
         &__item {
             flex-direction: column;
         }
@@ -1174,6 +1195,7 @@ label[for="paymentMethod"] {
             padding-top: 25px;
             padding-bottom: 25px;
         }
+
         &__box-right {
             width: 100%;
 
@@ -1188,6 +1210,27 @@ label[for="paymentMethod"] {
         }
         .slick-dots {
             bottom: -25px;
+        }
+
+        .slick-next {
+            right: 0;
+            width: 30px;
+            height: 60px;
+
+            &:before {
+                font-size: 20px;
+            }
+        }
+
+        .slick-prev {
+            left: 0;
+
+            width: 30px;
+            height: 60px;
+
+            &:before {
+                font-size: 20px;
+            }
         }
     }
 
@@ -2144,7 +2187,6 @@ label[for="paymentMethod"] {
         }
     }
 }
-
 
 .slider-category-products {
     .slick-track {

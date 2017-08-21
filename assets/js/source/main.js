@@ -174,7 +174,7 @@ jQuery(document).ready( function($) {
            {
               breakpoint: 768,
               settings: {
-                  arrows: false,
+                  arrows: true,
                   dots: true
               }
            }
@@ -192,12 +192,18 @@ jQuery(document).ready( function($) {
 		nextEffect		: 'none',
 		closeBtn		: true
 	});
+
     $(".fancybox-slider").fancybox({
-        padding         : [50, 35, 50, 35],
+        width		: 1000,
+        maxWidth :1000,
+		// height		: '100%',
+		autoSize	: false,
+        padding         : [50, 15, 50, 15],
         prevEffect		: 'none',
   		nextEffect		: 'none',
   		closeBtn		: true
   	});
+
     $('.certificates-slider').not('.slick-initialized').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -231,7 +237,7 @@ jQuery(document).ready( function($) {
                 breakpoint: 480,
                 settings: {
                    slidesToShow: 1,
-                    arrows: false,
+                    arrows: true,
                 }
              }
        ]
